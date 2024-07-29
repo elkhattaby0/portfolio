@@ -1,0 +1,20 @@
+{
+    "Header" : {
+        "logo" : "Logo",
+        "home" : "Accueil",
+        "about" : "A propos de moi",
+        "projects" : "Projets",
+        "blog" : "Blog",
+        "contact" : "Contact",
+        "dir" : "ltr",
+        "opt" : "lang"
+    },
+
+    "Homepage" : {
+        "heroSection" : {
+            "head" : "Bonjour, je suis Lahoucine El Khattaby - Développeur Full Stack",
+            "text" : "Spécialisé en MERN Stack, WordPress, Laravel (PHP), et Python",
+            "buttonTxt" : "Voir mon travail"
+        }
+    }
+}
