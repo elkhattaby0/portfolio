@@ -9,8 +9,11 @@ const Homepage = ({ current }) => {
 			</div>
 
 			<div className={styleHomepage.intro}>
-				<p>{current.Homepage.Introduction.Brief}</p>
-				<img src="" alt="" />
+				<img src={require("../Images/Avatar/profile.png")}
+					alt="profile" 
+					className={styleHomepage.img}
+				/>
+				<p className={styleHomepage.introTxt}>{current.Homepage.Introduction.Brief}</p>
 			</div>
 
 		</div>
@@ -18,13 +21,16 @@ const Homepage = ({ current }) => {
 }
 
 const styleHomepage = {
-	"divOne" : "container border-2 h-5/6",
-	"hero" : " border-2 border-red-500 flex flex-col items-center justify-center space-x-20	h-4/5",
-	"head" : "text-[#212121] text-4xl",
-	"text" : "text-[#212121] text-xl",
-	"buttonTxt" : "bg-[#212121] text-white px-5 py-3 rounded-xl",
+	"divOne" : "container max-md:w-11/12 h-full",
 
-	"intro" : " border-2 border-blue-500"
+	"hero" : "h-5/6 -2 border-red-500 flex flex-col items-center justify-center min-md:space-x-20",
+	"head" : "text-[#212121] text-4xl my-2 text-center",
+	"text" : "text-[#212121] text-xl my-2 text-center",
+	"buttonTxt" : "bg-[#212121] text-white px-5 py-3 my-2 rounded-xl hover:bg-white hover:text-[#212121] hover:border-2 hover:border-[#212121] text-center",
+
+	"intro" : "h-fit -2 border-blue-500 mt-4  flex flex-col items-center justify-center ",
+	'introTxt' : "w-11/12 my-4",
+	"img" : "bg-[#e6e2d3] h-1/4 w-1/4 my-4 object-cover rounded-xl"
 }
 
 export default Homepage;

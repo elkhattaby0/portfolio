@@ -15,6 +15,10 @@
             "head" : "مرحباً، أنا الحسين الخطابي - مطور برمجيات",
             "text" : "متخصّص في MERN Stack وWordPress وLaravel (PHP) وPython",
             "buttonTxt" : "اطلع على أعمالي"
+        },
+        "Introduction" : {
+            "Brief" : "I'm Lahoucine, a passionate Full Stack Developer specializing in the MERN stack, WordPress, and Laravel (PHP). With a solid foundation in frontend technologies like HTML, CSS, Bootstrap, and Tailwind, and proficiency in JavaScript, Python, C, and PHP, I excel in creating dynamic and responsive web applications. My expertise extends to database management with MySQL, SQLite, and MongoDB, and I'm well-versed in Agile methodology and Git/GitHub for efficient project management. Additionally, I have a keen eye for design, utilizing tools like Adobe Photoshop and Adobe XD. As a freelancer, I strive to deliver high-quality solutions that meet client needs and exceed expectations.",
+            "photo" : ""
         }
     }
 }

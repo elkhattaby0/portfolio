@@ -12,13 +12,30 @@
 
     "Homepage" : {
         "heroSection" : {
-            "head" : "Hi, I'm Lahoucine El Khattaby – Full Stack Developer",
+            "head" : "Hi, I'm Lahoucine EL KHATTABY – Full Stack Developer",
             "text" : "Specializing in MERN Stack, WordPress, Laravel (PHP), and Python",
             "buttonTxt" : "View My Work"
         },
         "Introduction" : {
-            "Brief" : "I'm Lahoucine, a passionate Full Stack Developer specializing in the MERN stack, WordPress, and Laravel (PHP). With a solid foundation in frontend technologies like HTML, CSS, Bootstrap, and Tailwind, and proficiency in JavaScript, Python, C, and PHP, I excel in creating dynamic and responsive web applications. My expertise extends to database management with MySQL, SQLite, and MongoDB, and I'm well-versed in Agile methodology and Git/GitHub for efficient project management. Additionally, I have a keen eye for design, utilizing tools like Adobe Photoshop and Adobe XD. As a freelancer, I strive to deliver high-quality solutions that meet client needs and exceed expectations.",
-            "photo" : ""
+            "Brief" : "I'm Lahoucine, a passionate Full Stack Developer specializing in the MERN stack, WordPress, and Laravel (PHP). With a solid foundation in frontend technologies like HTML, CSS, Bootstrap, and Tailwind, and proficiency in JavaScript, Python, C, and PHP, I excel in creating dynamic and responsive web applications. My expertise extends to database management with MySQL, SQLite, and MongoDB, and I'm well-versed in Agile methodology and Git/GitHub for efficient project management. Additionally, I have a keen eye for design, utilizing tools like Adobe Photoshop and Adobe XD. As a freelancer, I strive to deliver high-quality solutions that meet client needs and exceed expectations."
         }
+    },
+    
+    "AboutMe" : {
+        "bio1title" : "Background Information, Education, and Experience in Web Development:",
+        "bio1" : "Lahoucine Elkhattaby is a highly skilled Full Stack Developer with a deep specialization in the MERN (MongoDB, Express.js, React.js, Node.js) stack, WordPress, and Laravel (PHP). He holds extensive experience in frontend development, mastering HTML, CSS, Bootstrap, Tailwind, and Redux.js. Lahoucine is also proficient in JavaScript, Python, C, and PHP, making him versatile in various programming environments. <br/><br/>Lahoucine's educational background includes a strong foundation in computer science and software engineering, which has been further enriched by practical experience in the industry. He has honed his skills through various projects and professional engagements, demonstrating expertise in Agile methodology, Git/GitHub, and UML. His proficiency extends to data management with knowledge in MySQL, SQLite, and MongoDB.",
+
+        "bio2title" : "Journey and Passion for Coding and Technology:",
+        "bio2" : "Lahoucine's journey into the world of coding and technology began with a fascination for how software and websites are created. This curiosity turned into a passion, leading him to pursue a career in web development. Over the years, he has continuously sought to expand his knowledge and skills, staying updated with the latest technologies and best practices in the industry. <br/><br/>His passion for coding is evident in his dedication to creating efficient, user-friendly, and visually appealing web applications. Lahoucine enjoys solving complex problems and finds satisfaction in seeing his projects come to life. His commitment to excellence drives him to keep learning and improving, ensuring that he delivers high-quality work to his clients.",
+
+        "bio3title" : "Relevant Certifications or Courses:",
+        "bio3" : "Lahoucine has completed several certifications and courses to bolster his expertise in web development. These include:",
+        "bio3ul" : [
+            "React.js Certification : Mastering the popular frontend library to build dynamic user interfaces.",
+            "Node.js Certification : Gaining in-depth knowledge of server-side development with Node.js.",
+            "WordPress Development Course : Learning advanced techniques for creating custom themes and plugins.",
+            "Laravel Framework Course : Understanding the intricacies of the Laravel PHP framework for robust backend development.",
+            "Agile Methodology Certification : Emphasizing the importance of agile practices in managing and executing projects efficiently."
+        ]
     }
 }
