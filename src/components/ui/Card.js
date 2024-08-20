@@ -12,7 +12,7 @@ const Card = ({img="", alt="", para="", text=""}) => {
             return (
                 <>
                     <Text>
-                        {text.slice(0,100) + "..."}
+                        {text.slice(0,80) + "..."}
                     </Text>
                     
                 </>
