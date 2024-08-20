@@ -26,7 +26,7 @@ const Card = ({img="", alt="", para="", text=""}) => {
         "card": 'bg-gradient-to-r from-white to-gray rounded shadow-md w-1/2 p-6 m-2 w-[45%] max-md:w-full mx-0 '
     }
     return (
-        <div className={read ? `${style.card} h-fit` : `${style.card} h-[190px]`}>
+        <div className={read ? `${style.card} h-fit` : `${style.card} h-[200px]`}>
             {/* <Image url={img} alt={alt} w="100%" /> */}
             <ParagraphSix uicss="text-xl">{para}</ParagraphSix>
             <Space />
