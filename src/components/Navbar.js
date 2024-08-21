@@ -5,6 +5,7 @@ import ParagraphFive from "./ui/Paragraph/ParagraphFive"
 import ParagraphSix from "./ui/Paragraph/ParagraphSix"
 import SocialMedia from "./SocialMedia"
 import MenuResposive from "./MenuResposive"
+import Image from "./ui/Image"
 
 
 const Navbar = () => {
@@ -21,7 +22,9 @@ const Navbar = () => {
             <div className={uicss.container}>
                 <Columns>
                     <ParagraphFive uicss={uicss.logo}>
-                        <Link to="/">Logo</Link>
+                        <Link to="/">
+                            <Image url="logo_2.png" w="20px" />
+                        </Link>
                     </ParagraphFive>
                 </Columns>
                 <Columns nbr={5} uicss="max-md:hidden">
