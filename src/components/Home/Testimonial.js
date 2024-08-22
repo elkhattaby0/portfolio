@@ -3,9 +3,9 @@ import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import Space from "../ui/Space";
 
 const Data = [
-    {img: "ribab.jpg", "name": "Dolce Production", "msg": "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable."},
-    {img: "ribab.jpg", "name": "Dolce Production", "msg": "Lahoucine exceeded our expectations with his innovative solutions and excellent service."},
-    {img: "ribab.jpg", "name": "Dolce Production", "msg": "Exceptional work! Lahoucine's attention to detail and professionalism were outstanding."}
+    {img: "ribab.jpg", "name": "Client 1", "msg": "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable."},
+    {img: "ribab.jpg", "name": "Client 2", "msg": "Lahoucine exceeded our expectations with his innovative solutions and excellent service."},
+    {img: "ribab.jpg", "name": "Client 3", "msg": "Exceptional work! Lahoucine's attention to detail and professionalism were outstanding."}
 ]
 const Testimonial = () => {
 
