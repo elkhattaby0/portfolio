@@ -1,9 +1,4 @@
-
-import ParagraphFive from "../components/ui/Paragraph/ParagraphFive";
 import Space from "../components/ui/Space";
-import Columns from "../components/ui/Columns";
-import Separate from "../components/ui/Separate";
-import Card from "../components/ui/Card";
 import Footer from "../components/Footer";
 import Autoslide from "../components/ui/Autoslide";
 import Hero from "../components/Home/Hero";

@@ -4,4 +4,8 @@ https://github.com/gitname/react-gh-pages/issues/3
 
 slick-carousel
 
-React Spring or Framer Motion
+React Spring 
+
+Framer Motion
+
+https://swiperjs.com/demos#centered-auto

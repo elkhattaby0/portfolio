@@ -11,7 +11,7 @@ const Offer = () => {
 
     return (
         <div className={uicss.containerTwo}>
-            <ParagraphFive uicss="text-center mb-8">What I Offer ?</ParagraphFive>
+            <ParagraphFive uicss="text-center my-8">What I Offer ?</ParagraphFive>
             <Columns nbr={4} uicss="max-md:flex-col flex-wrap justify-between items-start  max-md:h-fit">
                 <Card 
                     para="Web Developement"
