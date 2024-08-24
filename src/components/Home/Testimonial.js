@@ -9,7 +9,7 @@ const Data = [
     { img: "ribab.jpg", name: "Client 1", msg: "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable." },
     { img: "ribab.jpg", name: "Client 2", msg: "Lahoucine exceeded our expectations with his innovative solutions and excellent service." },
     { img: "ribab.jpg", name: "Client 3", msg: "Exceptional work! Lahoucine's attention to detail and professionalism were outstanding." },
-    { img: "ribab.jpg", name: "Client 4", msg: "Lahoucine's creativity and problem-solving skills made our project a success. Highly recommended!" },
+    { img: "ribab.jpg", name: "Client 4", msg: "Lahoucine's creativity and problem-solving skills made our project a success. Highly recommended." },
     { img: "ribab.jpg", name: "Client 5", msg: "We were impressed by Lahoucine's ability to deliver high-quality work on time. His expertise is unmatched." },
     { img: "ribab.jpg", name: "Client 6", msg: "Lahoucine's commitment to our project was evident in the results. His skills are top-notch." }
 ];
@@ -63,7 +63,7 @@ const Testimonial = () => {
         <div className="bg-[#0D0C22] flex flex-col items-center justify-center w-full h-fit border- py-8">
             <ParagraphFive uicss="text-[#f8f7f4] text-center">Testimonial</ParagraphFive>
             <Space />
-            <div className="w-10/12 h-fit border-">
+            <div className="w-10/12 h-fit">
                 <Slider {...settings}>
                     {Data.map((n, index) => (
                         <Card key={index} img={n.img} name={n.name} msg={n.msg} />

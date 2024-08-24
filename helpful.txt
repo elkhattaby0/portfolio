@@ -8,4 +8,6 @@ React Spring
 
 Framer Motion
 
+flowbite
+
 https://swiperjs.com/demos#centered-auto
