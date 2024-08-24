@@ -17,6 +17,7 @@ const Data = [
 const Testimonial = () => {
     const settings = {
         dots: false,
+        arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
