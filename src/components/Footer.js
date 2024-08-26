@@ -35,7 +35,7 @@ const Footer = () => {
             </div>  
             
             <div className="w-10/12 mx-4">
-                <Text uicss="w-full text-white text-sm p- text-center max-md:text-left">
+                <Text uicss="w-full text-white text-sm max-md:text-[3vw] p- text-center max-md:text-left">
                 &copy; {new Date().getFullYear()} <i>Lahoucine EL KHATTABY</i>, All rights reserved.
                 </Text>
             </div>

@@ -1,43 +1,23 @@
-import { useState } from "react";
-// import Image from "./Image";
-import ParagraphSix from "./Paragraph/ParagraphSix";
-import Text from "./Text";
-import Space from "./Space";
 
-const Card = ({img="", alt="", para="", text=""}) => {
-    const [read, setRead] = useState(false);
+import Image from "./Image";
 
-    const RedMore = () => {
-        if(!read) {
-            return (
-                <>
-                    <Text>
-                        {text.slice(0,80) + "..."}
-                    </Text>
-                    
-                </>
-            )
-        } else {
-            return <Text>{text}</Text>
-        }
-    } 
-
-    const style = {
-        "card": 'bg-gradient-to-r from-white to-gray rounded shadow-md w-1/2 p-6 m-2 w-[45%] max-md:w-full mx-0 '
-    }
+const Card = (props) => {
     return (
-        <div className={read ? `${style.card} h-fit` : `${style.card} h-[240px]`}>
-            {/* <Image url={img} alt={alt} w="100%" /> */}
-            <ParagraphSix uicss="text-xl">{para}</ParagraphSix>
-            <Space />
-            {<RedMore />}
-            <button className="italic text-[12px] underline" onClick={()=> {
-                read ? setRead(false) : setRead(true)
-            }}>
-                {read ? "Less" : "Read More..."}
-            </button>
+        <div 
+            key={props.title} 
+            className="relative bg-[#0D0C22] bg-opacity-60 h-72 max-md:h-64 w-[24.5%] max-md:w-full my-2 rounded-md overflow-hidden flex flex-col justify-between shadow-md group"
+        >
+            <Image 
+                url={props.img} 
+                alt={props.title} 
+                mix="absolute inset-0 mix-blend-multiply rounded-md object-cover w-full h-full" 
+            />
+            <p className="text-[#f8f7f4] relative m-4 text-2xl font-semibold">{props.title}</p>
+            <p className="text-[#f8f7f4] relative bottom-0 m-4 text-md opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                {props.content}
+            </p>
         </div>
-    )
-}
+    );
+};
 
 export default Card; 

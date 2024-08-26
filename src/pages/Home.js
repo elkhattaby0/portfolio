@@ -1,4 +1,4 @@
-import Space from "../components/ui/Space";
+
 import Footer from "../components/Footer";
 import Autoslide from "../components/ui/Autoslide";
 import Hero from "../components/Home/Hero";
@@ -15,7 +15,6 @@ const Home = () => {
 
             <Hero />
             <Autoslide />
-            <Space />
             <Offer />       
             <Testimonial />
             <Footer />
