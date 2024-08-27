@@ -1,78 +1,126 @@
 import Image from "./Image";
-import Slider from "react-slick";
+import ParagraphFive from "./Paragraph/ParagraphFive";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const skills = [
-    { "name": "HTML", "img": "html.png" },
-    { "name": "CSS", "img": "css.png" },
-    { "name": "Bootstrap", "img": "bootstrap.png" },
-    { "name": "Tailwind", "img": "tailwindcss.png" },
-    { "name": "UML", "img": "uml.png" },
-    { "name": "WordPress", "img": "wordpress.png" },
-    { "name": "Data Managment", "img": 'datamana.png' },
-    { "name": "Python", "img": 'python.png' },
-    { "name": "PHP", "img": 'php.png' },
-    { "name": "Laravel", "img": 'laravel.png' },
-    { "name": "Agile", "img": 'agile.png' },
-    { "name": "MySQL", "img": 'mysql.png' },
-    { "name": "JavaScript", "img": 'js.png' },
-    { "name": "MongoDB", "img": 'mongodb.png' },
-    { "name": "ExpressJs", "img": 'expressjs.png' },
-    { "name": "NodeJs", "img": 'nodejs.png' },
-    { "name": "ReactJs", "img": 'reactjs.png' },
-    { "name": "Redux Toolkit", "img": 'redux.png' }
+    {
+        id: 1,
+        category: "Frontend Developer",
+        skills: [
+            { name: "HTML", img: "html.png" },
+            { name: "CSS", img: "css.png" },
+            { name: "Bootstrap", img: "bootstrap.png" },
+            { name: "Tailwind", img: "tailwindcss.png" },
+            { name: "ReactJs", img: "reactjs.png" },
+            { name: "JavaScript", img: "js.png" }
+        ]
+    },
+    {
+        id: 2,
+        category: "Backend Developer",
+        skills: [
+            { name: "NodeJs", img: "nodejs.png" },
+            { name: "PHP", img: "php.png" },
+            { name: "Python", img: "python.png" },
+            { name: "Laravel", img: "laravel.png" },
+            { name: "ExpressJs", img: "expressjs.png" }
+        ]
+    },
+    {
+        id: 3,
+        category: "CMS",
+        skills: [
+            { name: "WordPress", img: "wordpress.png" }
+        ]
+    },
+    {
+        id: 4,
+        category: "Database",
+        skills: [
+            { name: "MySQL", img: "mysql.png" },
+            { name: "MongoDB", img: "mongodb.png" }
+        ]
+    },
+    {
+        id: 5,
+        category: "Others",
+        skills: [
+            { name: "UML", img: "uml.png" },
+            { name: "Data Management", img: "datamana.png" },
+            { name: "Agile", img: "agile.png" },
+            { name: "Redux Toolkit", img: "redux.png" }
+        ]
+    }
 ];
 
 const Autoslide = () => {
-    const settings = {
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        variableWidth: false, 
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5,
-                    speed: 3000,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    speed: 3000,
-                }
-            }
-        ]
-    };
-
-    const Logos = (props) => {
-        return (
-            <div className="flex flex-col items-center w-full px-4 my-20">
-                <Image url={props.img} alt={props.name} w="50px" />
-                <p className="text-[#f8f7f4] mt-4">{props.name}</p>
-            </div>
-        );
-    };
-
-    return (
-        <div className="flex justify-center items-center w-full bg-[#0D0C22] h-fit overflow-hidden"> 
-            <div className="w-full h-fit">
-                <Slider {...settings}>
-                    {skills.map((n, index) => (
-                        <div key={index} className="flex justify-center"> 
-                            <Logos img={n.img} name={n.name} />
-                        </div>
+    return (   
+        <div className="bg-[#0D0C22] w-full flex flex-col items-center justify-center">
+            <ParagraphFive uicss="text-center text-[#f8f7f4] my-8">Skills</ParagraphFive>
+            <div className="w-10/12 h-fit mb-20 ">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {skills.map((n) => (
+                        <Accordion
+                            key={n.id}
+                            className="w-full"
+                            motionProps={{
+                                variants: {
+                                    enter: {
+                                        y: 0,
+                                        opacity: 1,
+                                        height: "auto",
+                                        transition: {
+                                            height: {
+                                                type: "spring",
+                                                stiffness: 500,
+                                                damping: 30,
+                                                duration: 1,
+                                            },
+                                            opacity: {
+                                                easings: "ease",
+                                                duration: 1,
+                                            },
+                                        },
+                                    },
+                                    exit: {
+                                        y: -10,
+                                        opacity: 0,
+                                        height: 0,
+                                        transition: {
+                                            height: {
+                                                easings: "ease",
+                                                duration: 0.25,
+                                            },
+                                            opacity: {
+                                                easings: "ease",
+                                                duration: 0.3,
+                                            },
+                                        },
+                                    },
+                                },
+                            }}
+                        >
+                            <AccordionItem
+                                className="w-full font-semibold text-[#f8f7f4] border-b"
+                                aria-label={n.category}
+                                title={<span className="text-[#f8f7f4] font-semibold text-xl">{n.category}</span>}
+                            >
+                                {n.skills.map((p, index) => (
+                                    <div key={index} className="flex items-center p-2 mix-blend-normal">
+                                        <Image
+                                            url={p.img}
+                                            alt={p.name}
+                                            w="35px"
+                                            mix="mix-blend-normal bg-red-500"
+                                            className="mix-blend-normal bg-red-500"
+                                        />
+                                        <p className="text-[#f8f7f4] ml-4">{p.name}</p>
+                                    </div>
+                                ))}
+                            </AccordionItem>
+                        </Accordion>
                     ))}
-                </Slider>
+                </div>
             </div>
         </div>
     );

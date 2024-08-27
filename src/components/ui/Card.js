@@ -12,7 +12,7 @@ const Card = (props) => {
                 alt={props.title} 
                 mix="absolute inset-0 mix-blend-multiply rounded-md object-cover w-full h-full" 
             />
-            <p className="text-[#f8f7f4] relative m-4 text-2xl font-semibold">{props.title}</p>
+            <p className="text-[#f8f7f4] relative top-[70%] group-hover:top-0 m-4 text-xl font-semibold">{props.title}</p>
             <p className="text-[#f8f7f4] relative bottom-0 m-4 text-md opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                 {props.content}
             </p>
