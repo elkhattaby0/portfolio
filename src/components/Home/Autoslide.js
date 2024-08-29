@@ -55,14 +55,10 @@ const skills = [
 ];
 
 const Autoslide = () => {
-    const [openItems, setOpenItems] = useState([]);
+    const [openItems, setOpenItems] = useState(false);
 
-    const handleToggle = (id) => {
-        setOpenItems((prevOpenItems) =>
-            prevOpenItems.includes(id)
-                ? prevOpenItems.filter(itemId => itemId !== id)
-                : [...prevOpenItems, id]
-        );
+    const handleToggle = () => {
+        setOpenItems(!openItems)
     };
 
     return (
@@ -73,18 +69,18 @@ const Autoslide = () => {
                     {skills.map(({ id, category, skills }) => (
                         <Accordion 
                             key={id} 
-                            // className="border flex justify-between"
+                            // className="border flex justify-between" alert('test')&#9665;
                         >
                             <AccordionItem                                
-                                onClick={() => handleToggle(id)}
-                                className="w-full border flex  flex-col"
+                                onPress={()=> handleToggle}
+                                className="w-full flex  flex-col headerskills"
                                 aria-label={category}
-                                indicator={<span className={`text-[#f8f7f4]  text-right font-semibold text-xl transform transition-transform ${openItems.includes(id) ? "rotate-90" : "rotate-0"}`}>&#11164;</span>}
-                                title={<span className="text-[#f8f7f4]  font-semibold text-xl">{category}</span>}
+                                indicator={<span className={"mr-4 text-[#f8f7f4]  text-right font-semibold text-xl  rotate-45 "}>-</span>}
+                                title={<span className="ml-4 text-[#f8f7f4]  font-semibold text-xl">{category}</span>}
                             >
-                                <div className="w-full border border-yellow-500">
+                                <div className="w-full">
                                 {skills.map((p) => (
-                                    <div key={p.name} className="flex items-center p-2 ml-6">
+                                    <div key={p.name} className="flex items-center p-2 ml-4">
                                         <Image
                                             url={p.img}
                                             alt={p.name}

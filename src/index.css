@@ -23,3 +23,9 @@
 ::-webkit-scrollbar-thumb:hover {
     background: white;
 }
+
+
+.headerskills h2 button {
+    justify-content: space-between;
+    border: 1px solid #f8f7f4;
+}

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Image from "../ui/Image";
 import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import Space from "../ui/Space";
+import Palette from '../Palette';
 
 const Data = [
     { img: "ribab.jpg", name: "Client 1", msg: "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable." },
@@ -43,24 +44,24 @@ const Testimonial = () => {
 
     const Card = (props) => {
         return (
-            <div className="flex flex-col justify-between h-[280px] mt-8 w-full max-md:h-fit p-4">
+            <div className={`bg-[${Palette.lightColor}] rounded-md flex flex-col justify-between h-[350px] mt-8 w-[99%] shadow-xl max-md:w-full max-md:h-fit p-8`}>
                 <div className="p-0 m-0">
-                    <p className="text-[#f8f7f4] text-6xl font-">&#10077;</p>
-                    <p className="text-[#f8f7f4] text-2xl font-semibold">{props.msg}</p>
+                    <p className={`text-[${Palette.darkColor}] text-9xl opacity-50 `}>&#10077;</p>
+                    <p className={`text-[${Palette.darkColor}] text-2xl font-normal opacity-80 leading-8 relative -top-10`}>{props.msg}</p>
                 </div>
                 <div className="flex items-center max-md:mt-5">
                     <div className="w-[35px] border-2 rounded-full bg-[#f8f7f4]">
                         <Image url={props.img} alt={props.name} mix="rounded-full" />
                     </div>
-                    <p className="text-[#f8f7f4] text-sm ml-4 italic">{props.name}</p>
+                    <p className={`text-[${Palette.darkColor}] text-sm ml-4 italic`}>{props.name}</p>
                 </div>
             </div>
         )
     }
 
     return (
-        <div className="bg-[#0D0C22] flex flex-col items-center justify-center w-full h-fit border- py-8">
-            <ParagraphFive uicss="text-[#f8f7f4] text-center">Testimonial</ParagraphFive>
+        <div className={`bg-[${Palette.lightColor}] flex flex-col items-center justify-center w-full h-fit border- py-8`}>
+            <ParagraphFive uicss={`text-[${Palette.darkColor}] text-center`}>- Client Feedback -</ParagraphFive>
             <Space />
             <div className="w-10/12 h-fit">
                 <Slider {...settings}>
