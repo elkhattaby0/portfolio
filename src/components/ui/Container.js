@@ -1,8 +1,8 @@
-import { black, darkblue, gray, red } from "../Palette"
+
 
 const Container = ({children, uicss=""}) => {
     const style = {
-        div : `bg-[${black}] ${uicss}`
+        div : `bg-[#fff] ${uicss}`
     } 
 
     return (

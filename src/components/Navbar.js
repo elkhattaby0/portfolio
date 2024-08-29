@@ -3,7 +3,6 @@ import { Link, Outlet } from "react-router-dom"
 import Columns from "./ui/Columns"
 import ParagraphFive from "./ui/Paragraph/ParagraphFive"
 import ParagraphSix from "./ui/Paragraph/ParagraphSix"
-import SocialMedia from "./SocialMedia"
 import MenuResposive from "./MenuResposive"
 import Image from "./ui/Image"
 

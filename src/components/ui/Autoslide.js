@@ -106,13 +106,12 @@ const Autoslide = () => {
                                 title={<span className="text-[#f8f7f4] font-semibold text-xl">{n.category}</span>}
                             >
                                 {n.skills.map((p, index) => (
-                                    <div key={index} className="flex items-center p-2 mix-blend-normal">
+                                    <div key={index} className="flex items-center p-2 ">
                                         <Image
                                             url={p.img}
                                             alt={p.name}
                                             w="35px"
-                                            mix="mix-blend-normal bg-red-500"
-                                            className="mix-blend-normal bg-red-500"
+                                            mix="mix-blend-normal"
                                         />
                                         <p className="text-[#f8f7f4] ml-4">{p.name}</p>
                                     </div>

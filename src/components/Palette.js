@@ -1,8 +1,10 @@
 
-const gray = "#f8f7f4";
-const darkblue = "#0D0C22";
-const white = "#fff";
-const black = "#000";
-const red = "#FF0000";
+const Palette = {
+    lightColor: "#f8f7f4", //gray
+    darkColor: "#0D0C22", //darkblue
+    light2Color: "#fff", //white
+    dark2Color: "#000", //black
+    redColor: "#FF0000" //
+}
 
-export { gray, darkblue, white, black, red }
+export default Palette

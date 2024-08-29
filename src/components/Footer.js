@@ -1,13 +1,7 @@
 import SocialMedia from "./SocialMedia"
-import Columns from "./ui/Columns"
-import Container from "./ui/Container"
-import Image from "./ui/Image"
 import ParagraphFive from "./ui/Paragraph/ParagraphFive"
-import ParagraphSix from "./ui/Paragraph/ParagraphSix"
-import Separate from "./ui/Separate"
 import Space from "./ui/Space"
 import Text from "./ui/Text"
-import { Link } from "react-router-dom"
 
 
 

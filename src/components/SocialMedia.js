@@ -15,7 +15,11 @@ const SocialMedia = () => {
             {
                 Social.map(n=> (
                     <div className="flex items-center justify-center bg-gray-400 hover:bg-[#f8f7f4] hover:rounded-full rounded w-34 p-2 m-2 cursor-pointer">
-                        <Image url={n.img} alt={n.name} w="25px" />
+                        <Image 
+                            url={n.img} 
+                            alt={n.name} 
+                            w="25px" 
+                        />
                     </div>
                 ))
             }                    

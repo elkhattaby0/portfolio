@@ -1,18 +1,13 @@
-
-const Image = ({ url, alt, w, mix="multiply" }) => {
-
-    const style = {
-        "img": `m cursor-pointer mix-blend-multiply object-cover ${mix}`
-    }
+const Image = ({ url, alt, w, mix = "mix-blend-multiply" }) => {
     return (
         <img
             src={require(`../../assets/${url}`)}
             alt={alt}
-            className={style.img}
-            width={`${w}px`}
+            className={`cursor-pointer object-cover ${mix}`}
+            width={w}
             loading="lazy"
         />
-    )
-}
+    );
+};
 
-export default Image
+export default Image;

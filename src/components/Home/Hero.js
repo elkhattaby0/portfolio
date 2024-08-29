@@ -29,7 +29,7 @@ const Hero = () => {
                 <Button link="projects" uicss="self-start">Explore My Work</Button>
             </Columns>
             <Columns uicss="w-1/2 flex justify-end max-md:hidden" >
-                <Image url="man.jpg" w="85%" alt="man" mix="multiply" />
+                <Image url="man.jpg" w="85%" alt="man" />
             </Columns>
         </div>
     )
