@@ -13,7 +13,7 @@ const MenuResposive = () => {
 
     const style = {
         menu: "flex items-center justify-center text-[#0D0C22] text-3xl font-bold py-2 w-[40px] h-[40px] hover:text-[#f8f7f4] hover:bg-[#0D0C22] rounded-md z-0 hover:shadow-md",
-        content: `fixed inset-0 z-10 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-700 ease-in-out w-full h-screen flex flex-col items-end justify-start bg-[#2A293D] `,
+        content: `fixed inset-0 z-10 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-700 ease-in-out w-full h-screen flex flex-col items-end justify-start bg-[#0D0C22] `,
         btn: "text-3xl text-red-600 hover:text-[#f8f7f4] rounded-md w-10 h-10 hover:bg-red-600 hover:shadow-md ",
         link: "w-10/12 text-xl my-2 hover:underline hover:text-2xl",
     };
@@ -46,7 +46,8 @@ const MenuResposive = () => {
                         ))}
                     </div>
                     <div className="w-full bg-[#0D0C22] flex justify-center">
-                        <div className="w-10/12">
+                        <div className="w-10/12 py-4 flex flex-col justify-center items-center">
+                            <p className="text-[#f8f7f4] text-xl text-semibold  text-center ml-2 my-">Follow me</p>
                             <SocialMedia />
                         </div>
                     </div>

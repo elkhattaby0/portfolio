@@ -1,6 +1,6 @@
 
 import Footer from "../components/Footer";
-import Autoslide from "../components/ui/Autoslide";
+import Autoslide from "../components/Home/Autoslide";
 import Hero from "../components/Home/Hero";
 import Offer from "../components/Home/Offer";
 import Testimonial from "../components/Home/Testimonial";

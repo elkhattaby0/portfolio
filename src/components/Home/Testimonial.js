@@ -4,7 +4,6 @@ import Image from "../ui/Image";
 import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import Space from "../ui/Space";
 
-// Sample data for the carousel
 const Data = [
     { img: "ribab.jpg", name: "Client 1", msg: "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable." },
     { img: "ribab.jpg", name: "Client 2", msg: "Lahoucine exceeded our expectations with his innovative solutions and excellent service." },
