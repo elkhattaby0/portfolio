@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ParagraphFive from "./ui/Paragraph/ParagraphFive";
-import Image from "./ui/Image";
 import SocialMedia from "./SocialMedia";
+import Logo from "./ui/Logo";
+import Palette from "./Palette";
 
 const MenuResposive = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,11 @@ const MenuResposive = () => {
                     <div className="border-b w-10/12 flex items-center justify-between">
                         <ParagraphFive uicss="uppercase py-4 text-[#0D0C22]">
                             <Link to="/" onClick={toggleMenu}>
-                                <Image url="logo_2.png" w="20px" />
+                                <Logo
+                                    logo={Palette.darkColor}
+                                    bk={Palette.lightColor}
+                                    w="20px"
+                                />
                             </Link>
                         </ParagraphFive>
                         <button className={style.btn} onClick={toggleMenu}>

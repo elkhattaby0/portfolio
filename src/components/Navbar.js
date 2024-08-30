@@ -4,7 +4,8 @@ import Columns from "./ui/Columns"
 import ParagraphFive from "./ui/Paragraph/ParagraphFive"
 import ParagraphSix from "./ui/Paragraph/ParagraphSix"
 import MenuResposive from "./MenuResposive"
-import Image from "./ui/Image"
+import Logo from "./ui/Logo"
+import Palette from "./Palette"
 
 
 const Navbar = () => {
@@ -22,7 +23,11 @@ const Navbar = () => {
                 <Columns>
                     <ParagraphFive uicss={uicss.logo}>
                         <Link to="/">
-                            <Image url="logo_2.png" w="20px" />
+                            <Logo 
+                                logo={Palette.darkColor}
+                                bk={Palette.lightColor}
+                                w="20px"
+                            />
                         </Link>
                     </ParagraphFive>
                 </Columns>
