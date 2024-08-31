@@ -15,7 +15,7 @@ const Card = (props) => {
                 mix="absolute inset-0 mix-blend-multiply rounded-md object-cover w-full h-full" 
             />
             <div
-                className="h-full cursor-pointer opacity-70 hover:opacity-100"
+                className="h-full cursor-pointer bg-none group-hover:opacity-60"
                 style={{backgroundColor: Palette.primaryColor}}
             >
                 <p 

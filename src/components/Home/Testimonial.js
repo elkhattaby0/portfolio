@@ -76,7 +76,7 @@ const Testimonial = () => {
             <ParagraphFive 
                 uicss="text-center"
                 stl={Palette.secondaryColor}    
-            >Client Feedback</ParagraphFive>
+            >&#8729; Client Feedback &#8729;</ParagraphFive>
             <Space />
             <div className="w-10/12 h-fit">
                 <Slider {...settings}>

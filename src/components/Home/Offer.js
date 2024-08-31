@@ -39,7 +39,7 @@ const Offer = () => {
             <ParagraphFive 
                 uicss="text-center my-8"
                 stl={Palette.secondaryColor}
-            >What I Offer ?</ParagraphFive>
+            >&#8729; What I Offer ? &#8729;</ParagraphFive>
             <Columns nbr={4} uicss="max-md:flex-col flex-wrap justify-between items-start  max-md:h-fit">
                 {
                     Data.map(n=> (
