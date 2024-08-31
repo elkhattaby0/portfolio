@@ -22,13 +22,7 @@ const Palett____e = {
     HighlightColor: "#eb5e28" // 
 }
 
-const Palette = {
-    backgroundColor: "#FFFFF0", //    
-    primaryColor: "#E5E5E5", // 
-    accentColor: "#4682B4", // 
-    secondaryColor: "#00BFA6", // 
-    HighlightColor: "#2B3A67" // 
-}
+
 const Palett__e = {
     backgroundColor: "#FAF0CA", // Light Cream: Background, 
     primaryColor: "#0D3B66", // Dark Blue: Header, Navigation bar, main section
@@ -37,4 +31,18 @@ const Palett__e = {
     HighlightColor: "#F95738" // Bold Red-Orange: call to action button, alerts, special section 
 }
 
+const Palette1 = {
+    backgroundColor: "#FFFFF0", //    
+    primaryColor: "#E5E5E5", // 
+    accentColor: "#4682B4", // 
+    secondaryColor: "#00BFA6", // 
+    HighlightColor: "#2B3A67" // 
+} //Gut
+const Palette = {
+    backgroundColor: "#F7F7F7", //    
+    primaryColor: "#1C1C1E", // 
+    accentColor: "#B0B0B5", // 
+    secondaryColor: "#2C2C2E", // 
+    HighlightColor: "#3A86FF" // 
+} 
 export default Palette
