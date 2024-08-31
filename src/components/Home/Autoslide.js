@@ -79,14 +79,14 @@ const Autoslide = () => {
                         >
                             <AccordionItem                                
                                 onPress={()=> handleToggle}
-                                className={`w-full flex  flex-col headerskills text-[${Palette.secondaryColor} font-semibold text-xl`}
+                                className={`w-full flex  flex-col headerskills font-semibold text-xl border px-3`}
                                 aria-label={category}
                                 title={<span 
-                                    className="ml-4 font-semibold text-xl"
+                                    className="w-[200px] font-semibold text-xl text-left"
                                     style={{color:Palette.accentColor}}
-                                    >{category}</span>}
+                                    >{id}. {category}</span>}
                             >
-                                <div className="w-full rounded-md p-2"
+                                <div className="w-full p-2"
                                 
                                 style={{backgroundColor: Palette.primaryColor}}>
                                 {skills.map((p) => (
