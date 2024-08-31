@@ -1,11 +1,11 @@
 
-const Columns = ({children, nbr=1, uicss=""}) => {
+const Columns = ({children, nbr=1, uicss="", stl=""}) => {
 
     const style = {
-        "column": `flex items-center columns-${nbr} ${uicss}` 
+        "column": `flex items-center rounded-md columns-${nbr} ${uicss}` 
     }
     return (
-        <div className={style.column}>
+        <div className={style.column} style={{backgroundColor:stl}}>
             {children}
         </div>
     )

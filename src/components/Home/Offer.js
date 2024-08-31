@@ -2,6 +2,7 @@ import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import Space from "../ui/Space";
 import Columns from "../ui/Columns";
 import Card from "../ui/Card";
+import Palette from "../Palette";
 
 const Data = [
     {
@@ -35,7 +36,10 @@ const Offer = () => {
 
     return (
         <div className={uicss.containerTwo}>
-            <ParagraphFive uicss="text-center my-8">What I Offer ?</ParagraphFive>
+            <ParagraphFive 
+                uicss="text-center my-8"
+                stl={Palette.secondaryColor}
+            >What I Offer ?</ParagraphFive>
             <Columns nbr={4} uicss="max-md:flex-col flex-wrap justify-between items-start  max-md:h-fit">
                 {
                     Data.map(n=> (

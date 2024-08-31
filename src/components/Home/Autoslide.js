@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "../ui/Image";
 import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import Palette from "../Palette";
 
 const skills = [
     {
@@ -62,32 +63,42 @@ const Autoslide = () => {
     };
 
     return (
-        <div className="bg-[#0D0C22] w-full flex flex-col items-center justify-center">
-            <ParagraphFive uicss="text-center text-[#f8f7f4] my-8">Skills</ParagraphFive>
+        <div 
+            className="w-full flex flex-col items-center justify-center"
+            style={{backgroundColor: Palette.backgroundColor}}
+        >
+            <ParagraphFive 
+                uicss="text-center my-8"
+                stl={Palette.secondaryColor}
+            >Skills</ParagraphFive>
             <div className="w-10/12 h-fit mb-20">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4  w-full">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
                     {skills.map(({ id, category, skills }) => (
                         <Accordion 
                             key={id} 
-                            // className="border flex justify-between" alert('test')&#9665;
                         >
                             <AccordionItem                                
                                 onPress={()=> handleToggle}
-                                className="w-full flex  flex-col headerskills"
+                                className={`w-full flex  flex-col headerskills text-[${Palette.secondaryColor} font-semibold text-xl`}
                                 aria-label={category}
-                                indicator={<span className={"mr-4 text-[#f8f7f4]  text-right font-semibold text-xl  rotate-45 "}>-</span>}
-                                title={<span className="ml-4 text-[#f8f7f4]  font-semibold text-xl">{category}</span>}
+                                title={<span 
+                                    className="ml-4 font-semibold text-xl"
+                                    style={{color:Palette.accentColor}}
+                                    >{category}</span>}
                             >
                                 <div className="w-full">
                                 {skills.map((p) => (
-                                    <div key={p.name} className="flex items-center p-2 ml-4">
+                                    <div key={p.name} className="flex items-center p-2 ml-8">
                                         <Image
                                             url={p.img}
                                             alt={p.name}
-                                            w="35px"
+                                            w="25px"
                                             mix="mix-blend-normal"
                                         />
-                                        <p className="text-[#f8f7f4] ml-4">{p.name}</p>
+                                        <p 
+                                            className="text-[#f8f7f4] ml-4 text-sm"
+                                            style={{color:Palette.accentColor}}
+                                            >{p.name}</p>
                                     </div>
                                 ))}
                                 </div>

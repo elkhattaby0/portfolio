@@ -1,10 +1,25 @@
+const Palett_e = {
+    backgroundColor: "#f8f7f4", //gray
+    primaryColor: "#0D0C22", //darkblue
+    accentColor: "#ffff", //white
+    secondaryColor: "#000", //black
+    HighlightColor: "orange"
+}
 
 const Palette = {
-    lightColor: "#f8f7f4", //gray
-    darkColor: "#0D0C22", //darkblue
-    light2Color: "#fff", //white
-    dark2Color: "#000", //black
-    redColor: "#FF0000" //
+    backgroundColor: "#fffcf2", // white    
+    primaryColor: "#252422", // dark blue
+    accentColor: "#403d39", // black
+    secondaryColor: "#ccc5b9", // gray
+    HighlightColor: "#eb5e28" // orange
+}
+
+const Palett__e = {
+    backgroundColor: "#FAF0CA", // Light Cream: Background, 
+    primaryColor: "#0D3B66", // Dark Blue: Header, Navigation bar, main section
+    accentColor: "#F4D35E", // Warm Yellow: Highlights, button, links, 
+    secondaryColor: "#EE964B", // Soft Orange: button, icons, Highlights
+    HighlightColor: "#F95738" // Bold Red-Orange: call to action button, alerts, special section 
 }
 
 export default Palette

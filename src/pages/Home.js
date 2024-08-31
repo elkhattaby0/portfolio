@@ -1,4 +1,3 @@
-
 import Footer from "../components/Footer";
 import Autoslide from "../components/Home/Autoslide";
 import Hero from "../components/Home/Hero";
@@ -7,7 +6,7 @@ import Testimonial from "../components/Home/Testimonial";
 
 const Home = () => {
     const uicss = {
-        "fullcontainer": "bg- w-full flex flex-col items-center justify-between",
+        "fullcontainer": "w-full flex flex-col items-center justify-between",
     }
 
     return (

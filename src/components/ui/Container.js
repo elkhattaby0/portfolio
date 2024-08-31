@@ -1,8 +1,8 @@
-
+import Palette from "../Palette"
 
 const Container = ({children, uicss=""}) => {
     const style = {
-        div : `bg-[#fff] ${uicss}`
+        div : `bg-[${Palette.backgroundColor}] ${uicss}`
     } 
 
     return (

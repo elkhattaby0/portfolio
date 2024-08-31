@@ -10,47 +10,53 @@ import Palette from "./Palette"
 
 const Navbar = () => {
     const uicss = {
-        "fullcontainer": "bg-[#f8f7f4] w-full flex flex-col justify- items-center",
-        "container": "bg-[#f8f7f4] flex w-10/12 justify-between items-center",
+        "fullcontainer": "w-full flex flex-col justify- items-center",
+        "container": "flex w-10/12 justify-between items-center",
 
-        "logo": "uppercase py-4 text-[#0D0C22]",
-        "links": "uppercase py-4 px-2 text-[#0D0C22]"
+        "logo": "uppercase py-4",
+        "links": "uppercase py-4 px-2"
     }
 
     return (
-        <div className={uicss.fullcontainer}>
-            <div className={uicss.container}>
-                <Columns>
-                    <ParagraphFive uicss={uicss.logo}>
-                        <Link to="/">
-                            <Logo 
-                                logo={Palette.darkColor}
-                                bk={Palette.lightColor}
-                                w="20px"
-                            />
-                        </Link>
-                    </ParagraphFive>
-                </Columns>
-                <Columns nbr={5} uicss="max-md:hidden">
-                    <ParagraphSix uicss={uicss.links}>
-                        <Link to='/'>Home</Link>
-                    </ParagraphSix>
-                    <ParagraphSix uicss={uicss.links}>
-                        <Link to='/projects'>Projects</Link>
-                    </ParagraphSix>
-                    <ParagraphSix uicss={uicss.links}>
-                        <Link to='/services'>Services</Link>
-                    </ParagraphSix>
-                    <ParagraphSix uicss={uicss.links}>
-                        <Link to='/contact'>Contact</Link>
-                    </ParagraphSix>
-                    <ParagraphSix uicss={uicss.links}>
-                        <Link to='/about'>About</Link>
-                    </ParagraphSix>
-                </Columns>
-                <Columns uicss="hidden max-md:flex bg-[#f8f7f4]">
-                    <MenuResposive />
-                </Columns>
+        <div className={uicss.fullcontainer} style={{backgroundColor:Palette.backgroundColor}}>
+            
+            <div 
+                className="w-full flex justify-center"
+                style={{backgroundColor: Palette.primaryColor}}
+            >
+                <div className={uicss.container}>
+                    <Columns>
+                        <ParagraphFive uicss={uicss.logo}>
+                            <Link to="/">
+                                <Logo 
+                                    logo={Palette.HighlightColor}
+                                    bk='none'
+                                    w="20px"
+                                />
+                            </Link>
+                        </ParagraphFive>
+                    </Columns>
+                    <Columns nbr={5} uicss="max-md:hidden">
+                        <ParagraphSix uicss={uicss.links} stl={Palette.HighlightColor}>
+                            <Link to='/'>Home</Link>
+                        </ParagraphSix>
+                        <ParagraphSix uicss={uicss.links} stl={Palette.HighlightColor}>
+                            <Link to='/projects'>Projects</Link>
+                        </ParagraphSix>
+                        <ParagraphSix uicss={uicss.links} stl={Palette.HighlightColor}>
+                            <Link to='/services'>Services</Link>
+                        </ParagraphSix>
+                        <ParagraphSix uicss={uicss.links} stl={Palette.HighlightColor}>
+                            <Link to='/contact'>Contact</Link>
+                        </ParagraphSix>
+                        <ParagraphSix uicss={uicss.links} stl={Palette.HighlightColor}>
+                            <Link to='/about'>About</Link>
+                        </ParagraphSix>
+                    </Columns>
+                    <Columns uicss={"hidden max-md:flex"} stl={Palette.HighlightColor}>
+                        <MenuResposive />
+                    </Columns>
+                </div>
             </div>
             {/* <SocialMedia /> */}
             <Outlet />

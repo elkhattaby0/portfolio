@@ -44,16 +44,28 @@ const Testimonial = () => {
 
     const Card = (props) => {
         return (
-            <div className={`bg-[${Palette.lightColor}] rounded-md flex flex-col justify-between h-[350px] mt-8 w-[99%] shadow-xl max-md:w-full max-md:h-fit p-8`}>
+            <div 
+                className="rounded-md flex flex-col justify-between h-[350px] mt-8 w-[99%] shadow-xl max-md:w-full max-md:h-fit p-8"
+                style={{backgroundColor: Palette.backgroundColor}}
+            >
                 <div className="p-0 m-0">
-                    <p className={`text-[${Palette.darkColor}] text-9xl opacity-50 `}>&#10077;</p>
-                    <p className={`text-[${Palette.darkColor}] text-2xl font-normal opacity-80 leading-8 relative -top-10`}>{props.msg}</p>
+                    <p 
+                        className="text-9xl opacity-50"
+                        style={{color: Palette.secondaryColor}}
+                    >&#10077;</p>
+                    <p 
+                        className={`text-[${Palette.accentColor}] text-2xl font-normal opacity-80 leading-8 relative -top-10`}
+                        
+                    >{props.msg}</p>
                 </div>
                 <div className="flex items-center max-md:mt-5">
                     <div className="w-[35px] border-2 rounded-full bg-[#f8f7f4]">
                         <Image url={props.img} alt={props.name} mix="rounded-full" />
                     </div>
-                    <p className={`text-[${Palette.darkColor}] text-sm ml-4 italic`}>{props.name}</p>
+                    <p 
+                        className="text-sm ml-4 italic"
+                        style={{color: Palette.accentColor}}    
+                    >{props.name}</p>
                 </div>
             </div>
         )
@@ -61,7 +73,10 @@ const Testimonial = () => {
 
     return (
         <div className={`bg-[${Palette.lightColor}] flex flex-col items-center justify-center w-full h-fit border- py-8`}>
-            <ParagraphFive uicss={`text-[${Palette.darkColor}] text-center`}>- Client Feedback -</ParagraphFive>
+            <ParagraphFive 
+                uicss="text-center"
+                stl={Palette.secondaryColor}    
+            >Client Feedback</ParagraphFive>
             <Space />
             <div className="w-10/12 h-fit">
                 <Slider {...settings}>
