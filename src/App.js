@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import NoPage from './components/NoPage';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                     <Route path='services' element={<Services />} />
                     <Route path='contact' element={<Contact />} />
                     <Route path='about' element={<About />} />
+                    <Route path="*" element={<NoPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>

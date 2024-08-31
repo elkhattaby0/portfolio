@@ -16,11 +16,11 @@ const Card = (props) => {
             />
             <p 
                 className="relative top-[70%] group-hover:top-0 m-4 text-xl font-semibold"
-                style={{color: Palette.secondaryColor}}    
+                style={{color: Palette.backgroundColor}}    
             >{props.title}</p>
             <p 
                 className="relative bottom-0 m-4 text-md opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
-                style={{color: Palette.accentColor}}    
+                style={{color: Palette.backgroundColor}}    
             >
                 {props.content}
             </p>

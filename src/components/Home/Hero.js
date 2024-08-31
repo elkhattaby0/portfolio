@@ -27,7 +27,7 @@ const Hero = () => {
                         Full Stack Developer | MERN Stack | WordPress | Laravel
                     </ParagraphFive>
                     <Space />
-                    <Text uicss={uicss.para} stl={Palette.accentColor}>
+                    <Text uicss={uicss.para} stl={Palette.secondaryColor}>
                         I build responsive, user-friendly and applications with a focus on performance and desgin. Let's bring your ideas to life. 
                     </Text>
                     <Space />

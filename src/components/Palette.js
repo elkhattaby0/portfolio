@@ -6,7 +6,7 @@ const Palett_e = {
     HighlightColor: "orange"
 }
 
-const Palett__e = {
+const Palett___e = {
     backgroundColor: "#fffcf2", // white    
     primaryColor: "#252422", // dark blue
     accentColor: "#403d39", // black
@@ -15,6 +15,14 @@ const Palett__e = {
 }
 
 const Palette = {
+    backgroundColor: "#fffcf2", //    
+    primaryColor: "#252422", // 
+    accentColor: "gray", // 
+    secondaryColor: "#403d39", // 
+    HighlightColor: "#eb5e28" // 
+}
+
+const Palett__e = {
     backgroundColor: "#FAF0CA", // Light Cream: Background, 
     primaryColor: "#0D3B66", // Dark Blue: Header, Navigation bar, main section
     accentColor: "#F4D35E", // Warm Yellow: Highlights, button, links, 
