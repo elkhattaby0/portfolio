@@ -3,6 +3,7 @@ import Autoslide from "../components/Home/Autoslide";
 import Hero from "../components/Home/Hero";
 import Offer from "../components/Home/Offer";
 import Testimonial from "../components/Home/Testimonial";
+import Contact from "./Contact"
 
 const Home = () => {
     const uicss = {
@@ -16,6 +17,7 @@ const Home = () => {
             <Autoslide />
             <Offer />       
             <Testimonial />
+            <Contact />
             <Footer />
 
         </div>

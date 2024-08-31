@@ -70,7 +70,7 @@ const Autoslide = () => {
             <ParagraphFive 
                 uicss="text-center my-8"
                 stl={Palette.secondaryColor}
-            >&#8729; Skills &#8729;</ParagraphFive>
+            >&#8729; Skills  &#8729;</ParagraphFive>
             <div className="w-10/12 h-fit mb-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
                     {skills.map(({ id, category, skills }) => (
