@@ -86,9 +86,13 @@ const Autoslide = () => {
                                     style={{color:Palette.accentColor}}
                                     >{category}</span>}
                             >
-                                <div className="w-full">
+                                <div className="w-full rounded-md p-2"
+                                
+                                style={{backgroundColor: Palette.primaryColor}}>
                                 {skills.map((p) => (
-                                    <div key={p.name} className="flex items-center p-2 ml-8">
+                                    <div key={p.name} 
+                                        className="flex items-center rou pl-8 p-3"    
+                                    >
                                         <Image
                                             url={p.img}
                                             alt={p.name}
@@ -97,7 +101,7 @@ const Autoslide = () => {
                                         />
                                         <p 
                                             className="text-[#f8f7f4] ml-4 text-sm"
-                                            style={{color:Palette.accentColor}}
+                                            style={{color:Palette.backgroundColor}}
                                             >{p.name}</p>
                                     </div>
                                 ))}

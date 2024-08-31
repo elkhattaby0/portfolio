@@ -31,7 +31,10 @@ const Hero = () => {
                         I build responsive, user-friendly and applications with a focus on performance and desgin. Let's bring your ideas to life. 
                     </Text>
                     <Space />
-                    <Button link="projects" uicss="self-start">Explore My Work</Button>
+                    <Button 
+                        link="projects" uicss="self-start"
+                        stl={Palette.primaryColor}    
+                    >Explore My Work</Button>
                 </Columns>
                 <Columns uicss="w-1/2 flex justify-end max-md:hidden" >
                     <Image url="man.jpg" w="85%" alt="man" mix="mix-blend-multiply"/>

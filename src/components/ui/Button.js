@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import Palette from "../Palette"
 
-const Button = ({children, link="/", uicss=""}) => {
+const Button = ({children, link="/", uicss="", stl=Palette.backgroundColor}) => {
     const navigate = useNavigate()
     
     const style = {
@@ -11,7 +11,7 @@ const Button = ({children, link="/", uicss=""}) => {
     return (
         <button 
             className={style.btn} 
-            style={{backgroundColor: Palette.HighlightColor, color: Palette.backgroundColor}}
+            style={{backgroundColor: Palette.HighlightColor, color: stl}}
             onClick={()=> navigate(link)}
         >
             {children}
