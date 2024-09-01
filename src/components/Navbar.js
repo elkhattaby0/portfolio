@@ -19,7 +19,12 @@ const Navbar = () => {
 
     return (
         <div className={uicss.fullcontainer} style={{backgroundColor:Palette.backgroundColor}}>
-            
+            <div className="w-full bg-red-500 flex justify-center">
+                <h1
+                    className="text-xl max-md:text-sm py-1"
+                    style={{color: Palette.primaryColor}}
+                >&#x26A0; Website still under development &#x26A0;</h1>
+            </div>
             <div 
                 className="w-full flex justify-center"
                 style={{backgroundColor: Palette.primaryColor}}
