@@ -4,9 +4,9 @@ import Button from "../components/ui/Button"
 
 const Contact = () => {
     const Input = [
-        {"id":1, type:"text", placeholder: "Name", height: "55px"},
-        {"id":2, type:"email", placeholder: "Email", height: "55px"},
-        {"id":3, type:"text", placeholder: "Project", height: "55px"},
+        {"id":1, type:"text", placeholder: "Name", height: "60px"},
+        {"id":2, type:"email", placeholder: "Email", height: "60px"},
+        {"id":3, type:"text", placeholder: "Project", height: "60px"},
     ]
 
     return (
@@ -38,7 +38,9 @@ const Contact = () => {
                 >
 
                 </textarea>
-                <Button>Send Message</Button>
+                <div className="w-full mt-2 flex justiy-start">
+                    <Button>Send Message</Button>
+                </div>
             </div>
         </div>
     )
