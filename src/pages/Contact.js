@@ -27,14 +27,14 @@ const Contact = () => {
                             type={n.type} 
                             placeholder={n.placeholder}
                             className="w-1/2 max-md:w-full outline-none my-2 px-4 rounded-md shadow-md"
-                            style={{backgroundColor:Palette.primaryColor, height: n.height, color:Palette.backgroundColor}}
+                            style={{backgroundColor:Palette.accentColor, height: n.height, color:Palette.backgroundColor}}
                         />
                     ))
                 }
                 <textarea
                     placeholder="Project description"
                     className="w-1/2 max-md:w-full outline-none my-2 px-4 pt-4 rounded-md shadow-md"
-                    style={{backgroundColor:Palette.primaryColor, height: "150px", color:Palette.backgroundColor}}
+                    style={{backgroundColor:Palette.accentColor, height: "150px", color:Palette.backgroundColor}}
                 >
 
                 </textarea>
