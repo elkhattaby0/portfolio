@@ -27,7 +27,7 @@ const Contact = () => {
                             type={n.type} 
                             placeholder={n.placeholder}
                             className="w-1/2 max-md:w-full outline-none my-2 px-4 rounded-md shadow-md"
-                            style={{backgroundColor:Palette.accentColor, height: n.height, color:Palette.backgroundColor}}
+                            style={{backgroundColor:Palette.secondaryColor, height: n.height, color:Palette.backgroundColor}}
                         />
                     ))
                 }
