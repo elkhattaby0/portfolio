@@ -94,11 +94,11 @@ const Skills = () => {
                                         <Image
                                             url={p.img}
                                             alt={p.name}
-                                            w="35px"
+                                            w="25px"
                                             mix="mix-blend-normal bg-gray-800 rounded-full p-1"
                                         />
                                         <p 
-                                            className="text-[#f8f7f4] ml-4 text-md"
+                                            className="text-[#f8f7f4] ml-4 text-sm"
                                             style={{color:Palette.primaryColor}}
                                             >{p.name}</p>
                                     </div>
