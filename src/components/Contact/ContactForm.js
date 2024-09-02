@@ -22,11 +22,11 @@ const ContactForm = () => {
             >
                 <div className="w-1/2 max-md:w-full">
                     <div className="flex">
-                        <h1 className="text-xl"
+                        <h1 className="text-md"
                             style={{color: Palette.HighlightColor}}
                         >&#128222;</h1>
                         <span className="px-4">
-                            <h1 className="text-xl font-bold"
+                            <h1 className="text-md font-bold"
                                 style={{color: Palette.primaryColor}}
                             >Call Me</h1>
                             <p className="text-xl mt-1"
@@ -35,11 +35,11 @@ const ContactForm = () => {
                         </span>
                     </div>
                     <div className="flex my-4">
-                        <h1 className="text-xl"
+                        <h1 className="text-md"
                             style={{color: Palette.HighlightColor}}
                         >&#128231;</h1>
                         <span className="px-4">
-                            <h1 className="text-xl font-bold"
+                            <h1 className="text-md font-bold"
                                 style={{color: Palette.primaryColor}}
                             >Email</h1>
                             <p className="text-xl mt-1"
