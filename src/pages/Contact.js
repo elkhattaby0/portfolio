@@ -26,15 +26,15 @@ const Contact = () => {
                             key={n.id}
                             type={n.type} 
                             placeholder={n.placeholder}
-                            className="w-1/2 max-md:w-full outline-none my-2 px-4 rounded-md shadow-md"
-                            style={{backgroundColor:Palette.secondaryColor, height: n.height, color:Palette.backgroundColor}}
+                            className="w-1/2 max-md:w-full outline-none my-2 px-4 rounded-md"
+                            style={{backgroundColor:"lightgray", height: n.height, color:Palette.primaryColor}}
                         />
                     ))
                 }
                 <textarea
                     placeholder="Project description"
-                    className="w-1/2 max-md:w-full outline-none my-2 px-4 pt-4 rounded-md shadow-md"
-                    style={{backgroundColor:Palette.secondaryColor, height: "150px", color:Palette.backgroundColor}}
+                    className="w-1/2 max-md:w-full outline-none my-2 px-4 pt-4 rounded-md"
+                    style={{backgroundColor:"lightgray", height: "150px", color:Palette.primaryColor}}
                 >
 
                 </textarea>
