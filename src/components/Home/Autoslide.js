@@ -64,11 +64,11 @@ const Autoslide = () => {
 
     return (
         <div 
-            className="w-full flex flex-col items-center justify-center"
+            className="w-full flex flex-col items-center justify-center my-4"
             style={{backgroundColor: Palette.backgroundColor}}
         >
             <ParagraphFive 
-                uicss="text-center my-8 text-3xl"
+                uicss="text-center my-10 text-3xl"
                 stl={Palette.secondaryColor}
             >&#8729; Skills  &#8729;</ParagraphFive>
             <div className="w-10/12 h-fit mb-20">
@@ -79,29 +79,27 @@ const Autoslide = () => {
                         >
                             <AccordionItem                                
                                 onPress={()=> handleToggle}
-                                className={`w-full flex  flex-col headerskills font-semibold text-xl border px-3`}
+                                className={`w-full flex  flex-col headerskills font-semibold text-xl`}
                                 aria-label={category}
                                 title={<span 
                                     className="w-[200px] font-semibold text-xl text-left"
                                     style={{color:Palette.primaryColor}}
                                     >{id}. {category}</span>}
                             >
-                                <div className="w-full p-2"
-                                
-                                style={{backgroundColor: Palette.primaryColor}}>
+                                <div className="w-full p-2">
                                 {skills.map((p) => (
                                     <div key={p.name} 
-                                        className="flex items-center pl-8 p-3"    
+                                        className="flex items-center pl-4 p-3"    
                                     >
                                         <Image
                                             url={p.img}
                                             alt={p.name}
-                                            w="25px"
-                                            mix="mix-blend-normal"
+                                            w="35px"
+                                            mix="mix-blend-normal bg-gray-800 rounded-full p-1"
                                         />
                                         <p 
                                             className="text-[#f8f7f4] ml-4 text-sm"
-                                            style={{color:Palette.backgroundColor}}
+                                            style={{color:Palette.primaryColor}}
                                             >{p.name}</p>
                                     </div>
                                 ))}
