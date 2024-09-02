@@ -4,7 +4,7 @@ import Hero from "../components/Home/Hero";
 import Offer from "../components/Home/Offer";
 import Timeline from "../components/Home/Timeline";
 import Testimonial from "../components/Home/Testimonial";
-import Contact from "./Contact"
+import ContactForm from "../components/Contact/ContactForm";
 
 const Home = () => {
     const uicss = {
@@ -18,7 +18,7 @@ const Home = () => {
             <Skills />
             <Timeline />
             <Offer />
-            <Contact />       
+            <ContactForm />       
             <Testimonial />            
             <Footer />
 
