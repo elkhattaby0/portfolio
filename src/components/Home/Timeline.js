@@ -25,8 +25,8 @@ const Timeline = () => {
                             class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                     </div>
                     <div 
-                        style={{backgroundColor: Palette.backgroundColor}}
-                        class="relative p-2 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                        style={{backgroundColor: Palette.accentColor}}
+                        class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
                             class="text-lg font-semibold lg:text-xl">Freelancer</h3>
@@ -39,12 +39,12 @@ const Timeline = () => {
                 {/* Left */}
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.backgroundColor}}
-                        class="relative p-2 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                        style={{backgroundColor: Palette.accentColor}}
+                        class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
                             class="text-lg font-semibold lg:text-xl"
-                        >Digital Development</h3>
+                        >Full Stack Developer</h3>
                         <p class="mt-2 leading-6">OFPPT</p>
                         <span 
                             style={{color: Palette.accentColor}}
@@ -77,8 +77,8 @@ const Timeline = () => {
                             class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                     </div>
                     <div 
-                        style={{backgroundColor: Palette.backgroundColor}}
-                        class="relative p-2 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                        style={{backgroundColor: Palette.accentColor}}
+                        class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
                             class="text-lg font-semibold lg:text-xl">Macdonald</h3>
@@ -90,11 +90,11 @@ const Timeline = () => {
 
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.backgroundColor}}
-                        class="relative p-2 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                        style={{backgroundColor: Palette.accentColor}}
+                        class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
-                            class="text-lg font-semibold lg:text-xl">Digital Development</h3>
+                            class="text-lg font-semibold lg:text-xl">Full Stack Developer</h3>
                         <p class="mt-2 leading-6">OFPPT</p>
                         <span 
                             style={{color: Palette.accentColor}}
@@ -126,8 +126,8 @@ const Timeline = () => {
                                 class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                         </div>
                     <div 
-                        style={{backgroundColor: Palette.backgroundColor}}
-                        class="relative p-2 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                        style={{backgroundColor: Palette.accentColor}}
+                        class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
                             class="text-lg font-semibold lg:text-xl">Chemistry</h3>
@@ -139,8 +139,8 @@ const Timeline = () => {
                 </div>
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.backgroundColor}}
-                        class="relative p-2 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                        style={{backgroundColor: Palette.accentColor}}
+                        class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
                             class="text-lg font-semibold lg:text-xl"
