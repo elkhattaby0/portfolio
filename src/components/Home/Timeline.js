@@ -25,7 +25,7 @@ const Timeline = () => {
                             class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                     </div>
                     <div 
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: Palette.backgroundColor}}
                         class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
