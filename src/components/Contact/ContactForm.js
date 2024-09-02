@@ -18,28 +18,58 @@ const ContactForm = () => {
                 stl={Palette.secondaryColor}
             >&#8729; Contact Me  &#8729;</ParagraphFive>
             <div
-                className="w-10/12  flex flex-col items-center justify-start"
+                className="w-10/12 flex max-md:flex-col"
             >
-                {
-                    Input.map(n=> (
-                        <input 
-                            key={n.id}
-                            type={n.type} 
-                            placeholder={n.placeholder}
-                            className="w-1/2 max-md:w-full outline-none my-2 px-4 rounded-md"
-                            style={{backgroundColor:"lightgray", height: n.height, color:Palette.primaryColor}}
-                        />
-                    ))
-                }
-                <textarea
-                    placeholder="Project description"
-                    className="w-1/2 max-md:w-full outline-none my-2 px-4 pt-4 rounded-md"
-                    style={{backgroundColor:"lightgray", height: "150px", color:Palette.primaryColor}}
-                >
+                <div className="w-1/2 max-md:w-full">
+                    <div className="flex">
+                        <h1 className="text-xl"
+                            style={{color: Palette.HighlightColor}}
+                        >&#128222;</h1>
+                        <span className="px-4">
+                            <h1 className="text-xl font-bold"
+                                style={{color: Palette.primaryColor}}
+                            >Call Me</h1>
+                            <p className="text-xl mt-1"
+                                style={{color: Palette.secondaryColor}}
+                            >+(212) 650 999 953</p>
+                        </span>
+                    </div>
+                    <div className="flex my-4">
+                        <h1 className="text-xl"
+                            style={{color: Palette.HighlightColor}}
+                        >&#128231;</h1>
+                        <span className="px-4">
+                            <h1 className="text-xl font-bold"
+                                style={{color: Palette.primaryColor}}
+                            >Email</h1>
+                            <p className="text-xl mt-1"
+                                style={{color: Palette.secondaryColor}}
+                            >eelkhattaby@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
+                <div className="w-1/2 max-md:w-full flex flex-col items-center justify-start">
+                    {
+                        Input.map(n=> (
+                            <input 
+                                key={n.id}
+                                type={n.type} 
+                                placeholder={n.placeholder}
+                                className="w-full outline-none my-2 px-4 rounded-md"
+                                style={{backgroundColor:"lightgray", height: n.height, color:Palette.primaryColor}}
+                            />
+                        ))
+                    }
+                    <textarea
+                        placeholder="Project description"
+                        className="w-full outline-none my-2 px-4 pt-4 rounded-md"
+                        style={{backgroundColor:"lightgray", height: "150px", color:Palette.primaryColor}}
+                    >
 
-                </textarea>
-                <div className="w-1/2 max-md:w-full mt-2 flex justiy-start">
-                    <Button>Send Message</Button>
+                    </textarea>
+                    <div className="w-full max-md:w-full mt-2 flex justiy-start">
+                        <Button>Send Message</Button>
+                    </div>
                 </div>
             </div>
         </div>
