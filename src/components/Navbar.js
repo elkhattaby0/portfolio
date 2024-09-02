@@ -8,7 +8,7 @@ import Palette from "./Palette";
 import { useState } from "react";
 
 const Navbar = () => {
-    const [activePath, setActivePath] = useState('/'); // Default path
+    const [activePath, setActivePath] = useState('/');
     const location = useLocation();
 
     const uicss = {
