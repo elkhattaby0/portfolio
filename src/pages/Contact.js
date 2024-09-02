@@ -4,7 +4,7 @@ import ContactForm from "../components/Contact/ContactForm"
 const Contact = () => {
     return (
         <div
-            className="w-full"
+            className="w-full h-[89vh]"
         >
             {
                 <ContactForm />
