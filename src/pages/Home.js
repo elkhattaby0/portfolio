@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import Autoslide from "../components/Home/Autoslide";
+import Skills from "../components/Home/Skills"
 import Hero from "../components/Home/Hero";
 import Offer from "../components/Home/Offer";
 import Timeline from "../components/Home/Timeline";
@@ -14,9 +14,9 @@ const Home = () => {
     return (
         <div className={uicss.fullcontainer}>
 
-            <Hero />
+            <Hero />            
+            <Skills />
             <Timeline />
-            <Autoslide />
             <Offer />
             <Contact />       
             <Testimonial />            

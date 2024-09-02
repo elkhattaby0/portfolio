@@ -55,7 +55,7 @@ const skills = [
     }
 ];
 
-const Autoslide = () => {
+const Skills = () => {
     const [openItems, setOpenItems] = useState(false);
 
     const handleToggle = () => {
@@ -71,7 +71,7 @@ const Autoslide = () => {
                 uicss="text-center my-10 text-3xl"
                 stl={Palette.secondaryColor}
             >&#8729; Skills  &#8729;</ParagraphFive>
-            <div className="w-10/12 h-fit mb-20">
+            <div className="w-10/12 h-fit mb-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
                     {skills.map(({ id, category, skills }) => (
                         <Accordion 
@@ -89,7 +89,7 @@ const Autoslide = () => {
                                 <div className="w-full flex flex-wrap p-">
                                 {skills.map((p) => (
                                     <div key={p.name} 
-                                        className="flex items-center pl-4 p-3"    
+                                        className="flex w-1/2 items-center pl-4 p-3"    
                                     >
                                         <Image
                                             url={p.img}
@@ -98,7 +98,7 @@ const Autoslide = () => {
                                             mix="mix-blend-normal bg-gray-800 rounded-full p-1"
                                         />
                                         <p 
-                                            className="text-[#f8f7f4] ml-4 text-sm"
+                                            className="text-[#f8f7f4] ml-4 text-md"
                                             style={{color:Palette.primaryColor}}
                                             >{p.name}</p>
                                     </div>
@@ -113,4 +113,4 @@ const Autoslide = () => {
     );
 };
 
-export default Autoslide;
+export default Skills;
