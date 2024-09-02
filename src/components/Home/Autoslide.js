@@ -86,7 +86,7 @@ const Autoslide = () => {
                                     style={{color:Palette.primaryColor}}
                                     >{id}. {category}</span>}
                             >
-                                <div className="w-full p-2">
+                                <div className="w-full flex flex-wrap p-">
                                 {skills.map((p) => (
                                     <div key={p.name} 
                                         className="flex items-center pl-4 p-3"    
