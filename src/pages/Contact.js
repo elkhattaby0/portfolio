@@ -1,6 +1,5 @@
 import ContactForm from "../components/Contact/ContactForm"
 import Footer from "../components/Footer"
-import Space from "../components/ui/Space"
 
 const Contact = () => {
     return (
@@ -8,7 +7,7 @@ const Contact = () => {
             className="w-full "
         >
             {<ContactForm />}
-            <Space />
+            <br />
             {<Footer />}
         </div>
     )
