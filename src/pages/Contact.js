@@ -14,7 +14,7 @@ const Contact = () => {
             className="w-full flex flex-col items-center mb-4"
         >
             <ParagraphFive 
-                uicss="text-center my-8"
+                uicss="text-center my-10 text-3xl"
                 stl={Palette.secondaryColor}
             >&#8729; Contact Me  &#8729;</ParagraphFive>
             <div
@@ -38,7 +38,7 @@ const Contact = () => {
                 >
 
                 </textarea>
-                <div className="w-full mt-2 flex justiy-start">
+                <div className="w-1/2 max-md:w-full mt-2 flex justiy-start">
                     <Button>Send Message</Button>
                 </div>
             </div>
