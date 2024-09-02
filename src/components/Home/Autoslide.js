@@ -68,7 +68,7 @@ const Autoslide = () => {
             style={{backgroundColor: Palette.backgroundColor}}
         >
             <ParagraphFive 
-                uicss="text-center my-8"
+                uicss="text-center my-8 text-3xl"
                 stl={Palette.secondaryColor}
             >&#8729; Skills  &#8729;</ParagraphFive>
             <div className="w-10/12 h-fit mb-20">
@@ -83,7 +83,7 @@ const Autoslide = () => {
                                 aria-label={category}
                                 title={<span 
                                     className="w-[200px] font-semibold text-xl text-left"
-                                    style={{color:Palette.accentColor}}
+                                    style={{color:Palette.primaryColor}}
                                     >{id}. {category}</span>}
                             >
                                 <div className="w-full p-2"
@@ -91,7 +91,7 @@ const Autoslide = () => {
                                 style={{backgroundColor: Palette.primaryColor}}>
                                 {skills.map((p) => (
                                     <div key={p.name} 
-                                        className="flex items-center rou pl-8 p-3"    
+                                        className="flex items-center pl-8 p-3"    
                                     >
                                         <Image
                                             url={p.img}
