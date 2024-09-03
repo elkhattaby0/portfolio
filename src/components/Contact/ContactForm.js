@@ -1,6 +1,8 @@
 import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import Palette from "../Palette";
-import Button from "../ui/Button"
+import Button from "../ui/Button";
+import Phone from "../../assets/svg/Phone"
+import Email from "../../assets/svg/Email";
 
 const ContactForm = () => {
     const Input = [
@@ -24,7 +26,8 @@ const ContactForm = () => {
                     <div className="flex">
                         <h1 className="text-md"
                             style={{color: Palette.HighlightColor}}
-                        >&#128222;</h1>
+                        >
+                        <Phone /></h1>
                         <span className="px-4">
                             <h1 className="text-md font-bold"
                                 style={{color: Palette.primaryColor}}
@@ -37,7 +40,7 @@ const ContactForm = () => {
                     <div className="flex my-4">
                         <h1 className="text-md"
                             style={{color: Palette.HighlightColor}}
-                        >&#128231;</h1>
+                        ><Email /></h1>
                         <span className="px-4">
                             <h1 className="text-md font-bold"
                                 style={{color: Palette.primaryColor}}

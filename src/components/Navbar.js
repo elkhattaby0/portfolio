@@ -3,7 +3,7 @@ import Columns from "./ui/Columns";
 import ParagraphFive from "./ui/Paragraph/ParagraphFive";
 import ParagraphSix from "./ui/Paragraph/ParagraphSix";
 import MenuResposive from "./MenuResposive";
-import Logo from "./ui/Logo";
+import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
 import { useState } from "react";
 

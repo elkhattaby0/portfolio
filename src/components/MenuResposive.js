@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ParagraphFive from "./ui/Paragraph/ParagraphFive";
 import SocialMedia from "./SocialMedia";
-import Logo from "./ui/Logo";
+import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
 
 const MenuResposive = () => {
