@@ -79,7 +79,7 @@ const Skills = () => {
                         >
                             <AccordionItem                                
                                 onPress={()=> handleToggle}
-                                className={`w-full flex  flex-col headerskills font-semibold text-xl`}
+                                className={`w-full flex  flex-col headerskills font-semibold text-xl border-b`}
                                 aria-label={category}
                                 title={<span 
                                     className="w-[200px] font-semibold text-xl text-left"

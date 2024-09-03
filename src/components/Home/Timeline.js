@@ -14,7 +14,7 @@ const Timeline = () => {
                 {/* Left */}
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
@@ -51,7 +51,7 @@ const Timeline = () => {
                             class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                     </div>
                     <div 
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
@@ -67,7 +67,7 @@ const Timeline = () => {
                 {/* Left */}
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
@@ -105,7 +105,7 @@ const Timeline = () => {
                             class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                     </div>
                     <div 
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
@@ -118,7 +118,7 @@ const Timeline = () => {
 
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
@@ -154,7 +154,7 @@ const Timeline = () => {
                                 class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                         </div>
                     <div 
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}
@@ -167,7 +167,7 @@ const Timeline = () => {
                 </div>
                 <div class="flex md:contents flex-row-reverse">
                     <div
-                        style={{backgroundColor: Palette.accentColor}}
+                        style={{backgroundColor: "lightgray"}}
                         class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 
                             style={{color: Palette.primaryColor}}

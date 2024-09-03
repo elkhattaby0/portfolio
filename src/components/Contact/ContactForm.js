@@ -19,7 +19,7 @@ const ContactForm = () => {
             >&#8729; Contact Me  &#8729;</ParagraphFive>
             <div
                 className="w-10/12 flex max-md:flex-col"
-            >
+            ><br />
                 <div className="w-1/2 max-md:w-full">
                     <div className="flex">
                         <h1 className="text-md"
@@ -46,7 +46,7 @@ const ContactForm = () => {
                                 style={{color: Palette.secondaryColor}}
                             >eelkhattaby@gmail.com</p>
                         </span>
-                    </div>
+                    </div><br />
                 </div>
                 <div className="w-1/2 max-md:w-full flex flex-col items-center justify-start">
                     {

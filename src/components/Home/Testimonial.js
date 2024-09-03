@@ -74,7 +74,7 @@ const Testimonial = () => {
     return (
         <div className={`bg-[${Palette.lightColor}] flex flex-col items-center justify-center w-full h-fit border- py-8`}>
             <ParagraphFive 
-                uicss="text-center"
+                uicss="text-center text-3xl"
                 stl={Palette.secondaryColor}    
             >&#8729; Client Feedback &#8729;</ParagraphFive>
             <Space />
