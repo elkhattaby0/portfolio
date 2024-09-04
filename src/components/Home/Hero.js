@@ -9,7 +9,7 @@ import Palette from "../Palette";
 
 const Hero = () => {
     const uicss = {
-        "container":"w-10/12 flex justify-between h-[89vh]",
+        "container":"w-10/12 flex justify-between h-[92vh]",
         "para": "self-start",
     }
     return (
