@@ -88,7 +88,7 @@ const Skills = () => {
                                             url={p.img}
                                             alt={p.name}
                                             w="25px"
-                                            mix="mix-blend-normal bg-[#3A86FF] rounded-full p-1"
+                                            mix="mix-blend-normal bg-gray-800 rounded-full p-1"
                                         />
                                         <p 
                                             className="text-[#f8f7f4] ml-4 text-sm"
