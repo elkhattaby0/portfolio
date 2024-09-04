@@ -55,7 +55,7 @@ const Testimonial = () => {
                     >&#10077;</p>
                     <p 
                         style={{color: Palette.accentColor}}
-                        className="text-2xl font-normal opacity-80 leading-8 relative -top-10"
+                        className="text-2xl font-normal leading-8 relative -top-10"
                         
                     >{props.msg}</p>
                 </div>
@@ -80,7 +80,7 @@ const Testimonial = () => {
             className="flex flex-col items-center justify-center w-full h-fit border- py-8">
             <ParagraphFive 
                 uicss="text-center text-3xl"
-                stl={Palette.secondaryColor}    
+                stl={Palette.backgroundColor}    
             >&#8729; Client Feedback &#8729;</ParagraphFive>
             <Space />
             <div className="w-10/12 h-fit">
