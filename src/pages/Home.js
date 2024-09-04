@@ -5,6 +5,7 @@ import Offer from "../components/Home/Offer";
 import Timeline from "../components/Home/Timeline";
 import Testimonial from "../components/Home/Testimonial";
 import ContactForm from "../components/Contact/ContactForm";
+import BackToTop from "../components/ui/BackToTop";
 
 const Home = () => {
     const uicss = {
@@ -15,6 +16,7 @@ const Home = () => {
         <div className={uicss.fullcontainer}>
 
             <Hero /> 
+            <BackToTop />
             <Skills />
             <Timeline />
             <Offer />
