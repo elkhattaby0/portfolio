@@ -13,7 +13,7 @@ const ContactForm = () => {
 
     return (
         <div
-            className="w-full flex flex-col items-center mb-4"
+            className="w-full flex flex-col items-center mb-4 py-4"
         >
             <ParagraphFive 
                 uicss="text-center my-10 text-3xl"

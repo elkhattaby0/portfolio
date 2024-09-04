@@ -31,7 +31,7 @@ const Data = [
 const Offer = () => {
 
     const uicss = {
-        "containerTwo": "w-10/12 flex flex-col justify-center h-fit max-md:h-fit",
+        "containerTwo": "h-screen w-10/12 flex flex-col justify-center",
     }
 
     return (
