@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className={uicss.fullcontainer}>
 
-            <Hero />            
+            <Hero /> 
             <Skills />
             <Timeline />
             <Offer />

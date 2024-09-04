@@ -1,8 +1,6 @@
-import { useState } from "react";
+import Palette from "../Palette"
+import ParagraphFive from "../ui/Paragraph/ParagraphFive"
 import Image from "../ui/Image";
-import ParagraphFive from "../ui/Paragraph/ParagraphFive";
-import { Accordion, AccordionItem } from "@nextui-org/react";
-import Palette from "../Palette";
 
 const skills = [
     {
@@ -56,37 +54,32 @@ const skills = [
 ];
 
 const Skills = () => {
-    const [openItems, setOpenItems] = useState(false);
-
-    const handleToggle = () => {
-        setOpenItems(!openItems)
-    };
-
     return (
-        <div 
-            className="w-full flex flex-col items-center justify-center my-4"
-            style={{backgroundColor: Palette.backgroundColor}}
-        >
-            <ParagraphFive 
-                uicss="text-center my-10 text-3xl"
-                stl={Palette.secondaryColor}
-            >&#8729; Skills  &#8729;</ParagraphFive>
-            <div className="w-10/12 h-fit mb-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+            <div 
+                className="w-10/12 flex flex-col items-center justify-center my-4"
+                style={{backgroundColor: Palette.backgroundColor}}
+            >    
+                <ParagraphFive 
+                    uicss="text-center my-10 text-3xl"
+                    stl={Palette.secondaryColor}
+                >&#8729; Skills  &#8729;</ParagraphFive>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
                     {skills.map(({ id, category, skills }) => (
-                        <Accordion 
-                            key={id} 
-                        >
-                            <AccordionItem                                
-                                onPress={()=> handleToggle}
-                                className={`w-full flex  flex-col headerskills font-semibold text-xl border-b`}
-                                aria-label={category}
-                                title={<span 
+                    <div class="py-" key={id}>
+                        <details class="group">
+                            <summary class="flex cursor-pointer list-none items-center justify-between font-medium border-b py-4">
+                                <span 
                                     className="w-[200px] font-semibold text-xl text-left"
-                                    style={{color:Palette.primaryColor}}
-                                    >{id}. {category}</span>}
-                            >
-                                <div className="w-full flex flex-wrap p-">
+                                >{id}. {category}</span>
+                                <span class="transition group-open:rotate-180">
+                                        <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                            <path d="M6 9l6 6 6-6"></path>
+                                        </svg>
+                                    </span>
+                            </summary>
+                            <div className="w-full flex flex-wrap p-">
                                 {skills.map((p) => (
                                     <div key={p.name} 
                                         className="flex w-1/2 items-center pl-4 p-3"    
@@ -95,7 +88,7 @@ const Skills = () => {
                                             url={p.img}
                                             alt={p.name}
                                             w="25px"
-                                            mix="mix-blend-normal bg-gray-800 rounded-full p-1"
+                                            mix="mix-blend-normal bg-[#3A86FF] rounded-full p-1"
                                         />
                                         <p 
                                             className="text-[#f8f7f4] ml-4 text-sm"
@@ -104,13 +97,12 @@ const Skills = () => {
                                     </div>
                                 ))}
                                 </div>
-                            </AccordionItem>
-                        </Accordion>
+                        </details>
+                    </div>
                     ))}
                 </div>
             </div>
-        </div>
-    );
-};
+    )
+}
 
-export default Skills;
+export default Skills
