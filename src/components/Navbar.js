@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const uicss = {
         "fullcontainer": "w-full flex flex-col justify- items-center",
-        "container": "flex w-10/12 justify-between items-center",
+        "container": " flex w-10/12 justify-between items-center",
         "logo": "uppercase py-4",
     };
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
-            <div className="sticky top-0 z-10 shadowe-md w-full bg-red-500 flex justify-center">
+            <div className="fixed top-0 z-10 shadowe-md w-full bg-red-500 flex justify-center hidden">
                 <h1
                     className="text-xl max-md:text-sm py-1"
                     style={{ color: Palette.primaryColor }}
