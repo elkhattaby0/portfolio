@@ -56,14 +56,14 @@ const skills = [
 const Skills = () => {
     return (
             <div 
-                className="h-screen w-10/12 flex flex-col items-center justify-center py-4"
+                className="h-screen w-10/12 flex flex-col items-center justify-around"
                 style={{backgroundColor: Palette.backgroundColor}}
             >    
                 <ParagraphFive 
                     uicss="text-center my-10 text-3xl"
                     stl={Palette.secondaryColor}
                 >&#8729; Skills  &#8729;</ParagraphFive>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                     {skills.map(({ id, category, skills }) => (
                     <div class="py-" key={id}>
                         <details class="group">
