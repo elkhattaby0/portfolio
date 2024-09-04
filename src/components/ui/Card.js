@@ -10,7 +10,7 @@ const Card = (props) => {
             style={{background: Palette.backgroundColor}}
         >
             <div class="relative overflow-hidden rounded-lg border bg-gray-100/50 p-2 my-2">
-                <div class="flex h-[150px] flex-col justify-between rounded-md p-6 ">
+                <div class="flex h-[150px] max-md:h-[120px] flex-col justify-between rounded-md p-6 max-md:p-3">
                     <Logo
                         logo={Palette.HighlightColor}
                         bk='none'
