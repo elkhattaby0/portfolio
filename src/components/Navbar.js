@@ -1,7 +1,4 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import Columns from "./ui/Columns";
-import ParagraphFive from "./ui/Paragraph/ParagraphFive";
-import ParagraphSix from "./ui/Paragraph/ParagraphSix";
 import MenuResposive from "./MenuResposive";
 import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
@@ -13,23 +10,23 @@ const Navbar = () => {
 
     const uicss = {
         "fullcontainer": "w-full flex flex-col justify- items-center",
-        "container": " flex w-10/12 justify-between items-center",
+        "container": "w-10/12 flex justify-between items-center",
         "logo": "uppercase py-4",
     };
 
     const getLinkClass = (path) => {
-        return `uppercase py-2 px-2  ${activePath === path ? "border-b-4 border-[#3A86FF] w-1/2 mx-auto " : ""}`;
+        return `text-center font-bold uppercase py-2 px  ${activePath === path ? "border-b-4 border-[#3A86FF]" : ""}`;
     };
 
     return (
         <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
-            <div
+            <section
                 className="w-full flex justify-center"
                 style={{ backgroundColor: Palette.primaryColor }}
             >
                 <div className={uicss.container}>
-                    <Columns>
-                        <ParagraphFive uicss={uicss.logo}>
+                    <div>
+                        <h1 className={uicss.logo}>
                             <Link to="/">
                                 <Logo
                                     logo={Palette.HighlightColor}
@@ -37,32 +34,34 @@ const Navbar = () => {
                                     w="20px"
                                 />
                             </Link>
-                        </ParagraphFive>
-                    </Columns>
-                    <Columns nbr={5} uicss="max-md:hidden">
-                        <ParagraphSix uicss={getLinkClass('/')} stl={Palette.HighlightColor}>
+                        </h1>
+                    </div>
+                    {/* Desktop */}
+                    <div className="max-md:hidden columns-5">
+                        <h3 className={getLinkClass('/')} style={{color:Palette.HighlightColor}}>
                             <Link to='/' onClick={() => setActivePath('/')}>Home</Link>
-                        </ParagraphSix>
-                        <ParagraphSix uicss={getLinkClass('/projects')} stl={Palette.HighlightColor}>
+                        </h3>
+                        <h3 className={getLinkClass('/projects')} style={{color:Palette.HighlightColor}}>
                             <Link to='/projects' onClick={() => setActivePath('/projects')}>Projects</Link>
-                        </ParagraphSix>
-                        <ParagraphSix uicss={getLinkClass('/services')} stl={Palette.HighlightColor}>
+                        </h3>
+                        <h3 className={getLinkClass('/services')} style={{color:Palette.HighlightColor}}>
                             <Link to='/services' onClick={() => setActivePath('/services')}>Services</Link>
-                        </ParagraphSix>
-                        <ParagraphSix uicss={getLinkClass('/contact')} stl={Palette.HighlightColor}>
+                        </h3>
+                        <h3 className={getLinkClass('/contact')} style={{color:Palette.HighlightColor}}>
                             <Link to='/contact' onClick={() => setActivePath('/contact')}>Contact</Link>
-                        </ParagraphSix>
-                        <ParagraphSix uicss={getLinkClass('/about')} stl={Palette.HighlightColor}>
+                        </h3>
+                        <h3 className={getLinkClass('/about')} style={{color:Palette.HighlightColor}}>
                             <Link to='/about' onClick={() => setActivePath('/about')}>
                                 About
                             </Link>
-                        </ParagraphSix>
-                    </Columns>
-                    <Columns uicss={"hidden max-md:flex"} stl={Palette.HighlightColor}>
+                        </h3>
+                    </div>
+                    {/* Smartphone */}
+                    <div className="hidden max-md:flex rounded" style={{backgroundColor:Palette.HighlightColor}}>
                         <MenuResposive />
-                    </Columns>
+                    </div>
                 </div>
-            </div>
+            </section>
             <Outlet />
         </div>
     );

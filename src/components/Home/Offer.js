@@ -3,6 +3,8 @@ import Space from "../ui/Space";
 import Columns from "../ui/Columns";
 import Card from "../ui/Card";
 import Palette from "../Palette";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Data = [
     {
@@ -35,7 +37,9 @@ const Offer = () => {
     }
 
     return (
-        <div className={uicss.containerTwo}>
+        <div 
+            className={uicss.containerTwo}
+        >
             <ParagraphFive 
                 uicss="text-center my-10 text-3xl"
                 stl={Palette.secondaryColor}
@@ -57,4 +61,5 @@ const Offer = () => {
     )
 }
 
+AOS.init();
 export default Offer;

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import ParagraphFive from "./ui/Paragraph/ParagraphFive";
 import SocialMedia from "./SocialMedia";
 import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
@@ -21,11 +20,12 @@ const MenuResposive = () => {
     };
 
     const getLinkClass = (path) => {
-        return `text-xl uppercase py-2 ${activePath === path ? " border-b-4 border-[#3A86FF] mx-auto" : ""}`;
+        return `text-left text-xl font-bold uppercase py-2 px  ${activePath === path ? "border-b-4 border-[#3A86FF]" : ""}`;
     };
 
+
     return (
-        <div>
+        <section>
             <button 
                 className={style.menu} 
                 style={{color: Palette.primaryColor}}
@@ -45,8 +45,8 @@ const MenuResposive = () => {
                     <div 
                         className="border-b w-10/12 flex items-center justify-between"
                     >
-                        <ParagraphFive 
-                            uicss="uppercase py-4"
+                        <h1 
+                            className="uppercase py-4"
                         >
                             <Link to="/" onClick={toggleMenu}>
                                 <Logo
@@ -55,7 +55,7 @@ const MenuResposive = () => {
                                     w="20px"
                                 />
                             </Link>
-                        </ParagraphFive>
+                        </h1>
                         <button 
                             className={style.btn} 
                             style={{color:Palette.HighlightColor}}
@@ -68,10 +68,10 @@ const MenuResposive = () => {
                         {['Home', 'Projects', 'Services', 'Contact', 'About'].map((item, index) => {
                             const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
                             return (
-                                <ParagraphFive 
+                                <h3 
                                     key={index} 
-                                    uicss={getLinkClass(path)}
-                                    stl={Palette.accentColor}
+                                    className={getLinkClass(path)}
+                                    style={{color:Palette.accentColor}}
                                 >
                                     <Link to={path} onClick={() => {
                                         toggleMenu();
@@ -79,7 +79,7 @@ const MenuResposive = () => {
                                     }}>
                                         {item}
                                     </Link>
-                                </ParagraphFive>
+                                </h3>
                             );
                         })}
                     </div>
@@ -99,7 +99,7 @@ const MenuResposive = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
