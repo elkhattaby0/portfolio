@@ -45,7 +45,7 @@ const Testimonial = () => {
     const Card = (props) => {
         return (
             <div 
-                className="rounded-md flex flex-col justify-between h-[290px] mt-8 w-[98%] max-md:w-full max-md:h-fit"
+                className="rounded-md flex flex-col justify-between h-[320px] mt-8 w-[98%] max-md:w-full max-md:h-fit border-dashed border p-4"
                 style={{backgroundColor: Palette.primaryColor}}
             >
                 <div className="p-0 m-0">
