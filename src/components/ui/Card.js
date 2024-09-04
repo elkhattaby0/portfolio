@@ -1,34 +1,27 @@
 
 import Palette from "../Palette";
-import Image from "./Image";
+import Logo from "../../assets/svg/Logo";
 
 const Card = (props) => {
     return (
         <div 
             key={props.title} 
-            className="relative h-72 max-md:h-64 w-[24.5%] max-md:w-full my-2 rounded-md overflow-hidden flex flex-col justify-between shadow-md group"
+            className=" w-[24.5%] max-md:w-[48%] flex flex-col justify-between"
             style={{background: Palette.backgroundColor}}
         >
-            <Image 
-                url={props.img} 
-                alt={props.title} 
-                mix="absolute inset-0 mix-blend-multiply rounded-md object-cover w-full h-full" 
-            />
-            <div
-                className="h-full cursor-pointer hover:backdrop-blur-sm"
-            >
-                <p 
-                    className="relative top-[70%] group-hover:top-0 m-4 text-xl font-semibold drop-shadow-md"
-                    style={{color: Palette.backgroundColor}}    
-                >{props.title}</p>
-                <p 
-                    className="relative bottom-0 m-4 text-md opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
-                    style={{color: Palette.backgroundColor}}    
-                >
-                    {props.content}
-                </p>
+            <div class="relative overflow-hidden rounded-lg border bg-gray-100/50 p-2 my-2">
+                <div class="flex h-[150px] flex-col justify-between rounded-md p-6 ">
+                    <Logo
+                        logo={Palette.HighlightColor}
+                        bk='none'
+                        w="15px"
+                    />
+                <div class="space-y-2">
+                    <h3 class="text-xl w-1/2">{props.title}</h3>
+                    {/* <p class="text-sm text-muted-foreground">{props.content}</p> */}
+                </div>
             </div>
-            
+        </div>            
         </div>
     );
 };

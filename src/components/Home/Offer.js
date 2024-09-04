@@ -40,7 +40,7 @@ const Offer = () => {
                 uicss="text-center my-10 text-3xl"
                 stl={Palette.secondaryColor}
             >&#8729; Services &#8729;</ParagraphFive>
-            <Columns nbr={4} uicss="max-md:flex-col flex-wrap justify-between items-start  max-md:h-fit">
+            <Columns nbr={4} uicss="max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
                 {
                     Data.map(n=> (
                         <Card 
