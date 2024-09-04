@@ -45,8 +45,8 @@ const Testimonial = () => {
     const Card = (props) => {
         return (
             <div 
-                className="rounded-md flex flex-col justify-between h-[350px] mt-8 w-[99%] shadow-xl max-md:w-full max-md:h-fit p-8"
-                style={{backgroundColor: Palette.backgroundColor}}
+                className="rounded-md flex flex-col justify-between h-[350px] mt-8 w-[99%] max-md:w-full max-md:h-fit p-8"
+                style={{backgroundColor: Palette.primaryColor}}
             >
                 <div className="p-0 m-0">
                     <p 
@@ -54,12 +54,15 @@ const Testimonial = () => {
                         style={{color: Palette.secondaryColor}}
                     >&#10077;</p>
                     <p 
-                        className={`text-[${Palette.accentColor}] text-2xl font-normal opacity-80 leading-8 relative -top-10`}
+                        style={{color: Palette.accentColor}}
+                        className="text-2xl font-normal opacity-80 leading-8 relative -top-10"
                         
                     >{props.msg}</p>
                 </div>
                 <div className="flex items-center max-md:mt-5">
-                    <div className="w-[35px] border-2 rounded-full bg-[#f8f7f4]">
+                    <div 
+                        style={{border: `1px solid ${Palette.HighlightColor}`}}
+                        className="w-[35px] border-2 rounded-full bg-[#f8f7f4]">
                         <Image url={props.img} alt={props.name} mix="rounded-full" />
                     </div>
                     <p 
@@ -72,7 +75,9 @@ const Testimonial = () => {
     }
 
     return (
-        <div className={`bg-[${Palette.lightColor}] flex flex-col items-center justify-center w-full h-fit border- py-8`}>
+        <div 
+            style={{backgroundColor: Palette.primaryColor}}
+            className="flex flex-col items-center justify-center w-full h-fit border- py-8">
             <ParagraphFive 
                 uicss="text-center text-3xl"
                 stl={Palette.secondaryColor}    
