@@ -56,7 +56,7 @@ const skills = [
 const Skills = () => {
     return (
             <div 
-                className="h-screen w-10/12 flex flex-col items-center justify-around"
+                className="h-fit w-10/12 flex flex-col items-center justify-center py-8"
                 style={{backgroundColor: Palette.backgroundColor}}
             >    
                 <ParagraphFive 
