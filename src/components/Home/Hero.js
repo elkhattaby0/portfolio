@@ -2,6 +2,8 @@ import Space from "../ui/Space";
 import Image from "../ui/Image";
 import Button from "../ui/Button";
 import Palette from "../Palette";
+import { Typewriter } from 'react-simple-typewriter'
+
 
 const Hero = () => {
     const uicss = {
@@ -14,11 +16,24 @@ const Hero = () => {
                 className="flex flex-col text-center max-md:text-left justify-center w-full"
                 >
                 <h1 className={`font-bold text-6xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
-                    Hi, I'm Lahoucine.
+                     
+                <Typewriter
+                    words={["Hi, I'm Lahoucine."]}
+                />
                 </h1>
                 <Space />
                 <h3 className={`text-3xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
-                    Full Stack Developer | MERN Stack | WordPress | Laravel
+                    {/* Full Stack Developer | MERN Stack | WordPress | Laravel */}
+                    <Typewriter
+                        words={
+                            ["Full Stack Developer", 
+                                "MERN Stack",
+                                "WordPress",
+                                "Laravel"
+                            ]
+                        }
+                        loop="false"
+                    />
                 </h3>
                 <Space />
                 <p className={`text-xl w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>
