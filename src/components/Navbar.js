@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
             <section
-                className={`fixed top-0 z-10 w-full  flex justify-center ${isVisible >10 ? " shadow-md border-b" : ""}`}
+                className={`fixed top-0 z-10 w-full  flex justify-center ${isVisible >10 ? "border-b" : ""}`}
                 style={isVisible ? 
                     { backgroundColor: Palette.backgroundColor } : 
                     {backgroundColor: "none"}
