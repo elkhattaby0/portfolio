@@ -1,6 +1,7 @@
 import Palette from "../Palette"
-import ParagraphFive from "../ui/Paragraph/ParagraphFive"
 import Image from "../ui/Image";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const skills = [
     {
@@ -55,17 +56,18 @@ const skills = [
 
 const Skills = () => {
     return (
-            <div 
+            <section 
                 className="h-screen max-md:h-fit py-8 w-10/12 flex flex-col items-center justify-center"
                 style={{backgroundColor: Palette.backgroundColor}}
             >    
-                <ParagraphFive 
-                    uicss="text-center my-10 text-3xl"
-                    stl={Palette.secondaryColor}
-                >&#8729; Skills  &#8729;</ParagraphFive>
+                <h1 
+                    data-aos="fade-up"
+                    className="font-bold text-center my-10 text-3xl"
+                    style={{color:Palette.secondaryColor}}
+                >&#8729; Skills  &#8729;</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                     {skills.map(({ id, category, skills }) => (
-                    <div class="py-" key={id}>
+                    <div class="py-" key={id}  data-aos="fade-up">
                         <details class="group">
                             <summary class="flex cursor-pointer list-none items-center justify-between font-medium border-b py-4">
                                 <span 
@@ -101,8 +103,9 @@ const Skills = () => {
                     </div>
                     ))}
                 </div>
-            </div>
+            </section>
     )
 }
 
-export default Skills
+export default Skills;
+AOS.init();
