@@ -29,7 +29,7 @@ const ContactForm = () => {
                         >
                         <Phone /></h1>
                         <span className="px-4">
-                            <h1 className="text-md font-bold"
+                            <h1 className="text-xl"
                                 style={{color: Palette.primaryColor}}
                             >Call Me</h1>
                             <p className="text-xl mt-1"
@@ -42,7 +42,7 @@ const ContactForm = () => {
                             style={{color: Palette.HighlightColor}}
                         ><Email /></h1>
                         <span className="px-4">
-                            <h1 className="text-md font-bold"
+                            <h1 className="text-xl"
                                 style={{color: Palette.primaryColor}}
                             >Email</h1>
                             <p className="text-xl mt-1"

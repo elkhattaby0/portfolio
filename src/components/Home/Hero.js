@@ -5,20 +5,19 @@ import Palette from "../Palette";
 
 const Hero = () => {
     const uicss = {
-        "container":"w-full flex justify-between h-[92vh]",
+        "container":"w-10/12 flex justify-between h-screen",
         "para": "self-start",
     }
     return (
-        <section className={uicss.container} style={{backgroundColor: Palette.primaryColor}}>
+        <section className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
             <div 
-                // className="flex flex-col items-start justify-center w-full max-md:w-full"
-                className="flex flex-col text-center justify-center w-full"
+                className="flex flex-col text-center max-md:text-left justify-center w-full"
                 >
                 <h1 className={`font-bold text-6xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     Hi, I'm Lahoucine.
                 </h1>
                 <Space />
-                <h3 className={`text-3xl w-full ${uicss.para}`} style={{color:Palette.accentColor}}>
+                <h3 className={`text-3xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
                     Full Stack Developer | MERN Stack | WordPress | Laravel
                 </h3>
                 <Space />
@@ -27,7 +26,7 @@ const Hero = () => {
                 </p>
                 <Space />
                 <Button 
-                    link="projects" uicss="self-center"
+                    link="projects" uicss="self-center max-md:self-start"
                     stl={Palette.backgroundColor}    
                 >Explore My Work</Button>
             </div>

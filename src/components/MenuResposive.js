@@ -28,7 +28,7 @@ const MenuResposive = () => {
         <section>
             <button 
                 className={style.menu} 
-                style={{color: Palette.primaryColor}}
+                style={{color: Palette.backgroundColor}}
                 onClick={toggleMenu}
             >
                 &#9776;

@@ -69,7 +69,7 @@ const Skills = () => {
                         <details class="group">
                             <summary class="flex cursor-pointer list-none items-center justify-between font-medium border-b py-4">
                                 <span 
-                                    className="w-[200px] font-semibold text-xl text-left"
+                                    className="w-[200px] text-xl w-full text-left"
                                 >{id}. {category}</span>
                                 <span class="transition group-open:rotate-180">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision"
@@ -91,7 +91,7 @@ const Skills = () => {
                                             mix="mix-blend-normal bg-gray-800 rounded-full p-1"
                                         />
                                         <p 
-                                            className="text-[#f8f7f4] ml-4 text-sm"
+                                            className="text-[#f8f7f4] ml-4 text-md"
                                             style={{color:Palette.primaryColor}}
                                             >{p.name}</p>
                                     </div>

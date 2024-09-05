@@ -18,7 +18,6 @@ const Card = (props) => {
                     />
                 <div class="space-y-2">
                     <h3 class="text-xl w-1/2">{props.title}</h3>
-                    {/* <p class="text-sm text-muted-foreground">{props.content}</p> */}
                 </div>
             </div>
         </div>            
