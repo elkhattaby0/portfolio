@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
     const uicss = {
-        "container":"w-10/12 flex justify-between h-screen",
+        "container":"relative top-0 h-screen w-10/12 flex justify-between ",
         "para": "self-start",
     }
     return (

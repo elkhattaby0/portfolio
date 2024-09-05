@@ -9,7 +9,7 @@ const Navbar = () => {
     const location = useLocation();
 
     const uicss = {
-        "fullcontainer": "w-full flex flex-col justify- items-center",
+        "fullcontainer": "font-mono  w-full flex flex-col justify- items-center",
         "container": "w-10/12 flex justify-between items-center",
         "logo": "uppercase py-4",
     };
