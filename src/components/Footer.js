@@ -28,7 +28,7 @@ const Footer = () => {
                 </h1>
                 <br/>
                 <p 
-                    className="text-xl text-center max-md:text-left"
+                    className="text-xl text-center max-md:text-left max-md:ml-2"
                     style={{color:Palette.accentColor}}    
                 >
                     Full Stack Developer specializing in MERN Stack, WordPress, Laravel, and creating high-performance applications.
