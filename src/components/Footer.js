@@ -14,39 +14,39 @@ const Footer = () => {
     }
 
     return (
-        <div 
+        <section 
             className={uicss.fullcontainer}
             style={{backgroundColor: Palette.primaryColor}}    
         >
 
             <div className={uicss.container}>
-                <ParagraphFive 
-                    uicss="uppercase py-4 text-center max-md:text-left"
-                    stl={Palette.HighlightColor}    
+                <h1 
+                    className="font-bold text-center my-10 text-3xl"
+                    style={{color:Palette.backgroundColor}}   
                 >
                     Keep In Touch.
-                </ParagraphFive>
-                <Space />
-                <Text 
-                    uicss="text-sm text-center max-md:text-left"
-                    stl={Palette.accentColor}    
+                </h1>
+                <br/>
+                <p 
+                    className="text-xl text-center max-md:text-left"
+                    style={{color:Palette.accentColor}}    
                 >
                     Full Stack Developer specializing in MERN Stack, WordPress, Laravel, and creating high-performance applications.
-                </Text>
-                <Space />
+                </p>
+                <br />
                 <SocialMedia />
                 
             </div>  
             
             <div className="w-10/12 mx-4">
-                <Text 
-                    uicss="w-full text-white text-sm max-md:text-[3vw] p- text-center max-md:text-left"
-                    stl={Palette.accentColor}    
+                <p 
+                    className="w-full text-white text-md max-md:text-[3vw] p- text-center max-md:text-left"
+                    style={{color:Palette.accentColor}}    
                 >
                 &copy; {new Date().getFullYear()} <i>Lahoucine EL KHATTABY</i>, All rights reserved.
-                </Text>
+                </p>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -1,6 +1,4 @@
-import ParagraphFive from "../ui/Paragraph/ParagraphFive";
 import Space from "../ui/Space";
-import Columns from "../ui/Columns";
 import Card from "../ui/Card";
 import Palette from "../Palette";
 import AOS from 'aos';
@@ -31,20 +29,21 @@ const Data = [
 
 
 const Offer = () => {
-
     const uicss = {
         "containerTwo": "h-screen max-md:h-fit py-8 w-10/12 flex flex-col justify-center",
     }
 
     return (
-        <div 
+        <section 
             className={uicss.containerTwo}
         >
-            <ParagraphFive 
-                uicss="text-center my-10 text-3xl"
-                stl={Palette.secondaryColor}
-            >&#8729; Services &#8729;</ParagraphFive>
-            <Columns nbr={4} uicss="max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
+            <h1 
+                data-aos="fade-up"
+                className="font-bold text-center my-10 text-3xl"
+                style={{color:Palette.secondaryColor}}
+            >&#8729; Services &#8729;</h1>
+            <div  
+                className=" columns-4 max-md:columns-2 max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
                 {
                     Data.map(n=> (
                         <Card 
@@ -55,9 +54,9 @@ const Offer = () => {
                         />
                     ))
                 }
-            </Columns>
+            </div>
             <Space />
-        </div>
+        </section>
     )
 }
 

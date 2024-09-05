@@ -75,14 +75,15 @@ const Testimonial = () => {
     }
 
     return (
-        <div 
+        <section 
             style={{backgroundColor: Palette.primaryColor}}
             className="flex flex-col items-center justify-center w-full h-fit border- py-8">
-            <ParagraphFive 
-                uicss="text-center text-3xl"
-                stl={Palette.backgroundColor}    
-            >&#8729; Client Feedback &#8729;</ParagraphFive>
-            <Space />
+            <h1 
+                data-aos="fade-up"
+                className="font-bold text-center my-10 text-3xl"
+                style={{color:Palette.backgroundColor}}   
+            >&#8729; Client Feedback &#8729;</h1>
+            <br />
             <div className="w-10/12 h-fit">
                 <Slider {...settings}>
                     {Data.map((n, index) => (
@@ -90,7 +91,7 @@ const Testimonial = () => {
                     ))}
                 </Slider>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -6,7 +6,8 @@ const Card = (props) => {
     return (
         <div 
             key={props.title} 
-            className=" w-[24.5%] max-md:w-[48%] flex flex-col justify-between"
+            data-aos="fade-up"
+            className=" w-full flex flex-col justify-between"
             style={{background: Palette.backgroundColor}}
         >
             <div class="relative overflow-hidden rounded-lg border bg-gray-100/50 p-2 my-2">

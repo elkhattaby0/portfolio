@@ -12,40 +12,53 @@ const ContactForm = () => {
     ]
 
     return (
-        <div
+        <section
             className="w-full flex flex-col items-center mb-4 py-4"
         >
-            <ParagraphFive 
-                uicss="text-center my-10 text-3xl"
-                stl={Palette.secondaryColor}
-            >&#8729; Contact Me  &#8729;</ParagraphFive>
+            <h1 
+                data-aos="fade-up"
+                className="font-bold text-center my-10 text-3xl"
+                style={{color:Palette.secondaryColor}}
+            >&#8729; Contact Me  &#8729;</h1>
             <div
                 className="w-10/12 flex max-md:flex-col"
             ><br />
                 <div className="w-1/2 max-md:w-full">
                     <div className="flex">
-                        <h1 className="text-md"
+                        <h1 
+                            data-aos="fade-up"
+                            className="text-md"
                             style={{color: Palette.HighlightColor}}
                         >
                         <Phone /></h1>
                         <span className="px-4">
-                            <h1 className="text-xl"
+                            <h1 
+                                data-aos="fade-up"
+                                className="text-xl"
                                 style={{color: Palette.primaryColor}}
                             >Call Me</h1>
-                            <p className="text-xl mt-1"
+                            <p 
+                                data-aos="fade-up"
+                                className="text-xl mt-1"
                                 style={{color: Palette.secondaryColor}}
                             >+(212) 650 999 953</p>
                         </span>
                     </div>
                     <div className="flex my-4">
-                        <h1 className="text-md"
+                        <h1 
+                            data-aos="fade-up"
+                            className="text-md"
                             style={{color: Palette.HighlightColor}}
                         ><Email /></h1>
                         <span className="px-4">
-                            <h1 className="text-xl"
+                            <h1 
+                                data-aos="fade-up"
+                                className="text-xl"
                                 style={{color: Palette.primaryColor}}
                             >Email</h1>
-                            <p className="text-xl mt-1"
+                            <p 
+                                data-aos="fade-up"
+                                className="text-xl mt-1"
                                 style={{color: Palette.secondaryColor}}
                             >eelkhattaby@gmail.com</p>
                         </span>
@@ -56,6 +69,7 @@ const ContactForm = () => {
                         Input.map(n=> (
                             <input 
                                 key={n.id}
+                                data-aos="fade-up"
                                 type={n.type} 
                                 placeholder={n.placeholder}
                                 className="w-full outline-none my-2 px-4 rounded-md"
@@ -64,18 +78,21 @@ const ContactForm = () => {
                         ))
                     }
                     <textarea
+                        data-aos="fade-up"
                         placeholder="Project description"
                         className="w-full outline-none my-2 px-4 pt-4 rounded-md"
                         style={{backgroundColor:"lightgray", height: "150px", color:Palette.primaryColor}}
                     >
 
                     </textarea>
-                    <div className="w-full max-md:w-full mt-2 flex justiy-start">
+                    <div 
+                        data-aos="fade-up"
+                        className="w-full max-md:w-full mt-2 flex justiy-start">
                         <Button>Send Message</Button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Hero = () => {
     const uicss = {
         "container":"relative top-0 h-screen w-10/12 flex justify-between ",
-        "para": "self-start",
+        "para": "self-center max-md:self-start",
     }
     return (
         <section className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
@@ -22,7 +22,7 @@ const Hero = () => {
                 />
                 </h1>
                 <Space />
-                <h3 className={`text-3xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
+                <h3 className={`text-4xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
                     {/* Full Stack Developer | MERN Stack | WordPress | Laravel */}
                     <Typewriter
                         words={
@@ -36,7 +36,7 @@ const Hero = () => {
                     />
                 </h3>
                 <Space />
-                <p className={`text-xl w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>
+                <p className={`text-xl w-1/2 max-md:w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>
                     I build responsive, user-friendly and applications with a focus on performance and desgin. Let's bring your ideas to life. 
                 </p>
                 <Space />

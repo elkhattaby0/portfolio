@@ -2,14 +2,19 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import MenuResposive from "./MenuResposive";
 import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const [isVisible, setIsVisible] = useState(0);
     const [activePath, setActivePath] = useState('/');
     const location = useLocation();
+    
+    setInterval(()=> {
+        setIsVisible(window.scrollY)
+    })
 
     const uicss = {
-        "fullcontainer": "font-sans w-full flex flex-col justify- items-center",
+        "fullcontainer": "w-full flex flex-col justify- items-center",
         "container": "w-10/12 flex justify-between items-center",
         "logo": "uppercase py-4",
     };
@@ -21,7 +26,7 @@ const Navbar = () => {
     return (
         <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
             <section
-                className="fixed top-0 z-10 w-full border-b flex justify-center"
+                className={`fixed top-0 z-10 w-full  flex justify-center ${isVisible >10 ? "shadow-md border-b" : ""}`}
                 style={{ backgroundColor: Palette.backgroundColor }}
             >
                 <div className={uicss.container}>
@@ -37,7 +42,7 @@ const Navbar = () => {
                         </h1>
                     </div>
                     {/* Desktop */}
-                    <div className="max-md:hidden columns-5">
+                    <div className="max-md:hidden columns-5" >
                         <h3 className={getLinkClass('/')} style={{color:Palette.HighlightColor}}>
                             <Link to='/' onClick={() => setActivePath('/')}>Home</Link>
                         </h3>
