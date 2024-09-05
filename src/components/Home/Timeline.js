@@ -5,15 +5,17 @@ const Timeline = () => {
     return (
         <div class="w-full bg-purple- flex justify-center">
             <div className="w-10/12">
-                <ParagraphFive
-                    uicss="text-3xl text-center my-8"
-                    stl={Palette.secondaryColor}
-                >&#8729; Journey &#8729;</ParagraphFive>
+                <h1 
+                    data-aos="fade-up"
+                    className="font-bold text-center my-10 text-3xl"
+                    style={{color:Palette.secondaryColor}}
+                >&#8729; Journey &#8729;</h1>
 
                 <div class="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
                     {/* Left */}
                     <div class="flex md:contents flex-row-reverse">
                         <div
+                            data-aos="fade-left"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3
@@ -51,6 +53,7 @@ const Timeline = () => {
                                 class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                         </div>
                         <div
+                            data-aos="fade-right"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                             <h3
@@ -67,6 +70,7 @@ const Timeline = () => {
                     {/* Left */}
                     <div class="flex md:contents flex-row-reverse">
                         <div
+                            data-aos="fade-left"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3
@@ -105,6 +109,7 @@ const Timeline = () => {
                                 class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                         </div>
                         <div
+                            data-aos="fade-right"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                             <h3
@@ -118,6 +123,7 @@ const Timeline = () => {
 
                     <div class="flex md:contents flex-row-reverse">
                         <div
+                            data-aos="fade-left"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3
@@ -154,6 +160,7 @@ const Timeline = () => {
                                 class="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"></div>
                         </div>
                         <div
+                            data-aos="fade-right"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                             <h3
@@ -167,6 +174,7 @@ const Timeline = () => {
                     </div>
                     <div class="flex md:contents flex-row-reverse">
                         <div
+                            data-aos="fade-left"
                             style={{ backgroundColor: "lightgray" }}
                             class="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                             <h3
