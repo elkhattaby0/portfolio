@@ -28,7 +28,7 @@ const Hero = () => {
                 <Space />
                 <Button 
                     link="projects" uicss="self-center"
-                    stl={Palette.accentColor}    
+                    stl={Palette.backgroundColor}    
                 >Explore My Work</Button>
             </div>
             
