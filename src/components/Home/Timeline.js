@@ -21,7 +21,7 @@ const Timeline = () => {
                             class="text-lg font-semibold lg:text-xl"
                         >Freelancer</h3>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap"
                         >2024 - Now</span>
                     </div>
@@ -59,7 +59,7 @@ const Timeline = () => {
                             <p class="mt-2 leading-6">Restaurant website</p>
                             <p class="mt-2 leading-6">At Nowotch</p>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap">2024</span>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Timeline = () => {
                         >Full Stack Developer</h3>
                         <p class="mt-2 leading-6">OFPPT</p>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap"
                         >2023 - 2024</span>
                     </div>
@@ -111,7 +111,7 @@ const Timeline = () => {
                             style={{color: Palette.primaryColor}}
                             class="text-lg font-semibold lg:text-xl">Macdonald</h3>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap">2023</span>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ const Timeline = () => {
                             class="text-lg font-semibold lg:text-xl">Full Stack Developer</h3>
                         <p class="mt-2 leading-6">OFPPT</p>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap">2022 - 2023</span>
                     </div>
                     <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
@@ -161,7 +161,7 @@ const Timeline = () => {
                             class="text-lg font-semibold lg:text-xl">Chemistry</h3>
                         <p class="mt-2 leading-6">University</p>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap">2020 - 2022</span>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ const Timeline = () => {
                         >Life and Earth Sciences</h3>
                         <p class="mt-2 leading-6">High School</p>
                         <span 
-                            style={{color: Palette.accentColor}}
+                            style={{color: Palette.primaryColor}}
                             class="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap"
                         >2020</span>
                     </div>
