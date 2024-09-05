@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
             <section
-                className="fixed top-0 z-10 w-full flex justify-center"
+                className="fixed top-0 z-10 w-full border-b flex justify-center"
                 style={{ backgroundColor: Palette.backgroundColor }}
             >
                 <div className={uicss.container}>
