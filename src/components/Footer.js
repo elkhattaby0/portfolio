@@ -1,12 +1,8 @@
 import Palette from "./Palette"
 import SocialMedia from "./SocialMedia"
-import ParagraphFive from "./ui/Paragraph/ParagraphFive"
-import Space from "./ui/Space"
-import Text from "./ui/Text"
 
 
-
-const Footer = () => {
+const Footer = ({currentLang}) => {
     const uicss = {
         "fullcontainer": "w-full h-fit max-md:h-fit flex flex-col justify-between items-center pt-8 pb-4",
         "container": "w-1/2 max-md:w-10/12 mx-4 my-8 mb-20",
@@ -24,15 +20,13 @@ const Footer = () => {
                     className="font-bold text-center my-10 text-3xl"
                     style={{color:Palette.backgroundColor}}   
                 >
-                    Keep In Touch.
+                    {currentLang.footer.headtitle}
                 </h1>
                 <br/>
                 <p 
                     className="text-xl text-center max-md:text-left max-md:ml-2"
                     style={{color:Palette.accentColor}}    
-                >
-                    Full Stack Developer specializing in MERN Stack, WordPress, Laravel, and creating high-performance applications.
-                </p>
+                >{currentLang.footer.text}</p>
                 <br />
                 <SocialMedia />
                 
@@ -43,7 +37,7 @@ const Footer = () => {
                     className="w-full text-white text-md max-md:text-[3vw] p- text-center max-md:text-left"
                     style={{color:Palette.accentColor}}    
                 >
-                &copy; {new Date().getFullYear()} <i>Lahoucine EL KHATTABY</i>, All rights reserved.
+                &copy; {new Date().getFullYear()} <i>{currentLang.footer.copyright.name}</i>, {currentLang.footer.copyright.text}
                 </p>
             </div>
         </section>

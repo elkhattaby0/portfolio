@@ -7,7 +7,7 @@ import Testimonial from "../components/Home/Testimonial";
 import ContactForm from "../components/Contact/ContactForm";
 import BackToTop from "../components/ui/BackToTop";
 
-const Home = () => {
+const Home = ({currentLang}) => {
     const uicss = {
         "fullcontainer": "w-full flex flex-col items-center justify-between",
     }
@@ -15,14 +15,14 @@ const Home = () => {
     return (
         <div className={uicss.fullcontainer}>
 
-            <Hero /> 
+            <Hero currentLang={currentLang.homepage.hero} /> 
             <BackToTop />
-            <Skills />
-            <Timeline />
-            <Offer />
-            <ContactForm />       
-            <Testimonial />            
-            <Footer />
+            <Skills currentLang={currentLang.homepage.skills}  />
+            <Timeline currentLang={currentLang.homepage.journey}  />
+            <Offer currentLang={currentLang.homepage.services} />
+            <ContactForm currentLang={currentLang.homepage.contact} />       
+            <Testimonial currentLang={currentLang.homepage.feedback} />            
+            <Footer currentLang={currentLang} />
 
         </div>
     )

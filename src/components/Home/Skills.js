@@ -3,58 +3,8 @@ import Image from "../ui/Image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const skills = [
-    {
-        id: 1,
-        category: "Frontend Developer",
-        skills: [
-            { name: "HTML", img: "html.png" },
-            { name: "CSS", img: "css.png" },
-            { name: "Bootstrap", img: "bootstrap.png" },
-            { name: "Tailwind", img: "tailwindcss.png" },
-            { name: "ReactJs", img: "reactjs.png" },
-            { name: "JavaScript", img: "js.png" }
-        ]
-    },
-    {
-        id: 2,
-        category: "Backend Developer",
-        skills: [
-            { name: "NodeJs", img: "nodejs.png" },
-            { name: "PHP", img: "php.png" },
-            { name: "Python", img: "python.png" },
-            { name: "Laravel", img: "laravel.png" },
-            { name: "ExpressJs", img: "expressjs.png" }
-        ]
-    },
-    {
-        id: 3,
-        category: "CMS",
-        skills: [
-            { name: "WordPress", img: "wordpress.png" }
-        ]
-    },
-    {
-        id: 4,
-        category: "Database",
-        skills: [
-            { name: "MySQL", img: "mysql.png" },
-            { name: "MongoDB", img: "mongodb.png" }
-        ]
-    },
-    {
-        id: 5,
-        category: "Others",
-        skills: [
-            { name: "UML", img: "uml.png" },
-            { name: "Data Management", img: "datamana.png" },
-            { name: "Agile", img: "agile.png" },
-            { name: "Redux Toolkit", img: "redux.png" }
-        ]
-    }
-];
 
-const Skills = () => {
+const Skills = ({currentLang}) => {
     return (
             <section 
                 className="h-screen max-md:h-fit py-8 w-10/12 flex flex-col items-center justify-center"
@@ -64,25 +14,25 @@ const Skills = () => {
                     data-aos="fade-up"
                     className="font-bold text-center my-10 text-3xl"
                     style={{color:Palette.secondaryColor}}
-                >&#8729; Skills  &#8729;</h1>
+                >&#8729; {currentLang.headtitle}  &#8729;</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-                    {skills.map(({ id, category, skills }) => (
-                    <div class="py-" key={id}  data-aos="fade-up">
+                    {currentLang.content.map(n => (
+                    <div class="py-" key={n.id}  data-aos="fade-up">
                         <details class="group">
                             <summary class="flex cursor-pointer list-none items-center justify-between font-medium border-b py-4">
                                 <span 
                                     className="w-[200px] text-xl w-full text-left"
-                                >{id}. {category}</span>
+                                >{n.id}. {n.category}</span>
                                 <span class="transition group-open:rotate-180">
-                                        <svg fill="none" height="24" shape-rendering="geometricPrecision"
-                                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="1.5" viewBox="0 0 24 24" width="24">
-                                            <path d="M6 9l6 6 6-6"></path>
-                                        </svg>
-                                    </span>
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
                             </summary>
                             <div className="w-full flex flex-wrap p-">
-                                {skills.map((p) => (
+                                {n.skills.map(p => (
                                     <div key={p.name} 
                                         className="flex w-1/2 items-center pl-4 p-3"    
                                     >

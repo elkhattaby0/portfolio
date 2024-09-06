@@ -4,13 +4,7 @@ import Button from "../ui/Button";
 import Phone from "../../assets/svg/Phone"
 import Email from "../../assets/svg/Email";
 
-const ContactForm = () => {
-    const Input = [
-        {"id":1, type:"text", placeholder: "Name", height: "60px"},
-        {"id":2, type:"email", placeholder: "Email", height: "60px"},
-        {"id":3, type:"text", placeholder: "Project", height: "60px"},
-    ]
-
+const ContactForm = ({currentLang}) => {
     return (
         <section
             className="w-full flex flex-col items-center mb-4 py-4"
@@ -19,7 +13,7 @@ const ContactForm = () => {
                 data-aos="fade-up"
                 className="font-bold text-center my-10 text-3xl"
                 style={{color:Palette.secondaryColor}}
-            >&#8729; Contact Me  &#8729;</h1>
+            >&#8729; {currentLang.headtitle}  &#8729;</h1>
             <div
                 className="w-10/12 flex max-md:flex-col"
             ><br />
@@ -36,12 +30,12 @@ const ContactForm = () => {
                                 data-aos="fade-up"
                                 className="text-xl"
                                 style={{color: Palette.primaryColor}}
-                            >Call Me</h1>
+                            >{currentLang.content.info[0].name}</h1>
                             <p 
                                 data-aos="fade-up"
                                 className="text-xl mt-1"
                                 style={{color: Palette.secondaryColor}}
-                            >+(212) 650 999 953</p>
+                            >{currentLang.content.info[0].value}</p>
                         </span>
                     </div>
                     <div className="flex my-4">
@@ -55,18 +49,18 @@ const ContactForm = () => {
                                 data-aos="fade-up"
                                 className="text-xl"
                                 style={{color: Palette.primaryColor}}
-                            >Email</h1>
+                            >{currentLang.content.info[1].name}</h1>
                             <p 
                                 data-aos="fade-up"
                                 className="text-xl mt-1"
                                 style={{color: Palette.secondaryColor}}
-                            >eelkhattaby@gmail.com</p>
+                            >{currentLang.content.info[1].value}</p>
                         </span>
                     </div><br />
                 </div>
                 <div className="w-1/2 max-md:w-full flex flex-col items-center justify-start">
                     {
-                        Input.map(n=> (
+                        currentLang.content.form.input.map(n=> (
                             <input 
                                 key={n.id}
                                 data-aos="fade-up"
@@ -79,16 +73,15 @@ const ContactForm = () => {
                     }
                     <textarea
                         data-aos="fade-up"
-                        placeholder="Project description"
+                        placeholder={currentLang.content.form.textarea.placeholder}
                         className="w-full outline-none my-2 px-4 pt-4 rounded-md"
                         style={{backgroundColor:"lightgray", height: "150px", color:Palette.primaryColor}}
                     >
-
                     </textarea>
                     <div 
                         data-aos="fade-up"
                         className="w-full max-md:w-full mt-2 flex justiy-start">
-                        <Button>Send Message</Button>
+                        <Button>{currentLang.content.form.btn}</Button>
                     </div>
                 </div>
             </div>

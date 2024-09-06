@@ -1,20 +1,10 @@
 import React from 'react';
 import Slider from "react-slick";
 import Image from "../ui/Image";
-import ParagraphFive from "../ui/Paragraph/ParagraphFive";
-import Space from "../ui/Space";
 import Palette from '../Palette';
 
-const Data = [
-    { img: "ribab.jpg", name: "Client 1", msg: "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable." },
-    { img: "ribab.jpg", name: "Client 2", msg: "Lahoucine exceeded our expectations with his innovative solutions and excellent service." },
-    { img: "ribab.jpg", name: "Client 3", msg: "Exceptional work! Lahoucine's attention to detail and professionalism were outstanding." },
-    { img: "ribab.jpg", name: "Client 4", msg: "Lahoucine's creativity and problem-solving skills made our project a success. Highly recommended." },
-    { img: "ribab.jpg", name: "Client 5", msg: "We were impressed by Lahoucine's ability to deliver high-quality work on time. His expertise is unmatched." },
-    { img: "ribab.jpg", name: "Client 6", msg: "Lahoucine's commitment to our project was evident in the results. His skills are top-notch." }
-];
 
-const Testimonial = () => {
+const Testimonial = ({currentLang}) => {
     const settings = {
         dots: false,
         arrows: false,
@@ -82,11 +72,11 @@ const Testimonial = () => {
                 data-aos="fade-up"
                 className="font-bold text-center my-10 text-3xl"
                 style={{color:Palette.backgroundColor}}   
-            >&#8729; Client Feedback &#8729;</h1>
+            >&#8729; {currentLang.headtitle} &#8729;</h1>
             <br />
             <div className="w-10/12 h-fit">
                 <Slider {...settings}>
-                    {Data.map((n, index) => (
+                    {currentLang.content.map((n, index) => (
                         <Card key={index} img={n.img} name={n.name} msg={n.msg} />
                     ))}
                 </Slider>

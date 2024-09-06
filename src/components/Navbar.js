@@ -4,7 +4,7 @@ import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({currentLang, switchLang}) => {
     const [isVisible, setIsVisible] = useState(0);
     const [activePath, setActivePath] = useState('/');
     const location = useLocation();
@@ -46,23 +46,13 @@ const Navbar = () => {
                     </div>
                     {/* Desktop */}
                     <div className="max-md:hidden columns-5" >
-                        <h3 className={getLinkClass('/')} style={{color:Palette.HighlightColor}}>
-                            <Link to='/' onClick={() => setActivePath('/')}>Home</Link>
-                        </h3>
-                        <h3 className={getLinkClass('/projects')} style={{color:Palette.HighlightColor}}>
-                            <Link to='/projects' onClick={() => setActivePath('/projects')}>Projects</Link>
-                        </h3>
-                        <h3 className={getLinkClass('/services')} style={{color:Palette.HighlightColor}}>
-                            <Link to='/services' onClick={() => setActivePath('/services')}>Services</Link>
-                        </h3>
-                        <h3 className={getLinkClass('/contact')} style={{color:Palette.HighlightColor}}>
-                            <Link to='/contact' onClick={() => setActivePath('/contact')}>Contact</Link>
-                        </h3>
-                        <h3 className={getLinkClass('/about')} style={{color:Palette.HighlightColor}}>
-                            <Link to='/about' onClick={() => setActivePath('/about')}>
-                                About
-                            </Link>
-                        </h3>
+                        {
+                            currentLang.map(n=> (
+                                <h3 className={getLinkClass(n.slug)} style={{color:Palette.HighlightColor}}>
+                                    <Link to={n.slug} onClick={() => setActivePath(n.slug)}>{n.title}</Link>
+                                </h3>
+                            ))
+                        }
                     </div>
                     {/* Smartphone */}
                     <div className="hidden max-md:flex rounded" style={{backgroundColor:Palette.HighlightColor}}>
