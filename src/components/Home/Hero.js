@@ -23,7 +23,6 @@ const Hero = () => {
                 </h1>
                 <Space />
                 <h3 className={`text-4xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
-                    {/* Full Stack Developer | MERN Stack | WordPress | Laravel */}
                     <Typewriter
                         words={
                             ["Full Stack Developer", 

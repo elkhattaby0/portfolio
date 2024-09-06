@@ -1,0 +1,142 @@
+[
+    {
+        "navbar": {
+            "1": {"title": "home", "slug": "/"},
+            "2": {"title": "projects", "slug": "/projects"},
+            "3": {"title": "services", "slug": "/services"},
+            "4": {"title": "contact", "slug": "/contact"},
+            "5": {"title": "about", "slug": "/about"}
+        },
+        "homepage": {
+            "hero": {
+                "headtitle": "Hi, I'm Lahoucine.",
+                "specialty": [
+                                "Full Stack Developer", 
+                                "MERN Stack", 
+                                "WordPress", 
+                                "Laravel"
+                            ],
+                "btn": {
+                    "text":"Explore My Work",
+                    "slug": "projects"                
+                }
+            },
+            "skills": {
+                "headtitle": "Skills",
+                "conent": [
+                    {
+                        "id": 1,
+                        "category": "Frontend Developer",
+                        "skills": [
+                            { "name": "HTML", "img": "html.png" },
+                            { "name": "CSS", "img": "css.png" },
+                            { "name": "Bootstrap", "img": "bootstrap.png" },
+                            { "name": "Tailwind", "img": "tailwindcss.png" },
+                            { "name": "ReactJs", "img": "reactjs.png" },
+                            { "name": "JavaScript", "img": "js.png" }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "category": "Backend Developer",
+                        "skills": [
+                            { "name": "NodeJs", "img": "nodejs.png" },
+                            { "name": "PHP", "img": "php.png" },
+                            { "name": "Python", "img": "python.png" },
+                            { "name": "Laravel", "img": "laravel.png" },
+                            { "name": "ExpressJs", "img": "expressjs.png" }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "category": "CMS",
+                        "skills": [
+                            { "name": "WordPress", "img": "wordpress.png" }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "category": "Database",
+                        "skills": [
+                            { "name": "MySQL", "img": "mysql.png" },
+                            { "name": "MongoDB", "img": "mongodb.png" }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "category": "Others",
+                        "skills": [
+                            { "name": "UML", "img": "uml.png" },
+                            { "name": "Data Management", "img": "datamana.png" },
+                            { "name": "Agile", "img": "agile.png" },
+                            { "name": "Redux Toolkit", "img": "redux.png" }
+                        ]
+                    }
+                ]
+            },
+            "journey": {
+                "headtitle": "Journey",
+                "conent": [
+                    {"headtitle":"", "text": "", "date": "2024 - Now"},
+                    {"headtitle":"Internship", "text": "Restaurant website At Nowotch", "date": "2024"},
+                    {"headtitle":"Full Stack Developer", "text": "OFPPT", "date": "2023 - 2024"},
+                    {"headtitle":"Macdonald", "text": "", "date": "2023"},
+                    {"headtitle":"Full Stack Developer", "text": "OFPPT", "date": "2022 - 2023"},
+                    {"headtitle":"Chemistry", "text": "University", "date": "2020 - 2022"},
+                    {"headtitle":"Life and Earth Sciences", "text": "High School", "date": "2020"}
+                ]
+            },
+            "services": {
+                "headtitle": "Services",
+                "conent": [
+                    {"id":1, "text": "Web Developement"},
+                    {"id":2, "text": "Wordpress Developement"},
+                    {"id":3, "text": "API Developement"},
+                    {"id":4, "text": "Consulting Developement"}
+                ]
+            },
+            "contact": {
+                "headtitle": "Contact",
+                "conent": {
+                    "info": [
+                        {"id": 1, "name": "Call Me", "value": "+(212) 650 999 953"},
+                        {"id": 2, "name": "Email", "value": "eelkhattaby@gmail.com"}
+                    ],
+                    "form": {
+                        "input": [
+                            {"id":1, "type":"text", "placeholder": "Name", "height": "60px"},
+                            {"id":2, "type":"email", "placeholder": "Email", "height": "60px"},
+                            {"id":3, "type":"text", "placeholder": "Project", "height": "60px"}
+                        ],
+                        "textarea": {"placeholder": "Project description"},
+                        "btn": "Send Message"
+                    }  
+                }
+                
+            },
+            "feedback": {
+                "headtitle": "Client Feedback",
+                "conent": [
+                    { "img": "ribab.jpg", "name": "Client 1", "msg": "Working with Lahoucine was a game-changer. His expertise and dedication were remarkable." },
+                    { "img": "ribab.jpg", "name": "Client 2", "msg": "Lahoucine exceeded our expectations with his innovative solutions and excellent service." },
+                    { "img": "ribab.jpg", "name": "Client 3", "msg": "Exceptional work! Lahoucine's attention to detail and professionalism were outstanding." },
+                    { "img": "ribab.jpg", "name": "Client 4", "msg": "Lahoucine's creativity and problem-solving skills made our project a success. Highly recommended." },
+                    { "img": "ribab.jpg", "name": "Client 5", "msg": "We were impressed by Lahoucine's ability to deliver high-quality work on time. His expertise is unmatched." },
+                    { "img": "ribab.jpg", "name": "Client 6", "msg": "Lahoucine's commitment to our project was evident in the results. His skills are top-notch." }
+                ]
+            }
+        },
+        "footer": {
+            "headtitle": "Keep In Touch.",
+            "text": "Full Stack Developer specializing in MERN Stack, WordPress, Laravel, and creating high-performance applications.",
+            "copyright": {"name":"Lahoucine EL KHATTABY" , "text":", All rights reserved."}
+        },
+        "socialmedia": [
+            {"name": "Facebook", "img": "facebook.png", "url": ""},
+            {"name": "Instagram", "img": "instagram.png", "url": ""},
+            {"name": "Linkedin", "img": "linkedin.png", "url": ""},
+            {"name": "X", "img": "twitter.png", "url": ""},
+            {"name": "Github", "img": "github.png", "url": ""}
+        ]
+    }
+]
