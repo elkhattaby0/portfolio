@@ -55,7 +55,7 @@ const Navbar = ({currentLang, switchLang}) => {
                         }
                     </div>
                     {/* Smartphone */}
-                    <div className="hidden max-md:flex rounded" style={{backgroundColor:Palette.HighlightColor}}>
+                    <div className="hidden max-md:flex rounded">
                         <MenuResposive />
                     </div>
                 </div>

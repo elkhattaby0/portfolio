@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
 import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
+import Menu from "../assets/svg/Menu";
 
 const MenuResposive = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const MenuResposive = () => {
     };
 
     const style = {
-        menu: "flex items-center justify-center text-3xl font-bold py-2 w-[40px] h-[40px] rounded-md z-0 shadow hover:shadow-md",
+        menu: "flex items-center justify-center text-3xl font-bold py-2 w-[40px] h-[40px] rounded-md z-0 hover:shadow-md rounded",
         content: `fixed inset-0 z-10 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-700 ease-in-out w-full h-screen flex flex-col items-end justify-start`,
         btn: "text-3xl rounded-md w-10 h-10 hover:shadow-md hover:bg-red-500 hover:text-none",
     };
@@ -27,11 +28,10 @@ const MenuResposive = () => {
     return (
         <section>
             <button 
-                className={style.menu} 
-                style={{color: Palette.backgroundColor}}
+                className={style.menu}
                 onClick={toggleMenu}
             >
-                &#9776;
+                <Menu color={Palette.HighlightColor} />
             </button>
             <div 
                 className={style.content} 
