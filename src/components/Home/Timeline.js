@@ -34,9 +34,12 @@ const Timeline = ({currentLang}) => {
                     >
                       {item.title}
                     </h3>
-                    <p 
-                      style={{ color: Palette.HighlightColor }}
-                      className="text-md ml-2 my-2 leading-6">{item.company} | {item.date}</p>
+                    <span 
+                      className="text-md ml-2 my-2 leading-6 flex">
+                        <p style={{ color: Palette.HighlightColor }}>{item.company}</p>
+                        <p style={{ color: Palette.primaryColor }} className="mx-2">|</p>
+                        <p style={{ color: Palette.HighlightColor }}>{item.date}</p>                        
+                    </span>
                     {
                       item.description.map(n=> (
                         <ul
@@ -95,9 +98,12 @@ const Timeline = ({currentLang}) => {
                     >
                       {item.title}
                     </h3>
-                    <p 
-                      style={{color: Palette.HighlightColor}}
-                      className="text-md ml-2 my-2 leading-6 ">{item.company} | {item.date}</p>
+                    <span 
+                      className="text-md ml-2 my-2 leading-6 flex">
+                        <p style={{ color: Palette.HighlightColor }}>{item.company}</p>
+                        <p style={{ color: Palette.primaryColor }} className="mx-2">|</p>
+                        <p style={{ color: Palette.HighlightColor }}>{item.date}</p>                        
+                    </span>
                     {
                       item.description.map(n=> (
                         <ul
