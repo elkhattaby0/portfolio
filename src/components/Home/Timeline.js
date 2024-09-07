@@ -26,7 +26,7 @@ const Timeline = ({currentLang}) => {
                   <div
                     data-aos="fade-up"
                     style={{ backgroundColor: Palette.backgroundColor }}
-                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto border" 
+                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto border shadow" 
                   >
                     <h3
                       style={{ color: Palette.primaryColor }}
@@ -37,7 +37,7 @@ const Timeline = ({currentLang}) => {
                     <span 
                       className="text-md ml-2 my-2 leading-6 flex">
                         <p style={{ color: Palette.HighlightColor }}>{item.company}</p>
-                        <p style={{ color: Palette.primaryColor }} className="mx-2">|</p>
+                        <p style={{ color: Palette.primaryColor }} className="mx-1">|</p>
                         <p style={{ color: Palette.HighlightColor }}>{item.date}</p>                        
                     </span>
                     {
@@ -90,7 +90,7 @@ const Timeline = ({currentLang}) => {
                   <div
                     data-aos="fade-up"
                     style={{ backgroundColor: Palette.backgroundColor }}
-                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto border"
+                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto border shadow"
                   >
                     <h3
                       style={{ color: Palette.primaryColor }}
@@ -101,7 +101,7 @@ const Timeline = ({currentLang}) => {
                     <span 
                       className="text-md ml-2 my-2 leading-6 flex">
                         <p style={{ color: Palette.HighlightColor }}>{item.company}</p>
-                        <p style={{ color: Palette.primaryColor }} className="mx-2">|</p>
+                        <p style={{ color: Palette.primaryColor }} className="mx-1">|</p>
                         <p style={{ color: Palette.HighlightColor }}>{item.date}</p>                        
                     </span>
                     {
