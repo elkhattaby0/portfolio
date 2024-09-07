@@ -78,54 +78,85 @@
             "headtitle": "Journey",
             "content": [
                 {
-                  "title": "Freelancer",
-                  "company": "",
-                  "date": "2024 - Now",
-                  "description": "",
+                  "title": "Full Stack Developer",
+                  "company": "Self-Employed (Freelancer)",
+                  "date": "2024 - Present",
+                  "description": [
+                    "Develop and maintain web applications using technologies such as React, Node.js, and Laravel.",
+                    "Design and implement responsive user interfaces and back-end systems.",
+                    "Work on custom WordPress themes and plugins for various clients.",
+                    "Handle end-to-end project management, from client consultation to deployment.",
+                    "Integrate third-party APIs and services to enhance application functionality.",
+                    "Ensure high performance and scalability of applications through code optimization."
+                  ],
                   "side": "left"
                 },
                 {
-                  "title": "Internship",
-                  "company": "Restaurant website - Nowotch",
+                  "title": "WordPress Developer",
+                  "company": "Internship At Nowotch",
                   "date": "2024",
-                  "description": "",
+                  "description": [
+                    "Developed a restaurant website using WordPress and Elementor.",
+                    "Customized themes and plugins to meet client needs.",
+                    "Enhanced the site's design for user-friendly navigation and responsiveness.",
+                    "Worked on content integration and basic SEO improvements."
+                  ],
                   "side": "right"
                 },
                 {
                   "title": "Full Stack Developer",
                   "company": "OFPPT",
                   "date": "2023 - 2024",
-                  "description": "",
+                  "description": [
+                    "Earned a diploma in Full Stack Development.",
+                    "Gained expertise in MERN stack, UML, Agile methodology, Laravel, API development, Redux Toolkit, data management, and MongoDB.",
+                    "Worked on cloud-native technologies and modern development practices."
+                  ],
                   "side": "left"
                 },
                 {
-                  "title": "Macdonald",
-                  "company": "",
+                  "title": "Polyvalent Employee",
+                  "company": "McDonald's",
                   "date": "2023",
-                  "description": "",
+                  "description": [
+                    "Handled various roles including customer service, food preparation, and cash register operations.",
+                    "Ensured high standards of cleanliness and adherence to food safety regulations.",
+                    "Provided excellent customer service and resolved issues promptly."
+                ],
                   "side": "right"
                 },
                 {
                   "title": "Full Stack Developer",
                   "company": "OFPPT",
                   "date": "2022 - 2023",
-                  "description": "",
+                  "description": [
+                    "Completed coursework in algorithms using Python.",
+                    "Learned front-end technologies including HTML, CSS, JavaScript, Bootstrap, and jQuery.",
+                    "Studied SQL, MySQL, PHP, and Object-Oriented Programming (OOP)."
+                  ],
                   "side": "left"
                 },
                 {
-                  "title": "Chemistry",
-                  "company": "University",
-                  "date": "2020 - 2022",
-                  "description": "",
-                  "side": "right"
-                },
+                    "title": "Chemistry",
+                    "company": "University",
+                    "date": "2020 - 2022",
+                    "description": [
+                      "Completed coursework in fundamental and advanced chemistry topics.",
+                      "Gained practical laboratory experience and conducted experiments.",
+                      "Developed skills in analytical and quantitative techniques."
+                    ],
+                    "side": "right"
+                },                  
                 {
-                  "title": "Life and Earth Sciences",
-                  "company": "High School",
-                  "date": "2020",
-                  "description": "",
-                  "side": "left"
-                }
+                    "title": "Life and Earth Sciences",
+                    "company": "High School",
+                    "date": "2020",
+                    "description": [
+                      "Graduated with a focus on Life and Earth Sciences.",
+                      "Studied core subjects including Mathematics, Physics, and Life and Earth Sciences."
+                    ],
+                    "side": "left"
+                  }                  
               ]
         },
         "services": {

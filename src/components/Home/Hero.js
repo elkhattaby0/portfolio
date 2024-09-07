@@ -15,9 +15,7 @@ const Hero = ({currentLang}) => {
                 className="flex flex-col text-center max-md:text-left justify-center w-full h-full"
                 >
                 <h1 className={`font-bold text-6xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
-                    <Typewriter
-                        words={currentLang.headtitle}
-                    />
+                    {currentLang.headtitle}
                 </h1>
                 <br />
                 <h3 className={`text-4xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>

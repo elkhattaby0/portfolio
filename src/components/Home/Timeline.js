@@ -25,22 +25,29 @@ const Timeline = ({currentLang}) => {
                 <>
                   <div
                     data-aos="fade-up"
-                    style={{ backgroundColor: "lightgray" }}
-                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto"
+                    style={{ backgroundColor: Palette.backgroundColor }}
+                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto border" 
                   >
                     <h3
                       style={{ color: Palette.primaryColor }}
-                      className="text-lg font-semibold lg:text-xl"
+                      className="text-xl font-semibold"
                     >
                       {item.title}
                     </h3>
-                    <p className="mt-2 leading-6">{item.company}</p>
-                    <span
-                      style={{ color: Palette.primaryColor }}
-                      className="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap"
-                    >
-                      {item.date}
-                    </span>
+                    <p 
+                      style={{ color: Palette.HighlightColor }}
+                      className="text-md ml-2 my-2 leading-6">{item.company} | {item.date}</p>
+                    {
+                      item.description.map(n=> (
+                        <ul
+                          style={{ color: Palette.primaryColor }}
+                          className="list-disc flex flex-col text-sm text-indigo-100/75 mx-6 leading-6"
+                        >
+                          <li>{n}</li>
+                        </ul>
+                      ))
+                    }
+                    
                   </div>
                   <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                     <div className="flex items-center justify-center w-6 h-full">
@@ -79,22 +86,28 @@ const Timeline = ({currentLang}) => {
                   </div>
                   <div
                     data-aos="fade-up"
-                    style={{ backgroundColor: "lightgray" }}
-                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto"
+                    style={{ backgroundColor: Palette.backgroundColor }}
+                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto border"
                   >
                     <h3
                       style={{ color: Palette.primaryColor }}
-                      className="text-lg font-semibold lg:text-xl"
+                      className="text-xl font-semibold"
                     >
                       {item.title}
                     </h3>
-                    <p className="mt-2 leading-6">{item.company}</p>
-                    <span
-                      style={{ color: Palette.primaryColor }}
-                      className="absolute text-sm text-indigo-100/75 -top-5 left-2 whitespace-nowrap"
-                    >
-                      {item.date}
-                    </span>
+                    <p 
+                      style={{color: Palette.HighlightColor}}
+                      className="text-md ml-2 my-2 leading-6 ">{item.company} | {item.date}</p>
+                    {
+                      item.description.map(n=> (
+                        <ul
+                          style={{ color: Palette.primaryColor }}
+                          className="list-disc flex flex-col text-sm text-indigo-100/75 mx-6 leading-6"
+                        >
+                          <li>{n}</li>
+                        </ul>
+                      ))
+                    }
                   </div>
                 </>
               )}
