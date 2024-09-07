@@ -3,25 +3,59 @@ import Button from "../ui/Button";
 import Phone from "../../assets/svg/Phone";
 import Email from "../../assets/svg/Email";
 import { useState } from "react";
+import Sucess from "../../assets/svg/Success";
+import Failed from "../../assets/svg/Failed";
 
-const Loading = () => {
+const Loading = (props) => {
+    let content;  
+
+    switch (props.status) {
+        case 'loading':
+            content = (
+                <>
+                    <div className="w-12 h-12 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+                    <p className="text-xl mt-4">Loading...</p>
+                </>
+            );
+            break;
+        case 'success':
+            content = (
+                <>
+                    <span className="w-[30%]">{props.svgg || <Sucess />}</span>
+                    <p className="text-xl mt-4 text-green-500">{props.msg || 'Action completed successfully!'}</p>
+                </>
+            );
+            break;
+        case 'failed':
+            content = (
+                <>
+                    <span className="w-[30%]">{props.svgg || <Failed />}</span>
+                    <p className="text-xl mt-4 text-red-500">{props.msg || 'Action failed. Please try again!'}</p>
+                </>
+            );
+            break;
+        default:
+            content = null;
+    }
+
     return (
         <div
-            style={{backgroundColor: Palette.backgroundColor}}
-            className="fixed top-[30%] z-10 border h-1/2 w-1/2 max-md:w-screen max-md:h-screen max-md-top-[0%] rounded-xl shadow-md"
+            style={{ backgroundColor: props.backgroundColor || "#fff" }}
+            className={`${
+                props.show === 'visible' ? 'block' : 'hidden'
+            } fixed top-20 z-20 border h-1/2 w-1/4 max-md:w-4/5 rounded-xl shadow flex flex-col items-center justify-center`}
         >
-
+            {content}
         </div>
-    )
-}
+    );
+};
+
 
 const ContactForm = ({ currentLang }) => {
     const [data, setData] = useState({})
-    const [captcha, setCaptcha] = useState(null);
+    const [loadingState, setLoadingState] = useState({status: 'loading', msg: '', svg: null, show: 'hidden',});
 
-    const onCaptchaChange = (value) => {
-        setCaptcha(value);
-    };
+    
 
     const getData = (e) => {
         const { name, value } = e.target
@@ -31,6 +65,10 @@ const ContactForm = ({ currentLang }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        setLoadingState({
+            status: 'loading',
+            show: 'visible',
+        });
 
         fetch('https://formspree.io/f/mpwankrw', {
             method: 'POST',
@@ -41,11 +79,26 @@ const ContactForm = ({ currentLang }) => {
             body: JSON.stringify(data),
         }).then(response => {
             if (response.ok) {
-                alert('Message sent successfully!');
+                setLoadingState({
+                        status: 'success',
+                        msg: 'Message sent successfully!',
+                        svg: <Sucess />,
+                        show: 'visible',
+                })
             } else {
-                alert('Failed to send message.');
+                setLoadingState({
+                    status: 'failed',
+                    msg: 'Failed to send message!',
+                    svg: <Failed />,
+                    show: 'visible',
+                });
             }
-        });
+            setTimeout(() => {
+                setLoadingState((prev) => ({ ...prev, show: 'hidden' }));
+            }, 3000);
+        }, 3000);
+        
+
     }
 
     return (
@@ -145,7 +198,13 @@ const ContactForm = ({ currentLang }) => {
                     </div>
                 </form>
             </div>
-            {/* <Loading /> */}
+            <Loading 
+                status={loadingState.status}
+                msg={loadingState.msg}
+                svg={loadingState.svgg}
+                show={loadingState.show}
+            />
+            
         </section>
     )
 }
