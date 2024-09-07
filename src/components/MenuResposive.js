@@ -15,7 +15,7 @@ const MenuResposive = () => {
     };
 
     const style = {
-        menu: "flex items-center justify-center text-3xl font-bold py-2 w-[40px] h-[40px] rounded-md z-0 hover:shadow-md rounded",
+        menu: "flex items-center justify-center text-3xl font-bold py-2 w-[40px] h-[40px] rounded-md z-0 hover:border rounded",
         content: `fixed inset-0 z-10 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-700 ease-in-out w-full h-screen flex flex-col items-end justify-start`,
         btn: "text-3xl rounded-md w-10 h-10 hover:shadow-md hover:bg-red-500 hover:text-none",
     };
