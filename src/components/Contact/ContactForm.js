@@ -66,16 +66,16 @@ const ContactForm = ({currentLang}) => {
                                 data-aos="fade-up"
                                 type={n.type} 
                                 placeholder={n.placeholder}
-                                className="w-full outline-none my-2 px-4 rounded-md"
-                                style={{backgroundColor:"lightgray", height: n.height, color:Palette.primaryColor}}
+                                className="w-full outline-none my-2 px-4 rounded-md border"
+                                style={{backgroundColor:Palette.backgroundColor, height: n.height, color:Palette.primaryColor}}
                             />
                         ))
                     }
                     <textarea
                         data-aos="fade-up"
                         placeholder={currentLang.content.form.textarea.placeholder}
-                        className="w-full outline-none my-2 px-4 pt-4 rounded-md"
-                        style={{backgroundColor:"lightgray", height: "150px", color:Palette.primaryColor}}
+                        className="w-full outline-none my-2 px-4 pt-4 rounded-md border"
+                        style={{backgroundColor:Palette.backgroundColor, height: "150px", color:Palette.primaryColor}}
                     >
                     </textarea>
                     <div 
