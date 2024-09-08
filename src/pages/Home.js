@@ -6,6 +6,7 @@ import Timeline from "../components/Home/Timeline";
 import Testimonial from "../components/Home/Testimonial";
 import ContactForm from "../components/Contact/ContactForm";
 import BackToTop from "../components/ui/BackToTop";
+import AboutMe from "../components/Home/AboutMe";
 
 const Home = ({currentLang}) => {
     const uicss = {
@@ -17,6 +18,7 @@ const Home = ({currentLang}) => {
 
             <Hero currentLang={currentLang.homepage.hero} /> 
             <BackToTop />
+            <AboutMe currentLang={currentLang.homepage.about}/>
             <Skills currentLang={currentLang.homepage.skills}  />
             <Timeline currentLang={currentLang.homepage.journey}  />
             <Offer currentLang={currentLang.homepage.services} />

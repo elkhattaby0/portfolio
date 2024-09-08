@@ -21,6 +21,16 @@
                 "slug": "projects"                
             }
         },
+        "about": {
+            "headtitle": "About Me",
+            "description": "Hi there! I'm Lahoucine El Khattaby, a Full-Stack Developer from Agadir, Morocco. I’m passionate about crafting web applications and am well-versed in the MERN stack, Laravel, and WordPress. I love learning new things on my own and keep up-to-date with the latest technologies. My skills cover everything from frontend (HTML5, CSS3, JavaScript, React.js) to backend development (PHP, MongoDB). Whether it’s creating responsive designs or enhancing UI/UX, I’m excited to bring your ideas to life. Let’s connect and see how we can work together.",
+            "categories": [
+                {"name":"Years experience", "value": "Junior"},
+                {"name":"Completed project", "value": "10+"},
+                {"name":"Companies Worked", "value": "2+"}
+            ]
+        },
+
         "skills": {
             "headtitle": "Skills",
             "content": [
