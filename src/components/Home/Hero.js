@@ -34,7 +34,7 @@ const Hero = ({currentLang}) => {
             >
                 <div 
                     className="relative w-96 h-[70%] max-md:w-60 max-md:mb-2 max-md:h-80 rounded-full overflow-hidden border shadow"
-                    style={{ backgroundImage: `linear-gradient(to top, ${Palette.primaryColor}, ${Palette.HighlightColor})` }}
+                    style={{ background: Palette.HighlightColor }}
                 >
                     <Image
                         url="profile.png"
