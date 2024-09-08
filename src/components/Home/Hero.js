@@ -33,7 +33,7 @@ const Hero = ({currentLang}) => {
                 >{currentLang.btn.text}</Button>
             </div>
             <div
-                className="w-1/2 max-md:w-full h-full flex items-center justify-end max-md:justify-center max-md:items-end"
+                className="w-1/2 max-md:w-full h-fit flex items-center justify-end max-md:justify-center max-md:items-end"
             >
                 <div 
                     className="relative w-96 h-[70%] max-md:w-60 max-md:h-60 rounded-full overflow-hidden border"
