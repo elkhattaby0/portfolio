@@ -23,7 +23,7 @@ const Hero = ({currentLang}) => {
                         loop="false"
                     />
                 </h3>                
-                <p className={`text-xl w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>{currentLang.text}</p>
+                <p className={`text-md w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>{currentLang.text}</p>
                 <Button 
                     link={currentLang.btn.slug} uicss="self-start my-2 shadow"
                     stl={Palette.backgroundColor}    
