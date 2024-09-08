@@ -30,16 +30,16 @@ const Hero = ({currentLang}) => {
                 >{currentLang.btn.text}</Button>
             </div>
             <div
-                className="w-1/2 h-full max-md:w-full h-full flex items-center justify-end max-md:justify-center max-md:items-end "
+                className="w-1/2 h-full max-md:w-full max-md:h-fit flex items-center justify-end max-md:justify-center max-md:items-end"
             >
                 <div 
-                    className="relative w-96 h-[70%] max-md:w-60 max-md:h-[70%] rounded-full overflow-hidden  border"
+                    className="relative w-96 h-[70%] max-md:w-60 max-md:h-60 rounded-full overflow-hidden  border"
                     style={{backgroundColor: Palette.HighlightColor}}
                 >
                     <Image
                         url="profile.png"
                         w="100%"
-                        mix="mix-blend-normal absolute -left-[20px] top-[20px] object-cover -rotate-[9deg]"
+                        mix="mix-blend-normal absolute -left-[20px] max-md:-left-[5px] top-[20px] object-cover -rotate-[9deg]"
                     />
                 </div>
             </div>
