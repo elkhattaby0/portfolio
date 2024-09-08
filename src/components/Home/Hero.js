@@ -6,31 +6,45 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = ({currentLang}) => {
     const uicss = {
-        "container":"h-screen w-10/12 flex justify-between items-center",
-        "para": "self-center max-md:self-start",
+        "container":"h-screen w-10/12 flex max-md:flex-col max-md:flex-col-reverse justify-between items-center",
+        "para": "self-start",
     }
     return (
         <section className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
             <div 
-                className="flex flex-col text-center max-md:text-left justify-center w-full h-full"
-                >
-                <h1 className={`font-bold text-6xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
+                className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-full"
+            >
+                <h1 className={`font-bold text-6xl max-md:text-4xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     {currentLang.headtitle}
                 </h1>
                 <br />
-                <h3 className={`text-4xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
+                <h3 className={`text-4xl max-md:text-2xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
                     <Typewriter
                         words={currentLang.specialty}
                         loop="false"
                     />
                 </h3>
                 <br />
-                <p className={`text-xl w-1/2 max-md:w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>{currentLang.text}</p>
+                <p className={`text-xl w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>{currentLang.text}</p>
                 <br />
                 <Button 
-                    link={currentLang.btn.slug} uicss="self-center max-md:self-start"
+                    link={currentLang.btn.slug} uicss="self-start"
                     stl={Palette.backgroundColor}    
                 >{currentLang.btn.text}</Button>
+            </div>
+            <div
+                className="w-1/2 max-md:w-full h-full flex items-center justify-end max-md:justify-center max-md:items-end"
+            >
+                <div 
+                    className="relative w-96 h-[70%] max-md:w-60 max-md:h-60 rounded-full overflow-hidden border"
+                    style={{backgroundColor: Palette.HighlightColor}}
+                >
+                    <Image
+                        url="profile.png"
+                        w="100%"
+                        mix="mix-blend-normal absolute -left-[20px] top-[20px] object-cover -rotate-[9deg]"
+                    />
+                </div>
             </div>
             
         </section>

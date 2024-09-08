@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
 import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
@@ -8,7 +8,7 @@ import Menu from "../assets/svg/Menu";
 const MenuResposive = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activePath, setActivePath] = useState('/'); 
-    const location = useLocation();
+    // const location = useLocation();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
