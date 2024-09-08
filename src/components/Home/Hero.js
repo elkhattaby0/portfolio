@@ -25,7 +25,7 @@ const Hero = ({currentLang}) => {
                 </h3>                
                 <p className={`text-xl w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>{currentLang.text}</p>
                 <Button 
-                    link={currentLang.btn.slug} uicss="self-start my-2"
+                    link={currentLang.btn.slug} uicss="self-start my-2 shadow"
                     stl={Palette.backgroundColor}    
                 >{currentLang.btn.text}</Button>
             </div>
@@ -33,7 +33,7 @@ const Hero = ({currentLang}) => {
                 className="w-1/2 h-full max-md:w-full max-md:h-fit flex items-center justify-end max-md:justify-center max-md:items-end"
             >
                 <div 
-                    className="relative w-96 h-[70%] max-md:w-60 max-md:mb-2 max-md:h-80 rounded-full overflow-hidden border"
+                    className="relative w-96 h-[70%] max-md:w-60 max-md:mb-2 max-md:h-80 rounded-full overflow-hidden border shadow"
                     style={{backgroundColor: Palette.HighlightColor}}
                 >
                     <Image
