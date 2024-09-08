@@ -40,7 +40,9 @@ const AboutMe = ({currentLang}) => {
                                         style={{color: Palette.primaryColor}}
                                         className="text-center text-2xl"
                                     >{n.value}</p>
-                                    <p style={{color: Palette.secondaryColor}}>{n.name}</p>
+                                    <p 
+                                        className="text-center text-md"
+                                        style={{color: Palette.secondaryColor}}>{n.name}</p>
                                 </span>  
                             ))
                         }                    
