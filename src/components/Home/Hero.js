@@ -14,7 +14,7 @@ const Hero = ({currentLang}) => {
             <div 
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-full max-md:h-fit"
             >
-                <h1 className={`font-bold text-6xl max-md:text-4xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
+                <h1 className={`font-bold text-6xl max-md:text-4xl w-full drop-shadow ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     {currentLang.headtitle}
                 </h1>
                 <h3 className={`text-4xl max-md:text-2xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
