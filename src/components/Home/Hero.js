@@ -14,7 +14,7 @@ const Hero = ({currentLang}) => {
             <div 
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-full max-md:h-fit"
             >
-                <h1 className={`font-bold text-6xl max-md:text-4xl w-full drop-shadow ${uicss.para}`} style={{color:Palette.HighlightColor}}>
+                <h1 className={`font-bold text-6xl max-md:text-4xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     {currentLang.headtitle}
                 </h1>
                 <h3 className={`text-4xl max-md:text-2xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
@@ -34,7 +34,7 @@ const Hero = ({currentLang}) => {
             >
                 <div 
                     className="relative w-96 h-[70%] max-md:w-60 max-md:mb-2 max-md:h-80 rounded-full overflow-hidden border shadow"
-                    style={{backgroundColor: Palette.HighlightColor}}
+                    style={{ backgroundImage: `linear-gradient(to top, ${Palette.primaryColor}, ${Palette.HighlightColor})` }}
                 >
                     <Image
                         url="profile.png"
