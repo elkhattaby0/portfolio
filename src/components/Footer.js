@@ -28,7 +28,7 @@ const Footer = ({currentLang}) => {
                     style={{color:Palette.accentColor}}    
                 >{currentLang.footer.text}</p>
                 <br />
-                <SocialMedia />
+                <SocialMedia currentLang={currentLang} />
                 
             </div>  
             

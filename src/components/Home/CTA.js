@@ -1,6 +1,6 @@
 import Palette from "../Palette";
 
-const CTA = () => {
+const CTA = ({ currentLang }) => {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -16,17 +16,17 @@ const CTA = () => {
             <h1 
                 className="w-full font-semibold text-4xl"
                 style={{color: Palette.backgroundColor}}
-            >Ready to Start a Project ?</h1>
+            >{currentLang.headline}</h1>
             <p
                 className="w-full text-xl my-4"
                 style={{color: Palette.secondaryColor}}
-            >Let's discuss how I can help achieve your goals.</p>
+            >{currentLang.subheadline}</p>
             <div className="w-full">
                 <button
                     onClick={() => scrollToSection('contact')}
                     className="w-[200px] text-xl p-4 rounded  hover:shadow-md"
                     style={{background: Palette.backgroundColor, color: Palette.secondaryColor}}
-                >Contact Me</button>            
+                >{currentLang.button}</button>            
             </div>
             
         </section>

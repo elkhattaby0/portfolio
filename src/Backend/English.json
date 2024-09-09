@@ -87,6 +87,11 @@
                 }
             ]
         },
+        "cta": {
+            "headline": "Ready to Start a Project ?",
+            "subheadline": "Let's discuss how I can help achieve your goals.",
+            "button": "Contact Me"
+        },
         "journey": {
             "headtitle": "Journey",
             "content": [
@@ -218,10 +223,11 @@
         "copyright": {"name":"Lahoucine EL KHATTABY" , "text":"All rights reserved."}
     },
     "socialmedia": [
-        {"name": "Facebook", "img": "facebook.png", "url": "facebook.com/"},
-        {"name": "Instagram", "img": "instagram.png", "url": "instagram.com/"},
-        {"name": "Linkedin", "img": "linkedin.png", "url": "linkedin.com/"},
-        {"name": "X", "img": "twitter.png", "url": "twitter.com/"},
-        {"name": "Github", "img": "github.png", "url": "github.com/"}
+        {"name": "Linkedin", "img": "linkedin.png", "url": "https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
+        {"name": "Github", "img": "github.png", "url": "https://github.com/elkhattaby0"},
+        {"name": "Instagram", "img": "instagram.png", "url": "https://www.instagram.com/lahoucine_elkhattaby?igsh=YzljYTk1ODg3Zg=="},
+        {"name": "Facebook", "img": "facebook.png", "url": "https://www.facebook.com/eelkhattaby"},      
+        {"name": "X", "img": "twitter.png", "url": "https://x.com/e_elkhattaby?t=677LmIyuSW41csKPJIAecw&s=09"}
+        
     ]
 }

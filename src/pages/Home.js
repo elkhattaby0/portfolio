@@ -22,7 +22,7 @@ const Home = ({currentLang}) => {
             <BackToTop />
             <AboutMe currentLang={currentLang.homepage.about}/>
             <Skills currentLang={currentLang.homepage.skills}  />
-            <CTA />
+            <CTA currentLang={currentLang.homepage.cta} />
             <Timeline currentLang={currentLang.homepage.journey}  />
             <Offer currentLang={currentLang.homepage.services} />
             <ContactForm currentLang={currentLang.homepage.contact} />       
