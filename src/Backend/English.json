@@ -1,10 +1,12 @@
 {
     "navbar": [
-        {"title": "home", "slug": "/"},
-        {"title": "projects", "slug": "/projects"},
-        {"title": "services", "slug": "/services"},
-        {"title": "contact", "slug": "/contact"},
-        {"title": "about", "slug": "/about"}
+        {"title": "home", "slug": "home"},
+        {"title": "about", "slug": "about"},
+        {"title": "exp/edu", "slug": "journey"},
+        {"title": "projects", "slug": "projects"},
+        {"title": "services", "slug": "services"},
+        {"title": "contact", "slug": "contact"}
+        
     ],
     "homepage": {
         "hero": {

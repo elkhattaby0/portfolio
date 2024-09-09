@@ -7,6 +7,7 @@ import Testimonial from "../components/Home/Testimonial";
 import ContactForm from "../components/Contact/ContactForm";
 import BackToTop from "../components/ui/BackToTop";
 import AboutMe from "../components/Home/AboutMe";
+import Palette from "../components/Palette";
 
 const Home = ({currentLang}) => {
     const uicss = {
@@ -14,7 +15,7 @@ const Home = ({currentLang}) => {
     }
 
     return (
-        <div className={uicss.fullcontainer}>
+        <div className={uicss.fullcontainer} style={{backgroundColor:Palette.backgroundColor}}>
 
             <Hero currentLang={currentLang.homepage.hero} /> 
             <BackToTop />

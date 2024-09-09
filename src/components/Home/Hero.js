@@ -10,8 +10,8 @@ const Hero = ({currentLang}) => {
         "para": "self-start my-2",
     }
     return (
-        <section className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
-            <div 
+        <section id="home" className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
+            <div                 
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-full max-md:h-fit"
             >
                 <h1 className={`font-bold text-6xl max-md:text-4xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>

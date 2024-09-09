@@ -4,12 +4,6 @@ import English from "./Backend/English.json"
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import About from './pages/About';
-
-
 import { useState } from 'react';
 
 const App = () => {
@@ -17,18 +11,13 @@ const App = () => {
 
     return (
         <BrowserRouter>
+            <Navbar currentLang={lang.navbar} switchLang={setLang} />
             <Routes>
-                <Route path="/" element={<Navbar currentLang={lang.navbar} switchLang={setLang} />}>
-                    <Route index element={<Home currentLang={lang} />} />
-                    <Route path='projects' element={<Projects />} />
-                    <Route path='services' element={<Services />} />
-                    <Route path='contact' element={<Contact />} />
-                    <Route path='about' element={<About />} />
-                    <Route path="*" element={<NoPage />} />
-                </Route>
+                <Route index element={<Home currentLang={lang} />} />
+                <Route path="*" element={<NoPage />} />
             </Routes>
         </BrowserRouter>
-    )
+    );
 }
 
-export default App
+export default App;

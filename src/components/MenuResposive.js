@@ -1,101 +1,72 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import SocialMedia from "./SocialMedia";
-import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
 import Menu from "../assets/svg/Menu";
 
-const MenuResposive = () => {
+const MenuResponsive = ({ currentLang }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [activePath, setActivePath] = useState('/'); 
-    // const location = useLocation();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     const style = {
-        menu: "flex items-center justify-center text-3xl font-bold py-2 w-[40px] h-[40px] rounded-md z-0 hover:border rounded",
-        content: `fixed inset-0 z-10 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-700 ease-in-out w-full h-screen flex flex-col items-end justify-start`,
-        btn: "text-3xl rounded-md w-10 h-10 hover:shadow-md hover:bg-red-500 hover:text-none",
+        menu: "flex items-center justify-center text-3xl font-bold py-2 w-[40px] h-[40px] rounded-md z-10 hover:border rounded",
+        content: `fixed top-0 right-0 z-10 transform ${isOpen ? 'translate-x-0 w-fit' : 'translate-x-full'} transition-transform duration-700 ease-in-out h-screen flex flex-col items-end justify-start shadow-lg`,
+        btn: "text-3xl rounded-md w-10 h-10 border border-red-500 text-red-500 hover:bg-red-500 hover:text-gray-100",
     };
 
-    const getLinkClass = (path) => {
-        return `text-left text-xl font-bold uppercase py-2 px  ${activePath === path ? "border-b-4 border-[#3A86FF]" : ""}`;
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
-
 
     return (
         <section>
             <button 
                 className={style.menu}
                 onClick={toggleMenu}
+                aria-label={isOpen ? "Close menu" : "Open menu"}
             >
                 <Menu color={Palette.HighlightColor} />
             </button>
             <div 
                 className={style.content} 
-                style={{backgroundColor: Palette.primaryColor}}
+                style={{ backgroundColor: Palette.primaryColor }}
             >
-                
                 <div 
-                    className={`h-full flex flex-col items-center justify-between w-10/12 shadow-l-md transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-1000 ease-in-out`}
-                    style={{backgroundColor:Palette.backgroundColor}}
+                    className="h-full flex flex-col items-center justify-between p-4"
+                    style={{ backgroundColor: Palette.backgroundColor }}
                 >
                     <div 
-                        className="border-b w-10/12 flex items-center justify-between"
+                        className="border-b w-full flex items-center justify-center p-2"
                     >
-                        <h1 
-                            className="uppercase py-4"
-                        >
-                            <Link to="/" onClick={toggleMenu}>
-                                <Logo
-                                    logo={Palette.HighlightColor}
-                                    bk="none"
-                                    w="20px"
-                                />
-                            </Link>
-                        </h1>
                         <button 
                             className={style.btn} 
-                            style={{color:Palette.HighlightColor}}
                             onClick={toggleMenu}
+                            aria-label="Close menu"
                         >
                             x
                         </button>
                     </div>
-                    <div className="w-10/12 h-full mt-10">
-                        {['Home', 'Projects', 'Services', 'Contact', 'About'].map((item, index) => {
-                            const path = item === 'Home' ? '/' : `/${item.toLowerCase()}`;
-                            return (
-                                <h3 
-                                    key={index} 
-                                    className={getLinkClass(path)}
-                                    style={{color:Palette.accentColor}}
+                    <div className="w-full h-full mt-10 flex flex-col items-center">
+                        {
+                            currentLang.map(n => (
+                                <button 
+                                    key={n.slug} 
+                                    aria-label="Close menu"
+                                    className="text-center font-bold py-2 px-4 uppercase outline-none mb-2"
+                                    style={{ color: Palette.HighlightColor }}
+                                    onClick={() => {
+                                        scrollToSection(n.slug);
+                                        toggleMenu()
+                                    }}
                                 >
-                                    <Link to={path} onClick={() => {
-                                        toggleMenu();
-                                        setActivePath(path);
-                                    }}>
-                                        {item}
-                                    </Link>
-                                </h3>
-                            );
-                        })}
-                    </div>
-                    <div 
-                        className="w-full flex justify-center"
-                        style={{background: Palette.backgroundColor}}    
-                    >
-                        <div 
-                            className="w-10/12 py-4 flex flex-col justify-center items-center"   
-                        >
-                            <p 
-                                className="text-[#f8f7f4] text-xl text-semibold text-center ml-2"
-                                style={{color:Palette.accentColor}}     
-                            >Follow me</p>
-                            <SocialMedia />
-                        </div>
+                                    {n.title}
+                                </button>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
@@ -103,4 +74,4 @@ const MenuResposive = () => {
     );
 };
 
-export default MenuResposive;
+export default MenuResponsive;

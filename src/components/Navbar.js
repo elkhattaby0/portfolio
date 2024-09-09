@@ -1,66 +1,59 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import MenuResposive from "./MenuResposive";
 import Logo from "../assets/svg/Logo";
 import Palette from "./Palette";
-import { useEffect, useState } from "react";
 
-const Navbar = ({currentLang, switchLang}) => {
+const Navbar = ({ currentLang, switchLang }) => {
     const [isVisible, setIsVisible] = useState(0);
-    const [activePath, setActivePath] = useState('/');
-    const location = useLocation();
-    
-    setInterval(()=> {
-        setIsVisible(window.scrollY)
-    })
 
-    const uicss = {
-        "fullcontainer": "w-full flex flex-col justify- items-center",
-        "container": "w-10/12 flex justify-between items-center",
-        "logo": "uppercase py-4",
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsVisible(window.scrollY);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
-    const getLinkClass = (path) => {
-        return `text-center font-bold uppercase py-2 px  ${activePath === path ? "border-b-4 border-[#3A86FF]" : ""}`;
+    const uicss = {
+        fullcontainer: "w-full flex flex-col justify- items-center",
+        container: "w-10/12 flex justify-between items-center",
+        logo: "uppercase py-4  outline-none",
     };
 
     return (
         <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
-            <section
-                className={`fixed top-0 z-10 w-full  flex justify-center ${isVisible >10 ? "border-b" : ""}`}
-                style={isVisible ? 
-                    { backgroundColor: Palette.backgroundColor } : 
-                    {backgroundColor: "none"}
-                }
-            >
+            <section className={`w-full flex justify-center ${isVisible > 10 ? "fixed top-0 z-10 border-b" : ""}`} style={isVisible ? { backgroundColor: Palette.backgroundColor } : { backgroundColor: "none" }}>
                 <div className={uicss.container}>
                     <div>
-                        <h1 className={uicss.logo}>
-                            <Link to="/">
-                                <Logo
-                                    logo={Palette.HighlightColor}
-                                    bk='none'
-                                    w="20px"
-                                />
-                            </Link>
-                        </h1>
+                        <button className={uicss.logo} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                            <Logo logo={Palette.HighlightColor} bk='none' w="20px" />
+                        </button>
                     </div>
-                    {/* Desktop */}
-                    <div className="max-md:hidden columns-5" >
+                    {/* Desktop Navigation */}
+                    <div className="max-md:hidden columns-6">
                         {
-                            currentLang.map(n=> (
-                                <h3 className={getLinkClass(n.slug)} style={{color:Palette.HighlightColor}}>
-                                    <Link to={n.slug} onClick={() => setActivePath(n.slug)}>{n.title}</Link>
+                            currentLang.map(n => (
+                                <h3  className="text-md" >
+                                    <button key={n.slug} className="text-center font-bold  py-2 px-0 uppercase outline-none" style={{ color: Palette.HighlightColor }} onClick={() => scrollToSection(n.slug)}>{n.title}</button>
                                 </h3>
                             ))
                         }
                     </div>
-                    {/* Smartphone */}
+                    {/* Smartphone Navigation */}
                     <div className="hidden max-md:flex rounded">
-                        <MenuResposive />
+                        <MenuResposive currentLang={currentLang}/>
                     </div>
                 </div>
             </section>
-            <Outlet />
         </div>
     );
 };

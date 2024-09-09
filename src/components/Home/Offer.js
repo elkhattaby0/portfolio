@@ -11,6 +11,7 @@ const Offer = ({currentLang}) => {
 
     return (
         <section 
+            id="services"
             className={uicss.containerTwo}
         >
             <h1 

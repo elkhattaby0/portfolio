@@ -102,7 +102,9 @@ const ContactForm = ({ currentLang }) => {
     }
 
     return (
-        <section className="w-full flex flex-col items-center mb-4 py-4">
+        <section 
+            id="contact"
+            className="w-full flex flex-col items-center mb-4 py-4">
             <h1
                 data-aos="fade-up"
                 className="font-bold text-center my-10 text-3xl"

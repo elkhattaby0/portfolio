@@ -8,9 +8,11 @@ const AboutMe = ({currentLang}) => {
     }
 
     return (
-        <section className={uicss.containerTwo} style={{backgroundColor: Palette.backgroundColor}}>
+        <section 
+            id="about"
+            className={uicss.containerTwo} style={{backgroundColor: Palette.backgroundColor}}>
             <h1 
-                data-aos="fade-up"
+                data-aos="fade-up"                
                 className="font-bold text-left my-10 text-3xl"
                 style={{color:Palette.secondaryColor}}
             >{currentLang.headtitle}</h1>

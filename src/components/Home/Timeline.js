@@ -3,7 +3,7 @@ import Palette from "../Palette";
 
 const Timeline = ({currentLang}) => {
   return (
-    <div className="w-full bg-purple- flex justify-center">
+    <div id="journey" className="w-full bg-purple- flex justify-center">
       <div className="w-10/12">
         <h1
           data-aos="fade-up"
