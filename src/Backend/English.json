@@ -30,7 +30,8 @@
                 {"name":"Years experience", "value": "Junior"},
                 {"name":"Completed project", "value": "10+"},
                 {"name":"Companies Worked", "value": "2+"}
-            ]
+            ],
+            "btn": {"title": "Resume", "link": ""}
         },
 
         "skills": {

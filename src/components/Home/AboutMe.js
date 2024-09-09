@@ -1,5 +1,6 @@
 import Palette from "../Palette";
 import Image from "../ui/Image";
+import Button from "../ui/Button"
 
 const AboutMe = ({currentLang}) => {
 
@@ -17,7 +18,7 @@ const AboutMe = ({currentLang}) => {
                 style={{color:Palette.secondaryColor}}
             >{currentLang.headtitle}</h1>
             <div className="grid gap-2 grid-cols-2 max-md:grid-cols-1">
-                <div 
+                <div data-aos="fade-right"
                     className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden border shadow contrast-100"
                     style={{ background: Palette.secondaryColor }}
                 >
@@ -42,12 +43,21 @@ const AboutMe = ({currentLang}) => {
                                         style={{color: Palette.primaryColor}}
                                         className="text-center text-2xl"
                                     >{n.value}</p>
-                                    <p 
+                                    <p data-aos="fade-up"
                                         className="text-center text-md"
                                         style={{color: Palette.secondaryColor}}>{n.name}</p>
                                 </span>  
                             ))
                         }                    
+                    </div>
+                    <div data-aos="fade-up">
+                    <a 
+                        href="/pdf/resume.pdf" 
+                        download="resume.pdf" 
+                        className="btn-download"
+                    >
+                        <Button>{currentLang.btn.title}</Button>
+                    </a>
                     </div>
                 </div>
             </div>
