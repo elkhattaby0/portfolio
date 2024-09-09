@@ -1,4 +1,5 @@
 {
+    "dir": "ltr",
     "navbar": [
         {"title": "home", "slug": "home"},
         {"title": "about", "slug": "about"},

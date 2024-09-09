@@ -53,18 +53,20 @@ const MenuResponsive = ({ currentLang }) => {
                     <div className="w-full h-full mt-10 flex flex-col items-center">
                         {
                             currentLang.map(n => (
-                                <button 
-                                    key={n.slug} 
-                                    aria-label="Close menu"
-                                    className="text-center font-bold py-2 px-4 uppercase outline-none mb-2"
-                                    style={{ color: Palette.HighlightColor }}
-                                    onClick={() => {
-                                        scrollToSection(n.slug);
-                                        toggleMenu()
-                                    }}
-                                >
-                                    {n.title}
-                                </button>
+                                <h3  className="text-md w-full text-center px-2 m-1 rounded bg-gray-100 hover:bg-gray-300 active:bg-gray-700 border" >
+                                    <button 
+                                        key={n.slug} 
+                                        aria-label="Close menu"
+                                        className="text-center font-bold  py-2 px-0 uppercase outline-none rounded-md"
+                                        style={{ color: Palette.HighlightColor }}
+                                        onClick={() => {
+                                            scrollToSection(n.slug);
+                                            toggleMenu()
+                                        }}
+                                    >
+                                        {n.title}
+                                    </button>
+                                </h3>
                             ))
                         }
                     </div>

@@ -4,7 +4,7 @@ import Hero from "../components/Home/Hero";
 import Offer from "../components/Home/Offer";
 import Timeline from "../components/Home/Timeline";
 import Testimonial from "../components/Home/Testimonial";
-import ContactForm from "../components/Contact/ContactForm";
+import ContactForm from "../components/Home/ContactForm";
 import BackToTop from "../components/ui/BackToTop";
 import AboutMe from "../components/Home/AboutMe";
 import Palette from "../components/Palette";

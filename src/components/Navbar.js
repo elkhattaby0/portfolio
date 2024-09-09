@@ -42,8 +42,8 @@ const Navbar = ({ currentLang, switchLang }) => {
                     <div className="max-md:hidden flex">
                         {
                             currentLang.map(n => (
-                                <h3  className="text-md px-2" >
-                                    <button key={n.slug} className="text-center font-bold  py-2 px-0 uppercase outline-none" style={{ color: Palette.HighlightColor }} onClick={() => scrollToSection(n.slug)}>{n.title}</button>
+                                <h3  className="text-md px-2 m-1 rounded bg-gray-100 hover:bg-gray-300 active:bg-gray-700 border" >
+                                    <button key={n.slug} className="text-center font-bold  py-2 px-0 uppercase outline-none rounded-md" style={{ color: Palette.HighlightColor }} onClick={() => scrollToSection(n.slug)}>{n.title}</button>
                                 </h3>
                             ))
                         }
