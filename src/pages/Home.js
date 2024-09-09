@@ -8,6 +8,7 @@ import ContactForm from "../components/Contact/ContactForm";
 import BackToTop from "../components/ui/BackToTop";
 import AboutMe from "../components/Home/AboutMe";
 import Palette from "../components/Palette";
+import CTA from "../components/Home/CTA";
 
 const Home = ({currentLang}) => {
     const uicss = {
@@ -21,6 +22,7 @@ const Home = ({currentLang}) => {
             <BackToTop />
             <AboutMe currentLang={currentLang.homepage.about}/>
             <Skills currentLang={currentLang.homepage.skills}  />
+            <CTA />
             <Timeline currentLang={currentLang.homepage.journey}  />
             <Offer currentLang={currentLang.homepage.services} />
             <ContactForm currentLang={currentLang.homepage.contact} />       

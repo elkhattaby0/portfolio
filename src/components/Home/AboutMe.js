@@ -52,8 +52,8 @@ const AboutMe = ({currentLang}) => {
                     </div>
                     <div data-aos="fade-up">
                     <a 
-                        href="/pdf/resume.pdf" 
-                        download="resume.pdf" 
+                        href={`/pdf/${currentLang.btn.link}`} 
+                        download={currentLang.btn.link}
                         className="btn-download"
                     >
                         <Button>{currentLang.btn.title}</Button>

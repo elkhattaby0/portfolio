@@ -9,6 +9,13 @@ const Hero = ({currentLang}) => {
         "container":"h-screen w-10/12 flex max-md:flex-col max-md:flex-col-reverse justify-between max-md:justify-center items-center",
         "para": "self-start my-2",
     }
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <section id="home" className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
             <div                 
@@ -24,10 +31,10 @@ const Hero = ({currentLang}) => {
                     />
                 </h3>                
                 <p className={`text-md w-full ${uicss.para}`} style={{color:Palette.secondaryColor}}>{currentLang.text}</p>
-                <Button 
-                    link={currentLang.btn.slug} uicss="self-start my-2 shadow"
+                <p onClick={()=> scrollToSection('contact')}><Button 
+                    uicss="self-start my-2 shadow"
                     stl={Palette.backgroundColor}    
-                >{currentLang.btn.text}</Button>
+                >{currentLang.btn.text}</Button></p>
             </div>
             <div
                 className="w-1/2 h-full max-md:w-full max-md:h-fit flex items-center justify-end max-md:justify-center max-md:items-end"

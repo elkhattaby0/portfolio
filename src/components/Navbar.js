@@ -39,10 +39,10 @@ const Navbar = ({ currentLang, switchLang }) => {
                         </button>
                     </div>
                     {/* Desktop Navigation */}
-                    <div className="max-md:hidden columns-6">
+                    <div className="max-md:hidden flex">
                         {
                             currentLang.map(n => (
-                                <h3  className="text-md" >
+                                <h3  className="text-md px-2" >
                                     <button key={n.slug} className="text-center font-bold  py-2 px-0 uppercase outline-none" style={{ color: Palette.HighlightColor }} onClick={() => scrollToSection(n.slug)}>{n.title}</button>
                                 </h3>
                             ))
