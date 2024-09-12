@@ -44,7 +44,7 @@ const Hero = ({currentLang}) => {
                     style={{ background: Palette.HighlightColor }}
                 >
                     <Image
-                        url="profile.png"
+                        url="webp/profile.webp"
                         w="100%"
                         mix="mix-blend-normal absolute -left-[20px] max-md:-left-[5px] top-[20px] object-cover -rotate-[9deg]"
                     />

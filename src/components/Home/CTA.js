@@ -19,13 +19,13 @@ const CTA = ({ currentLang }) => {
             >{currentLang.headline}</h1>
             <p
                 className="w-full text-xl my-4"
-                style={{color: Palette.secondaryColor}}
+                style={{color: Palette.primaryColor}}
             >{currentLang.subheadline}</p>
             <div className="w-full">
                 <button
                     onClick={() => scrollToSection('contact')}
                     className="w-[200px] text-xl p-4 rounded  hover:shadow-md"
-                    style={{background: Palette.backgroundColor, color: Palette.secondaryColor}}
+                    style={{background: Palette.backgroundColor, color: Palette.primaryColor}}
                 >{currentLang.button}</button>            
             </div>
             

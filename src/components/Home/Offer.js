@@ -20,7 +20,7 @@ const Offer = ({currentLang}) => {
                 style={{color:Palette.secondaryColor}}
             >&#8729; {currentLang.headtitle} &#8729;</h1>
             <div  
-                className=" columns-4 max-md:columns-2 max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
+                className=" columns-4 max-md:columns-1 max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
                 {
                     currentLang.content.map(n=> (
                         <Card 

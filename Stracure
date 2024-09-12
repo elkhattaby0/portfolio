@@ -1,0 +1,38 @@
+//Structure
+
+src
+|
+|__ assets
+|
+|__ server
+|
+|__ components
+|  |
+|  |__home
+|  |  |__ aboutme.js
+|  |  |__ contact.js
+|  |  |__ cta.js
+|  |  |__ hero.js
+|  |  |__ offers.js
+|  |  |__ skills.js
+|  |  |__ testimonial.js
+|  |  |__ timeline.js
+|  |
+|  |__ui
+|  |  |__ backtotop.js
+|  |  |__ button.js
+|  |  |__ card.js
+|  |  |__ image.js
+|  |
+|  |__footer.js
+|  |__menuresponsive.js
+|  |__navbar.js
+|  |__nopage.js
+|  |__palette.js
+|  |__socialmedia.js
+|
+|__ pages
+|  |__ home.js
+|
+|__ app.js
+

@@ -20,12 +20,12 @@ const AboutMe = ({currentLang}) => {
             <div className="grid gap-2 grid-cols-2 max-md:grid-cols-1">
                 <div data-aos="fade-right"
                     className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden border shadow contrast-100"
-                    style={{ background: Palette.secondaryColor }}
+                    style={{ background: Palette.HighlightColor }}
                 >
                     <Image
-                        url="profile.png"
+                        url="webp/profile.webp"
                         w="100%"
-                        mix="mix-blend-normal absolute -left-[20px] max-md:-left-[5px] top-[20px] object-cover -rotate-[9deg] brightness-50	"
+                        mix="mix-blend-normal absolute -left-[20px] max-md:-left-[5px] top-[20px] object-cover -rotate-[9deg] drop-shadow"
                     />
                 </div>
                 <div>
