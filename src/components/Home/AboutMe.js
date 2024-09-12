@@ -15,11 +15,11 @@ const AboutMe = ({currentLang}) => {
             <h1 
                 data-aos="fade-up"                
                 className="font-bold text-left my-10 text-3xl"
-                style={{color:Palette.secondaryColor}}
+                style={{ color:Palette.secondaryColor }}
             >{currentLang.headtitle}</h1>
             <div className="grid gap-2 grid-cols-2 max-md:grid-cols-1">
                 <div data-aos="fade-right"
-                    className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden border shadow contrast-100"
+                    className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden border shadow contrast-100  max-md:hidden"
                     style={{ background: Palette.HighlightColor }}
                 >
                     <Image

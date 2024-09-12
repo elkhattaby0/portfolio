@@ -26,7 +26,7 @@ const Timeline = ({currentLang}) => {
                   <div
                     data-aos="fade-up"
                     style={{ backgroundColor: Palette.backgroundColor }}
-                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto border shadow" 
+                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto border" 
                   >
                     <h3
                       style={{ color: Palette.primaryColor }}
@@ -90,7 +90,7 @@ const Timeline = ({currentLang}) => {
                   <div
                     data-aos="fade-up"
                     style={{ backgroundColor: Palette.backgroundColor }}
-                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto border shadow"
+                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto border"
                   >
                     <h3
                       style={{ color: Palette.primaryColor }}
