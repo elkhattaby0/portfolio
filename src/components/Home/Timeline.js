@@ -43,8 +43,8 @@ const Timeline = ({currentLang}) => {
                     {
                       item.description.map(n=> (
                         <ul
-                          style={{ color: Palette.primaryColor }}
-                          className="list-disc flex flex-col text-sm text-indigo-100/75 mx-6 leading-6"
+                          style={{ color: Palette.secondaryColor }}
+                          className="list-disc flex flex-col text-indigo-100/75 mx-6"
                         >
                           <li>{n}</li>
                         </ul>
@@ -107,8 +107,8 @@ const Timeline = ({currentLang}) => {
                     {
                       item.description.map(n=> (
                         <ul
-                          style={{ color: Palette.primaryColor }}
-                          className="list-disc flex flex-col text-sm text-indigo-100/75 mx-6 leading-6"
+                          style={{ color: Palette.secondaryColor }}
+                          className="list-disc flex flex-col text-indigo-100/75 mx-6"
                         >
                           <li>{n}</li>
                         </ul>

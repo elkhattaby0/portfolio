@@ -14,7 +14,7 @@ const CTA = ({ currentLang }) => {
                 style={{backgroundColor: Palette.HighlightColor}}
             >  
             <h1 
-                className="w-full font-semibold text-4xl"
+                className="w-full font-semibold text-4xl font-bold"
                 style={{color: Palette.backgroundColor}}
             >{currentLang.headline}</h1>
             <p
