@@ -7,10 +7,10 @@ const Timeline = ({currentLang}) => {
       <div className="w-10/12">
         <h1
           data-aos="fade-up"
-          className="font-bold text-center my-10 text-3xl"
-          style={{ color: Palette.secondaryColor }}
+          className="font-bold text-center max-md:text-left w-full my-10 text-3xl"
+          style={{ color: Palette.HighlightColor }}
         >
-          &#8729; {currentLang.headtitle} &#8729;
+          {currentLang.headtitle}
         </h1>
 
         <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
@@ -43,7 +43,7 @@ const Timeline = ({currentLang}) => {
                     {
                       item.description.map(n=> (
                         <ul
-                          style={{ color: Palette.secondaryColor }}
+                          style={{ color: Palette.primaryColor }}
                           className="list-disc flex flex-col text-indigo-100/75 mx-6"
                         >
                           <li>{n}</li>
@@ -107,7 +107,7 @@ const Timeline = ({currentLang}) => {
                     {
                       item.description.map(n=> (
                         <ul
-                          style={{ color: Palette.secondaryColor }}
+                          style={{ color: Palette.primaryColor }}
                           className="list-disc flex flex-col text-indigo-100/75 mx-6"
                         >
                           <li>{n}</li>

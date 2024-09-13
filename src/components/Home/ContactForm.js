@@ -107,10 +107,10 @@ const ContactForm = ({ currentLang }) => {
             className="w-full flex flex-col items-center mb-4 py-4">
             <h1
                 data-aos="fade-up"
-                className="font-bold text-center my-10 text-3xl"
-                style={{ color: Palette.secondaryColor }}
+                className="font-bold text-center max-md:text-left w-10/12 my-10 text-3xl"
+                style={{ color: Palette.HighlightColor }}
             >
-                &#8729; {currentLang.headtitle} &#8729;
+            {currentLang.headtitle}
             </h1>
             <div className="w-10/12 flex max-md:flex-col">
                 <div className="w-1/2 max-md:w-full">
@@ -133,7 +133,7 @@ const ContactForm = ({ currentLang }) => {
                             <p
                                 data-aos="fade-up"
                                 className="text-xl mt-1"
-                                style={{ color: Palette.secondaryColor }}
+                                style={{ color: Palette.primaryColor }}
                             >
                                 {currentLang.content.info[0].value}
                             </p>
@@ -158,7 +158,7 @@ const ContactForm = ({ currentLang }) => {
                             <p
                                 data-aos="fade-up"
                                 className="text-xl mt-1"
-                                style={{ color: Palette.secondaryColor }}
+                                style={{ color: Palette.primaryColor }}
                             >
                                 {currentLang.content.info[1].value}
                             </p>

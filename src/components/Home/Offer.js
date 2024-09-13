@@ -16,9 +16,9 @@ const Offer = ({currentLang}) => {
         >
             <h1 
                 data-aos="fade-up"
-                className="font-bold text-center my-10 text-3xl"
-                style={{color:Palette.secondaryColor}}
-            >&#8729; {currentLang.headtitle} &#8729;</h1>
+                className="font-bold text-center w-full my-10 text-3xl"
+                style={{color:Palette.HighlightColor}}
+            >{currentLang.headtitle}</h1>
             <div  
                 className=" columns-4 max-md:columns-1 max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
                 {

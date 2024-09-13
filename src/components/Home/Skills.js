@@ -12,10 +12,10 @@ const Skills = ({currentLang}) => {
             >    
                 <h1 
                     data-aos="fade-up"
-                    className="font-bold text-center my-10 text-3xl"
-                    style={{color:Palette.secondaryColor}}
-                >&#8729; {currentLang.headtitle}  &#8729;</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                    className="font-bold text-center max-md:text-left w-full my-10 text-3xl"
+                    style={{color:Palette.HighlightColor}}
+                >{currentLang.headtitle}</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
                     {currentLang.content.map(n => (
                     <div class="py-" key={n.id}  data-aos="fade-up">
                         <details class="group">
@@ -44,14 +44,16 @@ const Skills = ({currentLang}) => {
                                     <div key={p.name} 
                                         className="flex w-1/2 items-center pl-4 p-3"    
                                     >
+                                        <span className="rounded-full " style={{background: Palette.primaryColor}}>
                                         <Image
                                             url={p.img}
                                             alt={p.name}
                                             w="25px"
-                                            mix="mix-blend-normal bg-gray-800 rounded-full p-1"
+                                            mix="mix-blend-normal p-1"                                            
                                         />
+                                        </span>
                                         <p 
-                                            className="text-[#f8f7f4] ml-4 text-md"
+                                            className="ml-4"
                                             style={{color:Palette.primaryColor}}
                                             >{p.name}</p>
                                     </div>

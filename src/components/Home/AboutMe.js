@@ -15,7 +15,7 @@ const AboutMe = ({currentLang}) => {
             <h1 
                 data-aos="fade-up"                
                 className="font-bold text-left my-10 text-3xl"
-                style={{ color:Palette.secondaryColor }}
+                style={{ color:Palette.HighlightColor }}
             >{currentLang.headtitle}</h1>
             <div className="grid gap-2 grid-cols-2 max-md:grid-cols-1">
                 <div data-aos="fade-right"
@@ -32,7 +32,7 @@ const AboutMe = ({currentLang}) => {
                     <p
                         data-aos="fade-up"
                         className="text-md"
-                        style={{color: Palette.secondaryColor}}
+                        style={{color: Palette.primaryColor}}
                     >{currentLang.description}</p>
                     
                     <div className="flex mt-4">
