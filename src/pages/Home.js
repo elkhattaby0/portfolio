@@ -16,7 +16,7 @@ const Home = ({currentLang}) => {
     }
 
     return (
-        <div className={uicss.fullcontainer} style={{backgroundColor:Palette.backgroundColor}}>
+        <div className={uicss.fullcontainer} style={{background: Palette.backgroundColor}}>
 
             <Hero currentLang={currentLang.homepage.hero} /> 
             <BackToTop />

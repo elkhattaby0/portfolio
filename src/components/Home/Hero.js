@@ -17,22 +17,22 @@ const Hero = ({currentLang}) => {
     };
 
     return (
-        <section id="home" className={uicss.container} style={{backgroundColor: Palette.backgroundColor}}>
+        <section id="home" className={uicss.container}>
             <div                 
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-full max-md:h-fit"
             >
-                <h1 className={`font-bold text-6xl max-md:text-4xl w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
+                <h1 className={`font-semibold text-6xl max-md:text-4xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
                     {currentLang.headtitle}
                 </h1>
-                <h3 className={`text-4xl max-md:text-2xl w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>
+                <h3 className={`font-semibold text-4xl max-md:text-2xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     <Typewriter
                         words={currentLang.specialty}
                         loop="false"
                     />
                 </h3>                
-                <p className={`text-md w-full ${uicss.para}`} style={{color:Palette.primaryColor}}>{currentLang.text}</p>
+                <p className={`w-full font-normal ${uicss.para}`} style={{color:Palette.primaryColor}}>{currentLang.text}</p>
                 <p onClick={()=> scrollToSection('contact')}><Button 
-                    uicss="self-start my-2 shadow"
+                    uicss="self-start my-2 shadow font-normal"
                     stl={Palette.backgroundColor}    
                 >{currentLang.btn.text}</Button></p>
             </div>
@@ -40,8 +40,9 @@ const Hero = ({currentLang}) => {
                 className="w-1/2 h-full max-md:w-full max-md:h-fit flex items-center justify-end max-md:justify-center max-md:items-end"
             >
                 <div 
-                    className="relative w-96 h-[70%] max-md:w-60 max-md:mb-2 max-md:h-80 rounded-full overflow-hidden border shadow"
+                    className="relative w-96 h-[450px] max-md:w-60 max-md:mb-2 max-md:h-80 rounded-full overflow-hidden"
                     style={{ background: Palette.HighlightColor }}
+                    
                 >
                     <Image
                         url="webp/profile.webp"

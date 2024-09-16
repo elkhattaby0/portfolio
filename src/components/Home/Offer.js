@@ -23,10 +23,12 @@ const Offer = ({currentLang}) => {
                 className=" columns-4 max-md:columns-1 max-md:flex-wrap flex-wrap justify-between items-start  max-md:h-fit">
                 {
                     currentLang.content.map(n=> (
-                        <Card 
-                            key={n.id}
-                            title={n.text}
-                        />
+                        <>
+                            <Card 
+                                key={n.id}
+                                title={n.text}
+                            /><br/>
+                        </>
                     ))
                 }
             </div>

@@ -5,6 +5,7 @@ import Palette from "./Palette";
 
 const Navbar = ({ currentLang, switchLang }) => {
     const [isVisible, setIsVisible] = useState(0);
+    const [activeItem, setActiveItem] = useState(currentLang[0]?.slug || "");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,17 +21,18 @@ const Navbar = ({ currentLang, switchLang }) => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
+            setActiveItem(id); 
         }
     };
 
     const uicss = {
-        fullcontainer: "w-full flex flex-col justify- items-center",
+        fullcontainer: "w-full flex flex-col justify-items-center",
         container: "w-10/12 flex justify-between items-center",
-        logo: "uppercase py-4  outline-none",
+        logo: "uppercase py-4 outline-none",
     };
 
     return (
-        <div className={uicss.fullcontainer} style={{ backgroundColor: Palette.backgroundColor }}>
+        <div className={uicss.fullcontainer}>
             <section className={`w-full flex justify-center ${isVisible > 10 ? "fixed top-0 z-10 border-b" : ""}`} style={isVisible ? { backgroundColor: Palette.backgroundColor } : { backgroundColor: "none" }}>
                 <div className={uicss.container}>
                     <div>
@@ -40,17 +42,25 @@ const Navbar = ({ currentLang, switchLang }) => {
                     </div>
                     {/* Desktop Navigation */}
                     <div className="max-md:hidden flex">
-                        {
-                            currentLang.map(n => (
-                                <h3  className="text-sm px-2 m-1 rounded bg-gray-100 hover:bg-gray-300 active:bg-gray-700 border" >
-                                    <button key={n.slug} className="text-center font-bold  py-2 px-0 uppercase outline-none rounded-md" style={{ color: Palette.HighlightColor }} onClick={() => scrollToSection(n.slug)}>{n.title}</button>
-                                </h3>
-                            ))
-                        }
+                        {currentLang.map(n => (
+                            <h3 key={n.slug} className="text-md px-1 m-1 rounded ">
+                                <button
+                                    className="text-center font-semibold py-2 px-0 capitalize outline-none rounded-md"
+                                    style={{ color: activeItem === n.slug ? Palette.HighlightColor : Palette.primaryColor }}
+                                    onClick={() => scrollToSection(n.slug)}
+                                >
+                                    {n.title}
+                                </button>
+                            </h3>
+                        ))}
                     </div>
+                    <div className="max-md:hidden font-semibld">
+                        <button onClick={() => scrollToSection('contact')}>Hire Me</button>
+                    </div>
+
                     {/* Smartphone Navigation */}
                     <div className="hidden max-md:flex rounded">
-                        <MenuResposive currentLang={currentLang}/>
+                        <MenuResposive currentLang={currentLang} />
                     </div>
                 </div>
             </section>

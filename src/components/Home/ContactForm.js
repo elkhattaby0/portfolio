@@ -117,7 +117,7 @@ const ContactForm = ({ currentLang }) => {
                     <div className="flex">
                         <h1
                             data-aos="fade-up"
-                            className="text-md"
+                            className="text-md font-semibold"
                             style={{ color: Palette.HighlightColor }}
                         >
                             <Phone />
@@ -132,7 +132,7 @@ const ContactForm = ({ currentLang }) => {
                             </h1>
                             <p
                                 data-aos="fade-up"
-                                className="text-xl mt-1"
+                                className="text-xl font-normal mt-1"
                                 style={{ color: Palette.primaryColor }}
                             >
                                 {currentLang.content.info[0].value}
@@ -142,7 +142,7 @@ const ContactForm = ({ currentLang }) => {
                     <div className="flex my-4">
                         <h1
                             data-aos="fade-up"
-                            className="text-md"
+                            className="text-md font-semibold"
                             style={{ color: Palette.HighlightColor }}
                         >
                             <Email />
@@ -157,7 +157,7 @@ const ContactForm = ({ currentLang }) => {
                             </h1>
                             <p
                                 data-aos="fade-up"
-                                className="text-xl mt-1"
+                                className="text-xl font-normal mt-1"
                                 style={{ color: Palette.primaryColor }}
                             >
                                 {currentLang.content.info[1].value}
@@ -196,7 +196,7 @@ const ContactForm = ({ currentLang }) => {
                         data-aos="fade-up"
                         className="w-full max-md:w-full mt-2 flex justify-start"
                     >
-                        <Button type="submit">{currentLang.content.form.btn}</Button>
+                        <Button uicss="font-normal" type="submit">{currentLang.content.form.btn}</Button>
                     </div>
                 </form>
             </div>

@@ -7,9 +7,7 @@ import 'aos/dist/aos.css';
 const Skills = ({currentLang}) => {
     return (
             <section 
-                className="h-screen max-md:h-fit py-8 w-10/12 flex flex-col items-center justify-center"
-                style={{backgroundColor: Palette.backgroundColor}}
-            >    
+                className="h-screen max-md:h-fit py-8 w-10/12 flex flex-col items-center justify-center">    
                 <h1 
                     data-aos="fade-up"
                     className="font-bold text-center max-md:text-left w-full my-10 text-3xl"

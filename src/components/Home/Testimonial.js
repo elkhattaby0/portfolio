@@ -35,17 +35,17 @@ const Testimonial = ({currentLang}) => {
     const Card = (props) => {
         return (
             <div 
-                className="rounded-md flex flex-col justify-between h-[320px] mt-8 w-[98%] max-md:w-full max-md:h-fit border-dashed border p-4"
-                style={{backgroundColor: Palette.primaryColor}}
+                className="rounded-md flex flex-col justify-between h-[320px] mt-8 w-[98%] max-md:w-full max-md:h-fit  p-4"
+                style={{backgroundColor: Palette.secondaryColor}}
             >
                 <div className="p-0 m-0">
                     <p 
                         className="text-9xl opacity-50"
-                        style={{color: Palette.secondaryColor}}
+                        style={{color: Palette.backgroundColor}}
                     >&#10077;</p>
                     <p 
-                        style={{color: Palette.accentColor}}
-                        className="text-2xl font-normal leading-8 relative -top-10"
+                        style={{color: Palette.backgroundColor}}
+                        className="text-xl font-normal leading-8 relative -top-10"
                         
                     >{props.msg}</p>
                 </div>
@@ -56,8 +56,8 @@ const Testimonial = ({currentLang}) => {
                         <Image url={props.img} alt={props.name} mix="rounded-full" />
                     </div>
                     <p 
-                        className="text-sm ml-4 italic"
-                        style={{color: Palette.accentColor}}    
+                        className="text-sm ml-4 italic opacity-50"
+                        style={{color: Palette.backgroundColor}}    
                     >{props.name}</p>
                 </div>
             </div>
@@ -72,7 +72,7 @@ const Testimonial = ({currentLang}) => {
                 data-aos="fade-up"
                 className="font-bold text-center my-10 text-3xl"
                 style={{color:Palette.backgroundColor}}   
-            >&#8729; {currentLang.headtitle} &#8729;</h1>
+            >{currentLang.headtitle}</h1>
             <br />
             <div className="w-10/12 h-fit">
                 <Slider {...settings}>

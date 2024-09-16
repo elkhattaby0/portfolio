@@ -35,7 +35,7 @@ const Timeline = ({currentLang}) => {
                       {item.title}
                     </h3>
                     <span 
-                      className="text-md ml-2 my-2 leading-6 flex">
+                      className="font-medium ml-2 my-2 leading-6 flex">
                         <p style={{ color: Palette.HighlightColor }}>{item.company}</p>
                         <p style={{ color: Palette.primaryColor }} className="mx-1">|</p>
                         <p style={{ color: Palette.HighlightColor }}>{item.date}</p>                        
@@ -44,7 +44,7 @@ const Timeline = ({currentLang}) => {
                       item.description.map(n=> (
                         <ul
                           style={{ color: Palette.primaryColor }}
-                          className="list-disc flex flex-col text-indigo-100/75 mx-6"
+                          className="list-disc flex flex-col font-normal  mx-6 "
                         >
                           <li>{n}</li>
                         </ul>
@@ -99,7 +99,7 @@ const Timeline = ({currentLang}) => {
                       {item.title}
                     </h3>
                     <span 
-                      className="text-md ml-2 my-2 leading-6 flex">
+                      className="font-medium ml-2 my-2 leading-6 flex">
                         <p style={{ color: Palette.HighlightColor }}>{item.company}</p>
                         <p style={{ color: Palette.primaryColor }} className="mx-1">|</p>
                         <p style={{ color: Palette.HighlightColor }}>{item.date}</p>                        
@@ -108,7 +108,7 @@ const Timeline = ({currentLang}) => {
                       item.description.map(n=> (
                         <ul
                           style={{ color: Palette.primaryColor }}
-                          className="list-disc flex flex-col text-indigo-100/75 mx-6"
+                          className="list-disc flex flex-col font-normal mx-6"
                         >
                           <li>{n}</li>
                         </ul>

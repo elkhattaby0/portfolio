@@ -11,7 +11,7 @@ const AboutMe = ({currentLang}) => {
     return (
         <section 
             id="about"
-            className={uicss.containerTwo} style={{backgroundColor: Palette.backgroundColor}}>
+            className={uicss.containerTwo}>
             <h1 
                 data-aos="fade-up"                
                 className="font-bold text-left my-10 text-3xl"
@@ -19,7 +19,7 @@ const AboutMe = ({currentLang}) => {
             >{currentLang.headtitle}</h1>
             <div className="grid gap-2 grid-cols-2 max-md:grid-cols-1">
                 <div data-aos="fade-right"
-                    className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden border shadow contrast-100  max-md:hidden"
+                    className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden shadow contrast-100  max-md:hidden"
                     style={{ background: Palette.HighlightColor }}
                 >
                     <Image
@@ -31,7 +31,7 @@ const AboutMe = ({currentLang}) => {
                 <div>
                     <p
                         data-aos="fade-up"
-                        className="text-md"
+                        className="font-normal"
                         style={{color: Palette.primaryColor}}
                     >{currentLang.description}</p>
                     
@@ -41,10 +41,10 @@ const AboutMe = ({currentLang}) => {
                             <span key={n.name} className="flex flex-col p-4">
                                     <p data-aos="fade-up"
                                         style={{color: Palette.primaryColor}}
-                                        className="text-center text-2xl"
+                                        className="text-center text-2xl font-semibold"
                                     >{n.value}</p>
                                     <p data-aos="fade-up"
-                                        className="text-center text-md"
+                                        className="text-center text-md font-normal"
                                         style={{color: Palette.secondaryColor}}>{n.name}</p>
                                 </span>  
                             ))
@@ -56,7 +56,7 @@ const AboutMe = ({currentLang}) => {
                         download={currentLang.btn.link}
                         className="btn-download"
                     >
-                        <Button>{currentLang.btn.title}</Button>
+                        <Button uicss="font-normal">{currentLang.btn.title}</Button>
                     </a>
                     </div>
                 </div>
