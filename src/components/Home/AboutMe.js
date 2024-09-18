@@ -17,23 +17,13 @@ const AboutMe = ({currentLang}) => {
                 className="font-bold text-left my-10 text-3xl"
                 style={{ color:Palette.HighlightColor }}
             >{currentLang.headtitle}</h1>
-            <div className="grid gap-2 grid-cols-2 max-md:grid-cols-1">
-                <div data-aos="fade-right"
-                    className="relative w-96 h-full max-md:w-60 max-md:mb-2 max-md:h-60 rounded-2xl overflow-hidden shadow contrast-100  max-md:hidden"
-                    style={{ background: Palette.HighlightColor }}
-                >
-                    <Image
-                        url="webp/profile.webp"
-                        w="100%"
-                        mix="mix-blend-normal absolute -left-[20px] max-md:-left-[5px] top-[20px] object-cover -rotate-[9deg] drop-shadow"
-                    />
-                </div>
+            <div className="grid gap-2 grid-cols-1 max-md:grid-cols-1">
                 <div>
                     <p
                         data-aos="fade-up"
                         className="font-normal"
                         style={{color: Palette.primaryColor}}
-                    >{currentLang.description}</p>
+                        dangerouslySetInnerHTML={{ __html: currentLang.description}}/>
                     
                     <div className="flex mt-4">
                         {

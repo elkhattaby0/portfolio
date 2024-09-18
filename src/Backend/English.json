@@ -11,22 +11,22 @@
     ],
     "homepage": {
         "hero": {
-            "headtitle": ["Hi, I'm Lahoucine."],
+            "headtitle": ["Hi,<br/> I'm <strong>EL KHATTABY</strong> Lahoucine."],
             "specialty": [
                             "Full Stack Developer", 
                             "MERN Stack", 
                             "WordPress", 
                             "Laravel"
                         ],
-            "text": "Hello, I'm Lahoucine El Khattaby, a Full-Stack Web Developer passionate about creating innovative web applications. Experienced in WordPress, MERN stack, and Laravel, I love learning and tackling new challenges.",          
+            "text": "",          
             "btn": {
-                "text":"Explore My Work",
-                "slug": "projects"                
+                "text":"Hire Me",
+                "slug": "contact"                
             }
         },
         "about": {
             "headtitle": "About Me",
-            "description": "Hi there! I'm Lahoucine El Khattaby, a Full-Stack Developer from Agadir, Morocco. I’m passionate about crafting web applications and am well-versed in the MERN stack, Laravel, and WordPress. I love learning new things on my own and keep up-to-date with the latest technologies. My skills cover everything from frontend (HTML5, CSS3, JavaScript, React.js) to backend development (PHP, MongoDB). Whether it’s creating responsive designs or enhancing UI/UX, I’m excited to bring your ideas to life. Let’s connect and see how we can work together.",
+            "description": "Hello, my name is Lahoucine EL KHATTABY, and I am a Full Stack Developer.<br/>In frontend development, I specialize in HTML, React.js, and JavaScript. For styling, I use CSS, Bootstrap, jQuery, and Tailwind CSS.<br/>On the backend, I work with Laravel and the MERN stack (MongoDB, Express.js, React.js, and Node.js). I can also integrate Laravel with React.js using REST APIs.<br/>I have experience in WordPress development, working with plugins like Elementor, Code Snippet, WP Rocket, Yoast SEO, and Contact Form 7. Additionally, I can implement headless WordPress with a frontend framework.<br/>I am proficient in project deployment, managing FTP, purchasing domains, hosting, and SSL certificates, and connecting them seamlessly.<br/>In terms of databases, I manage both MySQL and MongoDB, and I deploy projects using Git/GitHub for version control.<br/>Most importantly, I’m always motivated to learn and grow. I’m constantly exploring new technologies and refining my skills to stay ahead.",
             "categories": [
                 {"name":"Years experience", "value": "Junior"},
                 {"name":"Completed project", "value": "10+"},
@@ -223,12 +223,10 @@
         "text": "Full Stack Developer specializing in MERN Stack, WordPress, Laravel, and creating high-performance applications.",
         "copyright": {"name":"Lahoucine EL KHATTABY" , "text":"All rights reserved."}
     },
-    "socialmedia": [
-        {"name": "Linkedin", "img": "linkedin.png", "url": "https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
-        {"name": "Github", "img": "github.png", "url": "https://github.com/elkhattaby0"},
-        {"name": "Instagram", "img": "instagram.png", "url": "https://www.instagram.com/lahoucine_elkhattaby?igsh=YzljYTk1ODg3Zg=="},
-        {"name": "Facebook", "img": "facebook.png", "url": "https://www.facebook.com/eelkhattaby"},      
-        {"name": "X", "img": "twitter.png", "url": "https://x.com/e_elkhattaby?t=677LmIyuSW41csKPJIAecw&s=09"}
-        
-    ]
+    "socialmedia": {
+        "linkedin": {"img": "linkedin.png", "url": "https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
+        "github": {"img": "github.png", "url": "https://github.com/elkhattaby0"},
+        "instagram": {"img": "instagram.png", "url": "https://www.instagram.com/lahoucine_elkhattaby?igsh=YzljYTk1ODg3Zg=="},
+        "facebook": {"img": "facebook.png", "url": "https://www.facebook.com/eelkhattaby"}        
+    }
 }
