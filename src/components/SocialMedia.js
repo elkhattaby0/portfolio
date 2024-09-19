@@ -6,64 +6,54 @@ import Instagram from "../assets/svg/SocialMedia/Instagram";
 
 const SocialMedia = ({currentLang}) => {
     const Social = ({ currentLang }) => {
-        const data = currentLang.socialmedia
+        const data = currentLang.socialmedia;
         return (
             <>
-                <a //Linkedin
+                <a // LinkedIn
                     href={data.linkedin.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center texet-center h-9 w-9 mx-2  rounded-xl hover:shadow-md hover:rounded-full cursor-pointer"
-                    style={{backgroundColor: Palette.accentColor}}
+                    className="flex items-center justify-center h-9 w-9 mx-2 rounded-full hover:shadow-md cursor-pointer"
+                    style={{ backgroundColor: Palette.accentColor }}
                 >
-                        <Linkedin 
-                            color={Palette.primaryColor} 
-                        />
+                    <Linkedin color={Palette.primaryColor} />
                 </a>
-                <a //Github
+                <a // GitHub
                     href={data.github.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center texet-center h-9 w-9 mx-2  rounded-xl hover:shadow-md hover:rounded-full cursor-pointer"
-                    style={{backgroundColor: Palette.accentColor}}
+                    className="flex items-center justify-center h-9 w-9 mx-2 rounded-full hover:shadow-md cursor-pointer"
+                    style={{ backgroundColor: Palette.accentColor }}
                 >
-                        <Github 
-                            color={Palette.primaryColor} 
-                        />
+                    <Github color={Palette.primaryColor} />
                 </a>
-                <a //Instagram
+                <a // Instagram
                     href={data.instagram.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center texet-center h-9 w-9 mx-2  rounded-xl hover:shadow-md hover:rounded-full cursor-pointer"
-                    style={{backgroundColor: Palette.accentColor}}
+                    className="flex items-center justify-center h-9 w-9 mx-2 rounded-full hover:shadow-md cursor-pointer"
+                    style={{ backgroundColor: Palette.accentColor }}
                 >
-                        <Instagram 
-                            color={Palette.primaryColor} 
-                        />
+                    <Instagram color={Palette.primaryColor} />
                 </a>
-                <a //Facebok
+                <a // Facebook
                     href={data.facebook.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center h-9 w-9 mx-2  rounded-xl hover:shadow-md hover:rounded-full cursor-pointer"
-                    style={{backgroundColor: Palette.accentColor}}
+                    className="flex items-center justify-center h-9 w-9 mx-2 rounded-full hover:shadow-md cursor-pointer"
+                    style={{ backgroundColor: Palette.accentColor }}
                 >
-                        <Facebook 
-                            color={Palette.primaryColor} 
-                        />
-                    </a>
+                    <Facebook color={Palette.primaryColor} />
+                </a>
             </>
-        )
-    }
+        );
+    };
 
     return (
-        <div className="flex justify-center max-md:justify-start ">
-            {
+        <div className="flex justify-center items-center space-x-4 w-full">
             <Social currentLang={currentLang} />
-            }                    
         </div>
-    )
-}
+    );
+};
 
 export default SocialMedia;
