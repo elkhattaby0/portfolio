@@ -1,96 +1,44 @@
 import React from "react";
 import Palette from "../Palette";
 
-const Timeline = ({currentLang}) => {
+const Timeline = ({ currentLang }) => {
   return (
-    <div id="journey" className="w-full bg-purple- flex justify-center">
-      <div className="w-10/12">
+    <div id="journey" className="w-full bg-white flex justify-center py-10">
+      <div className="w-11/12 md:w-8/12">
         <h1
+          className="text-3xl text-center font-bold my-5"
           data-aos="fade-up"
-          className="font-bold text-center max-md:text-left w-full my-10 text-3xl"
           style={{ color: Palette.HighlightColor }}
         >
           {currentLang.headtitle}
         </h1>
-
-        <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+        <div className="relative" data-aos="fade-up">
+          {/* Vertical line */}
+          <div 
+            style={{ background: Palette.HighlightColor }}
+            className="absolute w-1 h-full left-1/2 transform -translate-x-1/2"
+          ></div>
+          
           {currentLang.content.map((item, index) => (
             <div
               key={index}
-              className={`flex md:contents ${
-                item.side === "left" ? "flex-row-reverse" : ""
-              }`}
+              className={`my-5 flex ${item.side === 'left' ? 'flex-row-reverse' : 'flex-row'} items-center`}
             >
-              {item.side === "left" && (
-                <>
-                  <div
-                    data-aos="fade-up"
-                    style={{ backgroundColor: Palette.backgroundColor }}
-                    className="relative p-4 my-6 rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto w-[200px]" 
-                  >
-                    <h3
-                      style={{ color: Palette.HighlightColor }}
-                      className="text-xl font-semibold"
-                    >
-                      {item.title}
-                    </h3>
-                        <p className="font-medium my-2 leading-6 flex" style={{ color: Palette.primaryColor }}>{item.date}</p>    
-                        <p style={{ color: Palette.primaryColor }}
-                          className="flex flex-col font-normal ">{item.description}</p>
-                    
-                  </div>
-                  <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                    <div className="flex items-center justify-center w-6 h-full">
-                      <div
-                        style={{ backgroundColor: Palette.HighlightColor }}
-                        className="w-1 h-full rounded-t-full"
-                      ></div>
-                    </div>
-                    <div
-                      style={{
-                        backgroundColor: Palette.backgroundColor,
-                        border: `4px solid ${Palette.HighlightColor}`,
-                      }}
-                      className="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"
-                    ></div>
-                  </div>
-                </>
-              )}
-
-              {item.side === "right" && (
-                <>
-                  <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                    <div className="flex items-center justify-center w-6 h-full">
-                      <div
-                        style={{ backgroundColor: Palette.HighlightColor }}
-                        className="w-1 h-full rounded-t-full"
-                      ></div>
-                    </div>
-                    <div
-                      style={{
-                        backgroundColor: Palette.backgroundColor,
-                        border: `4px solid ${Palette.HighlightColor}`,
-                      }}
-                      className="absolute w-6 h-6 -mt-3 bg-white border-4 border-indigo-400 rounded-full top-1/2"
-                    ></div>
-                  </div>
-                  <div
-                    data-aos="fade-up"
-                    style={{ backgroundColor: Palette.backgroundColor }}
-                    className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto w-[200px]"
-                  >
-                    <h3
-                      style={{ color: Palette.HighlightColor }}
-                      className="text-xl font-semibold"
-                    >
-                      {item.title}
-                    </h3>
-                        <p className="font-medium my-2 leading-6 flex" style={{ color: Palette.primaryColor }}>{item.date}</p>    
-                        <p style={{ color: Palette.primaryColor }}
-                          className="flex flex-col font-normal ">{item.description}</p>
-                  </div>
-                </>
-              )}
+              {/* Content box */}
+              <div
+                className="w-1/2 px-5 py-3 rounded-lg"
+                style={{ backgroundColor: Palette.backgroundColor, color: Palette.primaryColor }}
+              >
+                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <p className="text-sm">{item.date}</p>
+                <p>{item.description}</p>
+              </div>
+              
+              {/* Timeline circle */}
+              <div 
+                className="relative z-2 flex justify-center items-center w-6 h-6 rounded-full -mx-3"
+                style={{ background: Palette.HighlightColor }}
+              ></div>
             </div>
           ))}
         </div>
