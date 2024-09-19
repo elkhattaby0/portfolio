@@ -1,6 +1,6 @@
 //LightPalette
 const Palette = {
-    backgroundColor: "#F7F7F7", //    
+    backgroundColor: "#fff", //    F7F7F7
     primaryColor: "#1C1C1E", // 
     accentColor: "#B0B0B5", // 
     secondaryColor: "#5A5A5C", // 
