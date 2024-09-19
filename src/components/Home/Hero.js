@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = ({currentLang}) => {
     const uicss = {
-        "container":"h-[90vh] max-md:h-fit w-10/12 flex max-md:flex-col max-md:flex-col-reverse justify-between max-md:justify-end items-center max-md:h-screen max-md:pt-4",
+        "container":"h-[90vh] max-md:h-fit w-10/12 flex max-md:flex-col max-md:flex-col-reverse justify-between max-md:justify-end items-center max-md:h-fit max-md:py-8",
         "para": "self-start my-2",
     }
     const scrollToSection = (id) => {
@@ -17,7 +17,7 @@ const Hero = ({currentLang}) => {
     };
 
     return (
-        <div className="w-full flex justify-center" style={{background: `linear-gradient(to bottom, ${Palette.primaryColor} 88%, ${Palette.backgroundColor})`}}>
+        <div className="w-full flex justify-center" style={{background: Palette.primaryColor}}>
         <section id="home" className={uicss.container} >
             <div                 
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-fit max-md:mt-4" 
