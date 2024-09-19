@@ -2,6 +2,7 @@ import Image from "../ui/Image";
 import Button from "../ui/Button";
 import Palette from "../Palette";
 import { Typewriter } from 'react-simple-typewriter'
+import Wave from "../../assets/svg/Wave";
 
 
 const Hero = ({currentLang}) => {
@@ -17,6 +18,7 @@ const Hero = ({currentLang}) => {
     };
 
     return (
+    <>
         <div className="w-full flex justify-center" style={{background: Palette.primaryColor}}>
         <section id="home" className={uicss.container} >
             <div                 
@@ -55,6 +57,10 @@ const Hero = ({currentLang}) => {
             
         </section>
         </div>
+        <div className="w-full">
+            <Wave color={Palette.primaryColor} />
+        </div>        
+    </>
     )
 }
 
