@@ -17,13 +17,13 @@ const Hero = ({currentLang}) => {
     };
 
     return (
-        <div className="w-full flex justify-center" style={{backgroundColor: Palette.primaryColor}}>
+        <div className="w-full flex justify-center" style={{background: `linear-gradient(to bottom, ${Palette.primaryColor} 88%, ${Palette.backgroundColor})`}}>
         <section id="home" className={uicss.container} >
             <div                 
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-fit max-md:mt-4" 
             >
                 <h1 
-                    className={`font-semibold text-4xl max-md:text-xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.backgroundColor}}
+                    className={`font-semibold text-5xl max-md:text-xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.backgroundColor}}
                     dangerouslySetInnerHTML={{ __html: currentLang.headtitle}} />
                 <h3 className={`font-semibold text-4xl max-md:text-2xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     <Typewriter
