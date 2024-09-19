@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = ({currentLang}) => {
     const uicss = {
-        "container":"h-[90vh] max-md:h-fit w-10/12 flex max-md:flex-col max-md:flex-col-reverse justify-between max-md:justify-center items-center max-md:h-screen",
+        "container":"h-[90vh] max-md:h-fit w-10/12 flex max-md:flex-col max-md:flex-col-reverse justify-between max-md:justify-end items-center max-md:h-screen max-md:pt-4",
         "para": "self-start my-2",
     }
     const scrollToSection = (id) => {
