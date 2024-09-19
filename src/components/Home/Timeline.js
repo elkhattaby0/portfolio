@@ -30,7 +30,7 @@ const Timeline = ({ currentLang }) => {
                 style={{ backgroundColor: Palette.backgroundColor, color: Palette.primaryColor }}
               >
                 <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="text-sm">{item.date}</p>
+                <p className="text-sm" style={{color: Palette.HighlightColor}}>{item.date}</p>
                 <p>{item.description}</p>
               </div>
               
