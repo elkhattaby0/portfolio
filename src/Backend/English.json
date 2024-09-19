@@ -3,7 +3,7 @@
     "navbar": [
         {"title": "home", "slug": "home"},
         {"title": "about", "slug": "about"},
-        {"title": "Experience", "slug": "journey"},
+        {"title": "Education", "slug": "journey"},
         {"title": "projects", "slug": "projects"},
         {"title": "services", "slug": "services"},
         {"title": "contact", "slug": "contact"}
@@ -94,46 +94,30 @@
             "button": "Contact Me"
         },
         "journey": {
-            "headtitle": "Experience",
+            "headtitle": "Education",
             "content": [
                 {
-                  "title": "Freelancer",
-                  "company": "Music Production Website, Dolce Production",
-                  "date": "2024",
-                  "description": [
-                    "Purchased hosting, domain, SSL, and Elementor Pro.",
-                    "Created demo landing pages using Canva.",
-                    "Presented these pages to clients and incorporated their feedback.",
-                    "Installed WordPress on the hosting server and began development.",
-                    "Converted images, implemented SEO practices, and checked website performance.",
-                    "Added the website to Google Search Console."
-                  ],
-                  "side": "left"
+                    "title": "Self-Learning",
+                    "date": "2024 - Present",
+                    "description": "",
+                    "side": "left"
                 },
                 {
-                  "title": "Internship",
-                  "company": "Restaurant Website, Nowotch",
-                  "date": "2024",
-                  "description": [],
+                  "title": " Full Stack Developer",
+                  "date": "2022 - 2024",
+                  "description": "Diploma in Full Stack Developer, OFPPT Agadir",
                   "side": "right"
                 },
                 {
-                  "title": "Part time Job",
-                  "company": "McDonald’s, Kitea Agadir ",
-                  "date": "2023",
-                  "description": [
-                    "What I Learned:",
-                    "Teamwork",
-                    "Stress Management",
-                    "Patience"
-                  ],
+                  "title": "Chemistry",
+                  "date": "2020 - 2022",
+                  "description": "Studied Chemistry, University of Sciences Iben Zoher Ait Melloul",
                   "side": "left"
                 },
                 {
-                  "title": "Part time Job",
-                  "company": "Selling Clothes, Inezgane Souk",
-                  "date": "2018",
-                  "description": [],
+                  "title": "High School",
+                  "date": "2020",
+                  "description": "2020: High School Diploma (BAC) in Life and Earth Sciences, Omar El Khayam High School",
                   "side": "right"
                 }               
               ]
