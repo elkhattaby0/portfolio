@@ -25,8 +25,11 @@ const Hero = ({currentLang}) => {
                 className="flex flex-col text-left justify-center w-1/2 max-md:w-full h-fit max-md:mt-4" 
             >
                 <h1 
-                    className={`font-semibold text-5xl max-md:text-3xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.backgroundColor}}
-                    dangerouslySetInnerHTML={{ __html: currentLang.headtitle}} />
+                    className={`font-semibold text-3xl max-md:text-xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.backgroundColor}}
+                    dangerouslySetInnerHTML={{ __html: currentLang.headtitle[0]}} />
+                <h1 
+                    className={`font-bold text-8xl max-md:text-4xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.backgroundColor}}
+                    dangerouslySetInnerHTML={{ __html: currentLang.headtitle[1]}} />
                 <h3 className={`font-semibold text-4xl max-md:text-2xl max-md:text-center w-full ${uicss.para}`} style={{color:Palette.HighlightColor}}>
                     <Typewriter
                         words={currentLang.specialty}
