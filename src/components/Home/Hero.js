@@ -36,9 +36,9 @@ const Hero = ({currentLang}) => {
                         loop="false"
                     />
                 </h3>                
-                <p className={`w-full font-normal ${uicss.para}`} style={{color:Palette.primaryColor}}>{currentLang.text}</p>
+                <p className={`w-full font-medium ${uicss.para}`} style={{color:Palette.primaryColor}}>{currentLang.text}</p>
                 <p className="max-md:text-center" onClick={()=> scrollToSection('contact')}><Button 
-                    uicss="self-start my-2 shadow font-normal"
+                    uicss="self-start my-2 shadow font-medium"
                     stl={Palette.backgroundColor}    
                 >{currentLang.btn.text}</Button></p>
             </div>

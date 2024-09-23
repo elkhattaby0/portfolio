@@ -1,6 +1,6 @@
 const Linkedin = ({ color }) => {
     return (
-        <svg width="25px"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="20px"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -7479.000000)" fill={color}>
                 <g id="icons" transform="translate(56.000000, 160.000000)">

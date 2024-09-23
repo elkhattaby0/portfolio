@@ -21,7 +21,7 @@ const AboutMe = ({currentLang}) => {
                 <div>
                     <p
                         data-aos="fade-up"
-                        className="font-normal"
+                        className="font-medium"
                         style={{color: Palette.primaryColor}}
                         dangerouslySetInnerHTML={{ __html: currentLang.description}}/>
                     
@@ -34,7 +34,7 @@ const AboutMe = ({currentLang}) => {
                                         className="text-center text-2xl font-semibold"
                                     >{n.value}</p>
                                     <p data-aos="fade-up"
-                                        className="text-center text-md font-normal"
+                                        className="text-center text-md font-medium"
                                         style={{color: Palette.secondaryColor}}>{n.name}</p>
                                 </span>  
                             ))
@@ -46,7 +46,7 @@ const AboutMe = ({currentLang}) => {
                         download={currentLang.btn.link}
                         className="btn-download"
                     >
-                        <Button uicss="font-normal">{currentLang.btn.title}</Button>
+                        <Button uicss="font-medium">{currentLang.btn.title}</Button>
                     </a>
                     </div>
                 </div>

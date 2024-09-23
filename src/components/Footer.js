@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia"
 const Footer = ({currentLang}) => {
     const uicss = {
         "fullcontainer": "w-full h-fit max-md:h-fit flex flex-col justify-between items-center pt-8 pb-4",
-        "container": "w-1/2 max-md:w-10/12 mx-4 my-8 mb-20",
+        "container": "w-1/2 max-md:w-10/12 mx-4 my-8 mb-20 flex flex-col items-center",
         "link": "text-gray-400 hover:text-[#f8f7f4] text-center max-md:text-left"
     }
 
@@ -22,12 +22,10 @@ const Footer = ({currentLang}) => {
                 >
                     {currentLang.footer.headtitle}
                 </h1>
-                <br/>
                 <p 
-                    className="text-xl text-center max-md:text-left max-md:ml-2"
+                    className="text-md text-center w-[70%]  max-md:w-full max-md:ml-2 mb-4"
                     style={{color:Palette.accentColor}}    
                 >{currentLang.footer.text}</p>
-                <br />
                 <SocialMedia currentLang={currentLang} />
                 
             </div>  

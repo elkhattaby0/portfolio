@@ -51,7 +51,7 @@ const Skills = ({currentLang}) => {
                                         />
                                         </span>
                                         <p 
-                                            className="ml-4"
+                                            className="ml-4 font-medium"
                                             style={{color:Palette.primaryColor}}
                                             >{p.name}</p>
                                     </div>
