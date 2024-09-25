@@ -1,5 +1,4 @@
 import Palette from "../Palette";
-import Image from "../ui/Image";
 import Button from "../ui/Button"
 
 const AboutMe = ({currentLang}) => {

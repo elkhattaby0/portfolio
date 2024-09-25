@@ -1,5 +1,4 @@
 import Palette from "../Palette"
-import Image from "../ui/Image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -44,6 +43,7 @@ const Skills = ({currentLang}) => {
                                         
                                         <img 
                                             src={require(`../../assets/svg/Skills/${p.img}`)} 
+                                            alt={p.img}
                                             width="29px"
                                         />
                                         <p 

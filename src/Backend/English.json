@@ -167,10 +167,10 @@
         "text": "Full Stack Developer specializing in MERN Stack, WordPress, Laravel, and creating high-performance applications.",
         "copyright": {"name":"Lahoucine EL KHATTABY" , "text":"All rights reserved."}
     },
-    "socialmedia": {
-        "linkedin": {"img": "linkedin.png", "url": "https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
-        "github": {"img": "github.png", "url": "https://github.com/elkhattaby0"},
-        "instagram": {"img": "instagram.png", "url": "https://www.instagram.com/lahoucine_elkhattaby?igsh=YzljYTk1ODg3Zg=="},
-        "facebook": {"img": "facebook.png", "url": "https://www.facebook.com/eelkhattaby"}        
-    }
+    "socialmedia": [
+        {"img": "Linkedin.svg", "url": "https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
+        {"img": "Github.svg", "url": "https://github.com/elkhattaby0"},
+        {"img": "Instagram.svg", "url": "https://www.instagram.com/lahoucine_elkhattaby?igsh=YzljYTk1ODg3Zg=="},
+        {"img": "Facebook.svg", "url": "https://www.facebook.com/eelkhattaby"}        
+    ]
 }
