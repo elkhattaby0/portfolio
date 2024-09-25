@@ -78,8 +78,20 @@
                 },
                 {
                     "id": 5,
+                    "category": "Tools",
+                    "skills": [
+                        { "name": "VSCode", "img": "vscode.svg" },
+                        { "name": "Postman", "img": "postman.svg" },
+                        { "name": "XAMPP", "img": "xampp.svg" },
+                        { "name": "FileZilla", "img": "filezilla.svg" }
+                    ]
+                },
+                {
+                    "id": 6,
                     "category": "Others",
                     "skills": [
+                        { "name": "RESTful API", "img": "api.svg" },
+                        { "name": "Git/GitHub", "img": "git.svg" },
                         { "name": "UML", "img": "uml.svg" },
                         { "name": "Data Management", "img": "datamanagement.svg" },
                         { "name": "Agile", "img": "agile.svg" },
