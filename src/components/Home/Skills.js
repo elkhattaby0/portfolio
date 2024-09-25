@@ -3,7 +3,6 @@ import Image from "../ui/Image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 const Skills = ({currentLang}) => {
     return (
             <section 
@@ -42,14 +41,11 @@ const Skills = ({currentLang}) => {
                                     <div key={p.name} 
                                         className="flex w-1/2 items-center pl-4 p-3"    
                                     >
-                                        <span className="rounded-full " style={{background: Palette.primaryColor}}>
-                                        <Image
-                                            url={p.img}
-                                            alt={p.name}
-                                            w="25px"
-                                            mix="mix-blend-normal p-1"                                            
+                                        
+                                        <img 
+                                            src={require(`../../assets/svg/Skills/${p.img}`)} 
+                                            width="29px"
                                         />
-                                        </span>
                                         <p 
                                             className="ml-4 font-medium"
                                             style={{color:Palette.primaryColor}}

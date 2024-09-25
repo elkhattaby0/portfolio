@@ -42,48 +42,48 @@
                     "id": 1,
                     "category": "Frontend Developer",
                     "skills": [
-                        { "name": "HTML", "img": "html.png" },
-                        { "name": "CSS", "img": "css.png" },
-                        { "name": "Bootstrap", "img": "bootstrap.png" },
-                        { "name": "Tailwind", "img": "tailwindcss.png" },
-                        { "name": "ReactJs", "img": "reactjs.png" },
-                        { "name": "JavaScript", "img": "js.png" }
+                        { "name": "HTML", "img": "html.svg" },
+                        { "name": "CSS", "img": "css.svg" },
+                        { "name": "Bootstrap", "img": "bootstrap.svg" },
+                        { "name": "Tailwind", "img": "tailwind.svg" },
+                        { "name": "ReactJs", "img": "html.svg" },
+                        { "name": "JavaScript", "img": "javascript.svg" }
                     ]
                 },
                 {
                     "id": 2,
                     "category": "Backend Developer",
                     "skills": [
-                        { "name": "NodeJs", "img": "nodejs.png" },
-                        { "name": "PHP", "img": "php.png" },
-                        { "name": "Python", "img": "python.png" },
-                        { "name": "Laravel", "img": "laravel.png" },
-                        { "name": "ExpressJs", "img": "expressjs.png" }
+                        { "name": "NodeJs", "img": "nodejs.svg" },
+                        { "name": "PHP", "img": "php.svg" },
+                        { "name": "Python", "img": "python.svg" },
+                        { "name": "Laravel", "img": "laravel.svg" },
+                        { "name": "ExpressJs", "img": "nodejs.svg" }
                     ]
                 },
                 {
                     "id": 3,
                     "category": "CMS",
                     "skills": [
-                        { "name": "WordPress", "img": "wordpress.png" }
+                        { "name": "WordPress", "img": "wordpress.svg" }
                     ]
                 },
                 {
                     "id": 4,
                     "category": "Database",
                     "skills": [
-                        { "name": "MySQL", "img": "mysql.png" },
-                        { "name": "MongoDB", "img": "mongodb.png" }
+                        { "name": "MySQL", "img": "mysql.svg" },
+                        { "name": "MongoDB", "img": "mongodb.svg" }
                     ]
                 },
                 {
                     "id": 5,
                     "category": "Others",
                     "skills": [
-                        { "name": "UML", "img": "uml.png" },
-                        { "name": "Data Management", "img": "datamana.png" },
-                        { "name": "Agile", "img": "agile.png" },
-                        { "name": "Redux Toolkit", "img": "redux.png" }
+                        { "name": "UML", "img": "uml.svg" },
+                        { "name": "Data Management", "img": "datamanagement.svg" },
+                        { "name": "Agile", "img": "agile.svg" },
+                        { "name": "Redux Toolkit", "img": "redux.svg" }
                     ]
                 }
             ]

@@ -2,7 +2,7 @@ import Palette from "./Palette"
 import SocialMedia from "./SocialMedia"
 
 
-const Footer = ({currentLang}) => {
+const Footer = ({currentLang = {}}) => {
     const uicss = {
         "fullcontainer": "w-full h-fit max-md:h-fit flex flex-col justify-between items-center pt-8 pb-4",
         "container": "w-1/2 max-md:w-10/12 mx-4 my-8 mb-20 flex flex-col items-center",
