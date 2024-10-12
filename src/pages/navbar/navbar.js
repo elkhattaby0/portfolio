@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className='navbar'>
             <a href='/'>
             <h1>
-                <Logo logo="#50D890" bk="none" />
+                <Logo logo="#EFFFFB" bk="none" />
             </h1>
             </a>
             <button className="menu-toggle" onClick={toggleMenu}>

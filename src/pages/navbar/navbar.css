@@ -13,11 +13,11 @@
 .menu-toggle {
     @apply text-3xl;
     cursor: pointer;
-    color: var(--green);
+    color: var(--white);
     
 }
 .menu-toggle:hover {
-    color: var(--white)
+    color: var(--green)
 }
 
 .menu {
@@ -53,9 +53,11 @@
 
 @media (min-width: 768px) {
     .menu {
-        @apply w-3/12 h-full border;
+        @apply w-3/12 h-full;
+        border: 1px ridge var(--white);
         background-color: var(--black);
         color: var(--white);
+        /* box-shadow: 0px 0px 0px 5px var(--blue); */
     }
 
     .menu li {
