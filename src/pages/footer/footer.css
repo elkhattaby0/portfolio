@@ -1,0 +1,25 @@
+.footer {
+    @apply mt-10 pt-3 pb-1 items-center flex flex-col;
+    border-top: 1px ridge var(--green);
+}
+
+.footer div {
+    @apply flex items-center justify-center my-2;
+}
+
+.footer div a {
+    @apply mx-2 cursor-pointer;
+}
+
+.footer p {
+    @apply text-sm;
+}
+
+.socialincon {
+    transition: fill 0.3s ease;
+    fill: var(--green);
+    @apply border;
+}
+.socialincon:hover {
+    fill: var(--blue);
+}

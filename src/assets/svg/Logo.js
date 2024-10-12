@@ -2,7 +2,7 @@
 const Logo = (props) => {
     return (
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width={props.w} viewBox="0 0 161 274" enable-background="new 0 0 161 274">
+            width="20px" viewBox="0 0 161 274" enable-background="new 0 0 161 274">
     <path fill={props.logo} opacity="1.000000" stroke="none" 
         d="
     M162.000000,74.000000 

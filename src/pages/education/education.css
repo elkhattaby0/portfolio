@@ -1,0 +1,32 @@
+.education {
+    @apply h-screen flex flex-col justify-center max-md:h-fit max-md:mt-16;
+    
+}
+
+.education h1 {
+    @apply text-3xl font-bold pb-4;
+    color: var(--green);
+
+}
+
+.education div {
+    @apply  p-4 w-fit;
+}
+
+.education div h3 {
+    @apply text-2xl font-bold pb-2;
+    color: var(--blue);
+}
+
+.education div h4 {
+    @apply text-xl font-bold pr-4 w-fit whitespace-nowrap;
+    /* color: var(--blue); */
+}
+
+.education div p {
+    @apply w-fit;
+}
+
+.education div span {
+    @apply flex max-md:flex-col;
+}

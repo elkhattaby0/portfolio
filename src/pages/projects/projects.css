@@ -1,0 +1,41 @@
+.projects {
+    @apply h-fit flex flex-col justify-center max-md:mt-16;
+    
+}
+
+.projects h1 {
+    @apply text-3xl font-bold pb-4;
+    color: var(--green);
+
+}
+
+.projects .projectCard {
+    @apply my-3;
+    /* background: var(--white); */
+    
+}
+
+.projects .projectCard span {
+    @apply flex justify-between my-2;
+
+}
+
+.projects span h4 {
+    @apply text-xl font-semibold;
+    color: var(--white)
+}
+
+
+.projects span a {
+    @apply text-xl font-bold;
+    color: var(--white)
+}
+
+.projects .projectCard ul {
+    @apply flex text-sm;
+}
+
+.projects .projectCard ul li {
+    @apply mr-1 p-1;
+    background: var(--blue);
+}

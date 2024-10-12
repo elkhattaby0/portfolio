@@ -1,0 +1,13 @@
+.hero {
+    @apply h-[89vh] flex flex-col justify-center  max-md:h-fit;
+}
+
+.hero h1 {
+    @apply text-3xl font-bold pb-4;
+    color: var(--green);
+}
+
+.hero span {
+    @apply text-xl;
+    color: var(--blue);
+}
