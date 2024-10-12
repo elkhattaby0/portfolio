@@ -24,8 +24,6 @@ const Projects = () => {
                         <iframe 
                             src={n.link} 
                             title={n.title}
-                            width="100%"    
-                            height="300px"
                         />   
                         <span>
                             <h4>{n.title}</h4>
