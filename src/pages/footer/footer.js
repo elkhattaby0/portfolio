@@ -20,7 +20,7 @@ const social = [
     },
     {
         "img": WhatsappIcon,
-        "link": "+(212) 6 50 99 99 53"
+        "link": "https://wa.me/212650999953"
     },
 ]
 
