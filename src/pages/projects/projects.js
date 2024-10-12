@@ -2,16 +2,15 @@ import "./projects.css"
 
 const proj = [
     {
-        "title": "Dolce Production",
-        "link": "https://dolceproduction.com/",
-        "tech": ["Wordpress", "Elementor"]
-    },
-    {
         "title": "Atlas Azawan",
         "link": "https://atlasazawan.com/",
         "tech": ["Wordpress", "Elementor"]
     },
-    
+    {
+        "title": "Dolce Production",
+        "link": "https://dolceproduction.com/",
+        "tech": ["Wordpress", "Elementor"]
+    },
 ]
 
 const Projects = () => {
