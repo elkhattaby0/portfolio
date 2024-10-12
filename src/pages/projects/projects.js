@@ -1,21 +1,21 @@
 import "./projects.css"
 
 const proj = [
-    {
-        "title": "Daily Prayer Time",
-        "img": "../../assets/project1.webp",
-        "tech": ["Python", "Flask"]
-    },
-    {
-        "title": "Qneksi Blog",
-        "img": "../../assets/project1.webp",
-        "tech": ["Next js", "Sass"]
-    },
-    {
-        "title": "Opiniometer",
-        "img": "../../assets/project1.webp",
-        "tech": ["React Js", "Python", "Chart Js"]
-    },
+    // {
+    //     "title": "Daily Prayer Time",
+    //     "img": "../../assets/project1.webp",
+    //     "tech": ["Python", "Flask"]
+    // },
+    // {
+    //     "title": "Qneksi Blog",
+    //     "img": "../../assets/project1.webp",
+    //     "tech": ["Next js", "Sass"]
+    // },
+    // {
+    //     "title": "Opiniometer",
+    //     "img": "../../assets/project1.webp",
+    //     "tech": ["React Js", "Python", "Chart Js"]
+    // },
 ]
 
 const Projects = () => {
