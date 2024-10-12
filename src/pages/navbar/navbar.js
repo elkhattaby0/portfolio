@@ -11,9 +11,11 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
+            <a href='/'>
             <h1>
                 <Logo logo="#50D890" bk="none" />
             </h1>
+            </a>
             <button className="menu-toggle" onClick={toggleMenu}>
                 ☰ {/* Hamburger icon */}
             </button>
