@@ -1,5 +1,5 @@
 .hero {
-    @apply h-[89vh] flex flex-col justify-center  max-md:h-fit;
+    @apply h-[89vh] flex flex-col justify-center  max-lg:h-fit;
 }
 
 .hero h1 {
