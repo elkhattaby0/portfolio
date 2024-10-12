@@ -9,6 +9,9 @@
     @apply text-2xl font-semibold;
     color: var(--green);
 }
+.navbar button, .navbar a {
+    outline: none;
+}
 
 .menu-toggle {
     @apply text-3xl;
