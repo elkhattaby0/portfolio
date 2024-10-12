@@ -13,10 +13,11 @@
 .menu-toggle {
     @apply text-3xl;
     cursor: pointer;
+    color: var(--green);
     
 }
 .menu-toggle:hover {
-    color: var(--green)
+    color: var(--white)
 }
 
 .menu {
