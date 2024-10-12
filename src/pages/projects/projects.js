@@ -27,7 +27,10 @@ const Projects = () => {
                         />   
                         <span>
                             <h4>{n.title}</h4>
-                            <a>&#9626;</a>
+                            <a 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href={n.link}>&#9626;</a>
                         </span> 
                         <ul>
                             {n.tech.map(s=> <li>{s}</li>)}
