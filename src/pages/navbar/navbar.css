@@ -1,5 +1,5 @@
 .navbar {
-    @apply flex justify-between items-center w-full py-3 uppercase font-semibold;
+    @apply flex justify-between items-center w-full py-3 mb-14 uppercase font-semibold;
     border-bottom: 1px ridge var(--green);
     cursor: pointer;
     position: relative;
