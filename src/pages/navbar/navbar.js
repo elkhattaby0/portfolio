@@ -17,11 +17,11 @@ const Navbar = () => {
             </h1>
             </a>
             <button className="menu-toggle" onClick={toggleMenu}>
-                ☰ {/* Hamburger icon */}
+                ☰ 
             </button>
             <ul className={`menu ${isOpen ? 'open' : ''}`}>
                 <button className="close-btn" onClick={toggleMenu}>
-                    ✕ {/* Close button */}
+                    ✕
                 </button>
                 <li><a href='#about' onClick={toggleMenu}>About</a></li>
                 <li><a href='#education' onClick={toggleMenu}>Education</a></li>

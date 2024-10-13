@@ -30,7 +30,7 @@
     z-index: 1000;
     width: 250px;
     background: var(--black);
-    @apply flex flex-col items-center justify-center w-8/12;
+    @apply flex flex-col items-center justify-center max-lg:justify-start max-lg:pt-20 w-8/12;
     border: 1px ridge var(--white);
 }
 
