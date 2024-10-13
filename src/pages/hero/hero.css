@@ -13,5 +13,5 @@
 }
 
 .hero p {
-    @apply text-xl indent-[50px];
+    @apply text-xl;
 }
