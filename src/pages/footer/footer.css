@@ -1,10 +1,14 @@
 .footer {
     @apply mt-10 pt-3 pb-1 items-center flex flex-col;
-    border-top: 1px ridge var(--green);
 }
 
 .footer div {
     @apply flex items-center justify-center my-2;
+}
+
+.footer h2 {
+    @apply text-xl font-bold mb-2;
+    color: var(--green);
 }
 
 .footer div a {
@@ -20,7 +24,4 @@
     transition: fill 0.3s ease;
     fill: var(--green);
     @apply border;
-}
-.socialincon:hover {
-    fill: var(--blue);
 }

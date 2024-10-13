@@ -20,13 +20,13 @@ const edu = [
 const Education = () => {
     return (
         <div className="education" id="education">
-            <h1># Education.</h1>
+            <h1>&#10024; Education.</h1>
             {
                 edu.map(n=> (
                     <div>
                         <h3>{n.title}.</h3>
                         <span>
-                            <h4># {n.time}</h4>
+                            <h4>&#9889; {n.time}</h4>
                             <p>{n.desc}.</p>
                         </span>
                         

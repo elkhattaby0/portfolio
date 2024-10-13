@@ -27,6 +27,7 @@ const social = [
 const Footer = () => {
     return (
         <div className="footer" id="contact">
+            <h2>Keep In Touch.</h2>
             <div>
             {
                 social.map(n=> (                    

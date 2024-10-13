@@ -10,7 +10,7 @@
 }
 
 .education div {
-    @apply  p-4 w-fit;
+    @apply   w-fit pb-4;
 }
 
 .education div h3 {

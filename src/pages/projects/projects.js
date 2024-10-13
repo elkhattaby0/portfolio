@@ -28,7 +28,7 @@ const Projects = () => {
 
     return (
         <div className="projects" id="projects">
-            <h1># Projects.</h1>
+            <h1>&#10024; Projects.</h1>
 
             <div className="tabs">
                 {categories.map((category, index) => (

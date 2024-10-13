@@ -11,3 +11,7 @@
     @apply text-xl;
     color: var(--blue);
 }
+
+.hero p {
+    @apply text-xl;
+}

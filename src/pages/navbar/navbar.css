@@ -1,6 +1,6 @@
 .navbar {
     @apply flex justify-between items-center w-full py-3  max-lg:mb-14 uppercase font-semibold;
-    border-bottom: 1px ridge var(--green);   
+    /* border-bottom: 5px dashed var(--green);    */
     cursor: pointer;
     position: relative;
 }
