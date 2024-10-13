@@ -14,12 +14,12 @@
 }
 
 .education div h3 {
-    @apply text-2xl font-bold pb-2;
+    @apply text-xl font-bold pb-2;
     color: var(--blue);
 }
 
 .education div h4 {
-    @apply text-xl font-bold pr-4 w-fit whitespace-nowrap;
+    @apply text-base font-bold pr-4 w-fit whitespace-nowrap;
     /* color: var(--blue); */
 }
 
