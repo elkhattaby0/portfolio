@@ -26,7 +26,7 @@ const Education = () => {
                     <div>
                         <h3>{n.title}.</h3>
                         <span>
-                            <h4>&#9889; {n.time}</h4>
+                            <h4>{n.time}</h4>
                             <p>{n.desc}.</p>
                         </span>
                         
