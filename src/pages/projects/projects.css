@@ -3,12 +3,12 @@
 }
 
 .projects h1 {
-    @apply text-3xl font-bold pb-12;
+    @apply text-3xl font-bold pb-10;
     color: var(--green);
 }
 
 .tabs {
-    @apply flex gap-4 max-md:gap-3 mb-10 max-md:flex-col;
+    @apply flex gap-4 max-md:gap-3 mb-6 max-md:flex-col;
 }
 
 .tabs button {
