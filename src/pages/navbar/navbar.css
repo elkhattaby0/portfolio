@@ -33,6 +33,9 @@
     @apply flex flex-col items-center justify-center max-lg:justify-start max-lg:pt-20 w-8/12;
     border: 1px ridge var(--white);
 }
+.menu li {
+    @apply max-lg:py-6;
+}
 
 .close-btn {
     @apply text-3xl self-end p-4 hover:text-red-500;
