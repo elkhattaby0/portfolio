@@ -34,7 +34,7 @@
 }
 
 .project-frame {
-    @apply w-full h-[300px] max-lg:h-[250px];
+    @apply w-full h-[300px] max-lg:h-[220px];
     /* width: 100%; */
     /* height: 300px; */
     background: var(--white);
