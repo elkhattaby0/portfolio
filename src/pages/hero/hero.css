@@ -3,15 +3,35 @@
 }
 
 .hero h1 {
-    @apply text-3xl font-bold pb-4;
+    @apply text-3xl font-bold pb-4 hidden;
     color: var(--green);
 }
 
 .hero span {
-    @apply text-xl;
+    @apply text-2xl font-bold;
     color: var(--blue);
+}
+
+.hero h2 {
+    @apply text-6xl mb-4 font-bold ;
+}
+
+.hero h2 span {
+    @apply text-4xl mb-4 font-bold ;
+    color: var(--green)
 }
 
 .hero p {
     @apply text-xl;
+}
+
+.hero div {
+    @apply flex;
+}
+.hero div a {
+    @apply mr-4;
+    /* background: var(--green); */
+}
+.hero div a svg:hover {
+    fill: var(--green);
 }

@@ -32,7 +32,7 @@ body {
 }
 
 .homeContent {
-    @apply  w-5/12 p-0 m-0 max-md:w-10/12;
+    @apply  w-6/12  p-0 m-0 max-md:w-10/12;
 }
 
 
