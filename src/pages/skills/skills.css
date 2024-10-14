@@ -1,0 +1,36 @@
+.projects {
+    @apply flex flex-col justify-center mt-16;
+}
+
+.projects h1 {
+    @apply text-3xl font-bold pb-10;
+    color: var(--green);
+}
+
+.tabs {
+    @apply flex gap-2 max-md:gap-3 mb-6 max-md:flex-col;
+}
+
+.tabs button {
+    @apply border outline-none p-2 rounded-md;
+    border-color: var(--blue);
+    transition: background-color 0.3s;
+}
+
+.tabs button.active-tab {
+    background: var(--blue);
+}
+
+.skills-list {
+    @apply flex flex-row flex-wrap gap-6;
+}
+
+.skills-list div {
+    @apply  flex flex-col items-center;
+}
+
+.skills-list p {
+    @apply text-base font-semibold pt-2;
+}
+
+
