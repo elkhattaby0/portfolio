@@ -25,3 +25,11 @@
     fill: var(--green);
     @apply border;
 }
+
+.footer div a {
+    @apply mr-2;
+    /* background: var(--green); */
+}
+.footer div a svg:hover {
+    fill: var(--green);
+}

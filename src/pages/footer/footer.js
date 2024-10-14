@@ -1,25 +1,23 @@
 import "./footer.css"
+import { SiGithub, SiInstagram, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
-import GitHubIcon from "../../assets/svg/SocialMedia/Github.svg"
-import InstagramIcon from "../../assets/svg/SocialMedia/Instagram.svg"
-import LinkedinIcon from "../../assets/svg/SocialMedia/Linkedin.svg"
-import WhatsappIcon from "../../assets/svg/SocialMedia/Whatsapp.svg"
-
+const sizeIcon = 25;
+const colorIcon = "#EFFFFB"
 const social = [
     {
-        "img": GitHubIcon,
+        "img": <SiGithub size={sizeIcon} color={colorIcon} />,
         "link": "https://github.com/elkhattaby0"
     },
     {
-        "img": InstagramIcon,
+        "img": <SiInstagram size={sizeIcon} color={colorIcon} />,
         "link": "https://www.instagram.com/lahoucine_elkhattaby"
     },
     {
-        "img": LinkedinIcon,
+        "img": <SiLinkedin size={sizeIcon} color={colorIcon} />,
         "link": "https://www.linkedin.com/in/lahoucine-el-khattaby-0335341bb"
     },
     {
-        "img": WhatsappIcon,
+        "img": <SiWhatsapp size={sizeIcon} color={colorIcon} />,
         "link": "https://wa.me/212650999953"
     },
 ]
@@ -29,16 +27,16 @@ const Footer = () => {
         <div className="footer" id="contact">
             <h2>Keep In Touch.</h2>
             <div>
-            {
-                social.map(n=> (                    
-                    <a 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={n.link}>
-                        <img src={n.img} />
-                    </a>                    
-                ))
-            }
+                {
+                    social.map(n=>(
+                        <a 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={n.link}>
+                            {n.img}
+                        </a>     
+                    ))
+                }
             </div>
             <p>© Copyright 2024, All rights reserved. Made With Lahoucine EL KHATTABY.</p>
         </div>

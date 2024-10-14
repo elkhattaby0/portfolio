@@ -29,9 +29,10 @@
     @apply flex;
 }
 .hero div a {
-    @apply mr-4;
+    @apply mr-2;
     /* background: var(--green); */
 }
+
 .hero div a svg:hover {
     fill: var(--green);
 }

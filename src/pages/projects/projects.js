@@ -6,7 +6,7 @@ const proj = [
         title: "Atlas Azawan",
         link: "https://atlasazawan.com/",
         tech: ["Wordpress", "Elementor"],
-        category: "CMS",
+        category: "CMS Projects",
     },
     {
         title: "Dolce Production",
