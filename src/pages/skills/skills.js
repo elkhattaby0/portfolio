@@ -125,6 +125,7 @@ const proj = [
         icon: <SiRabbitmq size={45} color="#EFFFFB" />,
         category: "Others",
     },
+    
 ];
 
 const categories = ["All", "Frontend", "Backend", "Database", "CMS", "Others"];
@@ -138,7 +139,7 @@ const Skills = () => {
             : proj.filter((p) => p.category === activeTab);
 
     return (
-        <div className="projects" id="projects">
+        <div className="projects" id="skills">
             <h1>&#10024; Skills.</h1>
 
             <div className="tabs">
