@@ -1,8 +1,37 @@
-import React, { useState } from "react";
-import { SiHtml5, SiCss3, SiBootstrap, SiTailwindcss, SiJquery, SiJavascript, SiPython, SiMysql, SiMongodb, SiNodedotjs, SiPhp, SiLaravel, SiReact, SiTypescript, SiWordpress, SiExpress, SiGit, SiGithub, SiUml, SiVisualstudiocode, SiElementor, SiCanva, SiJson, SiRabbitmq, SiPostman } from "react-icons/si"; 
+import {
+    SiHtml5,
+    SiCss3,
+    SiBootstrap,
+    SiTailwindcss,
+    SiJquery,
+    SiJavascript,
+    SiPython,
+    SiMysql,
+    SiMongodb,
+    SiNodedotjs,
+    SiPhp,
+    SiLaravel,
+    SiReact,
+    SiTypescript,
+    SiWordpress,
+    SiExpress,
+    SiGit,
+    SiGithub,
+    SiUml,
+    SiVisualstudiocode,
+    SiElementor,
+    SiCanva,
+    SiJson,
+    SiRabbitmq,
+    SiPostman,
+    SiSeo,
+    SiReactnative,
+} from "react-icons/si";
 
 import "./skills.css";
-const sizeIcon = 40; 
+
+const sizeIcon = 40;
+
 const proj = [
     {
         name: "HTML",
@@ -43,7 +72,6 @@ const proj = [
         name: "MySQL",
         icon: <SiMysql size={sizeIcon} color="#EFFFFB" />,
         category: "Database",
-        
     },
     {
         name: "MongoDB",
@@ -79,6 +107,16 @@ const proj = [
         name: "Wordpress",
         icon: <SiWordpress size={sizeIcon} color="#EFFFFB" />,
         category: "CMS",
+    },
+    {
+        name: "SEO",
+        icon: <SiSeo size={sizeIcon} color="#EFFFFB" />,
+        category: "CMS",
+    },
+    {
+        name: "React Native",
+        icon: <SiReactnative size={sizeIcon} color="#EFFFFB" />,
+        category: "Mobile",
     },
     {
         name: "ExpressJs",
@@ -130,13 +168,12 @@ const proj = [
         icon: <SiRabbitmq size={sizeIcon} color="#EFFFFB" />,
         category: "Others",
     },
-    
 ];
 
-const categories = ["All", "Frontend", "Backend", "Database", "CMS", "Others"];
+const categories = ["All", "Frontend", "Backend", "Database", "CMS", "Mobile", "Others"];
 
 const Skills = () => {
-    const [activeTab, setActiveTab] = useState("All");
+    const [activeTab, setActiveTab] = React.useState("All");
 
     const filteredProjects =
         activeTab === "All"
