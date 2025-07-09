@@ -106,7 +106,7 @@
                 {
                     "subtitle": "Backend", "link": "https://www.careerexplorer.com/careers/back-end-developer/",
                     "skills": [
-                        "NodeJs", "ExpressJs", "Laravel", "Firebase", "Supabase"
+                        "NodeJs", "ExpressJs", "Laravel", "Firebase", "Supabase", "REST API", "Headless API"
                     ]
                 },
                 {
@@ -130,13 +130,13 @@
                 {
                     "subtitle": "Tools", "link": "https://www.apm.org.uk/resources/find-a-resource/agile-project-management",
                     "skills": [
-                        "Git/GitHub", "Agile Methods", "UML"
+                        "Git/GitHub", "Agile Methods", "UML", "VS Code", "Postman", "XAMPP", "Docker", "Linux", "SonarQube", "RabbitMQ"
                     ]
                 },
                 {
                     "subtitle": "Languages", "link": "https://en.wikipedia.org/wiki/Programming_language",
                     "skills": [
-                        "JavaScript", "TypeScript", "Python", "PHP", "C Language"
+                        "JavaScript", "TypeScript", "Python (Tkinter)", "PHP", "C Language"
                     ]
                 }
             ]
