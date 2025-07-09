@@ -1,0 +1,298 @@
+:root {
+  --accentColor: #0077C0;
+  --textColor: #1D242B;
+  --border: #C7EEFF;
+  --bg: #FAFAFA;
+  
+  --h1: clamp(26px, 4vw, 30px);
+  --h2: clamp(20px, 3vw, 25px);
+  --h3: clamp(14px, 2vw, 16px);
+  --p: clamp(13px, 2vw, 14px);
+
+  --lineHeight: 1.6;
+}
+
+
+body {
+    padding: 0px; margin: 0px;
+    height: 100%;
+    background: var(--bg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    /* border: 4px solid var(--accentColor); */
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* HEAD */
+#head {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#head section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#head h1 {
+    padding: 0; margin: 0;
+    font-size: var(--h1);
+    text-transform: uppercase;
+    color: var(--textColor);
+    line-height: var(--lineHeight);
+}
+#head h2 {
+    padding: 0; margin:0;
+    font-size: var(--h2);
+    text-transform: capitalize;
+    color: var(--accentColor);
+    line-height: var(--lineHeight);
+    /* border: 1px solid red; */
+}
+#head ul {
+    padding: 0; margin: 0;
+    /* border: 1px solid gray; */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    color: var(--textColor);
+    gap: 5px;
+}
+#head li {
+    /* border: 1px solid red; */
+    margin-right: 15px;
+    line-height: var(--lineHeight);
+    display: flex; align-items: center;
+}
+#head img {
+    border-radius: 10%;
+    border: 2px dashed var(--accentColor);
+    height: 140px;
+    width: 140px;
+    /* background: var(--textColor); */
+    cursor: pointer;
+}
+#head a {
+    text-decoration: none;
+    color: var(--textColor);
+    line-height: var(--lineHeight);
+}
+
+
+
+/* Body */
+#body {
+    /* border: 1px solid red; */
+    padding: 0; margin: 0;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+    margin-top: 50px;
+}
+#body h2 {
+    padding: 0; margin: 0;
+    text-transform: uppercase;
+    font-size: var(--h2);
+    color: var(--textColor);
+    border-bottom: 3px solid var(--textColor);
+    padding-bottom: 5px;
+    line-height: var(--lineHeight);
+}
+#body section {
+    /* border: 1px solid red; */
+    height: fit-content;
+
+}
+#body section div{
+    /* border: 2px solid var(--accentColor); */
+    padding: 0; margin: 0;
+    margin-top: 10px;
+    display: grid;
+    gap: 4px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #1d242b90;
+}
+#body section h3 {
+    /* border: 2px solid red;    */
+    padding: 0; margin: 0;
+    text-transform: capitalize;
+    font-size: var(--h3);
+    color: var(--textColor);
+    line-height: var(--lineHeight);
+}
+#body section p, .langtext {
+    color: var(--textColor);
+    font-size: var(--p);
+    line-height: var(--lineHeight);
+}
+.langtext { padding: 0; margin: 0; }
+#body section .img svg {
+    fill: var(--textColor);
+    width: 10 0%; height: 14px;
+    margin-right: 5px;
+}
+#body section div a {
+    padding: 0; margin: 0;
+    color: var(--accentColor);
+    text-transform: capitalize;
+    font-size: var(--p);
+    font-weight: 600;
+    line-height: var(--lineHeight);
+    text-decoration: none;
+}
+#body section div div {
+    /* border: 2px solid salmon; */
+    padding: 0; margin: 0;
+    border: none;
+    display: flex;
+    justify-content: start;
+    text-transform: capitalize;
+    font-size: var(--p);
+}
+#body section div div p{
+    /* border: 2px solid salmon; */
+    padding: 0; margin: 0;
+    font-size: var(--p);
+    color: var(--textColor);
+    line-height: var(--lineHeight);
+}
+#body section div div p:first-child {
+    width: 130px;
+}
+#body section div ul {
+    /* border: 2px solid red; */
+    padding: 0; margin: 0;
+    list-style: disc;
+    padding-left: 18px;
+    font-size: var(--p);
+    color: var(--textColor);
+    line-height: var(--lineHeight);
+}
+
+#body section div .skills {
+    /* border: 2px solid greenyellow; */
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    line-height: var(--lineHeight);
+    gap: 5px;
+}
+#body section div .skills li {
+    /* border: 2px solid red; */
+    /* border-bottom: 1px solid var(--textColor); */
+    /* width: 130px;  */
+    width: fit-content;
+    margin-right: 10px;
+    text-align: left;
+    font-size: var(--p);
+    color: var(--textColor);
+    text-transform: capitalize;
+    line-height: var(--lineHeight);
+}
+
+#qrcode {
+    background: var(--bg);
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.341);
+    height: 90px; width: 90px;
+    border-radius: 10px;
+    position: fixed;
+    left: 10px;
+    bottom: 20px;    
+    padding: 4px;
+}
+#qrcode img {
+    height: 100%; width: 100%; border-radius: 10px; 
+}
+
+#switchLang {
+    /* border: 2px solid var(--textColor); */
+    border: none;
+    color: var(--bg);
+    font-size: var(--h3);
+    font-weight: 600;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 8px 14px;
+    background: var(--bg);
+    outline: none;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    /* rotate: 90deg; */
+    background: var(--accentColor);
+}
+#switchLang option {
+    /* height: 100px;
+    padding: 10px; */
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: var(--h3);
+    color: var(--bg);
+}
+#body a:hover, #head a:hover {
+    text-decoration: underline;
+}
+@media(max-width: 1199px) {
+    #main {
+        width: 95%;
+        margin-top: 12px;
+    }
+    #head {
+        display: flex;
+        flex-direction: column-reverse;
+    }   
+    #head section {
+        gap: 10px
+    }
+    #head section:last-child {
+        background: var(--border);
+        height: 180px;
+        width: 100%;
+        position: relative;
+        border-radius: 20px;
+        background-image: url("./Images/cover.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 60px;
+    }
+    #head section:last-child div {
+        background-image: linear-gradient(to bottom, #000000be, #ffffff28);
+        width: 100%; height: 100%;
+        border-radius: 20px;
+    }
+    #head img {
+        position: absolute;
+        top: 90px;
+        left: 33%;
+        /* box-shadow: 1px 1px 4px var(--textColor); */
+        border: none;
+    }
+
+    #body {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin-top: 30px;
+    }
+    #body section {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    
+    #qrcode {
+        display: none;
+    }
+}

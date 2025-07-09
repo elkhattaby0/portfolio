@@ -1,0 +1,169 @@
+{
+    "img": "./Images/profile.jpg",
+    "fullname": "lahoucine el khattaby",
+    "subtitle": "développeur full stack",
+    "contact": [
+        { "type": "phone", "value": "+(212) 650-999-953", "link": "tel:0650999953", "icon": "https://img.icons8.com/ios-filled/100/phone.png"},
+        { "type": "email", "value": "elhoucine0elkhattaby@gmail.com", "link": "mailto:elhoucine0elkhattaby@gmail.com", "icon": "https://img.icons8.com/pastel-glyph/100/new-post--v1.png" },
+        { "type": "linkden", "value": "linkden.con/in/lahoucine-elkhattaby", "link": "https://ma.linkedin.com/in/lahoucine-el-khattaby-0335341bb", "icon": "https://img.icons8.com/ios-filled/100/linkedin.png"},
+        { "type": "address", "value": "Dcheira Agadir, Maroc", "icon": "https://img.icons8.com/ios-filled/100/marker.png", "link": "https://maps.app.goo.gl/BwEkNjM68U2QzRTZ6"}
+    ],
+
+    "details": [
+        {
+            "title": "formation",
+            "details": [
+                { 
+                    "title": "Diplôme en Développement Digital (Informatique)",
+                    "subtitle": "OFPPT Agadir",
+                    "year": "2022 - 2024",
+                    "city": "agadir",
+                    "link": "https://maps.app.goo.gl/e7E5RLH3M13Ba6Dx8"
+                },
+                { 
+                    "title": "chimie",
+                    "subtitle": "université Ibn Zohr des sciences",
+                    "year": "2020 - 2022",
+                    "city": "Ait Melloul",
+                    "link": "https://maps.app.goo.gl/cqnrrggmaM8TqaNg6"
+                },
+                { 
+                    "title": "Bac SVT",
+                    "subtitle": "Lycée Omar El Khayam",
+                    "year": "2019 - 2020",
+                    "city": "Dcheira",
+                    "link": "https://maps.app.goo.gl/gRuexmqQcBwyycmj7"
+                }
+            ]
+        },
+        {
+            "title": "EXPÉRIENCES PROFESSIONNELLES",
+            "details": [
+                {
+                    "title": "développeur Web Freelance",
+                    "subtitle": "",
+                    "year": "2025 - present",
+                    "city": "",
+                    "link": "",
+                    "lists": [
+                        "Création d'un site associatif sous WordPress",
+                        "Utilisation d'Elementor",
+                        "Optimisation SEO"
+                    ]
+                },
+                {
+                    "title": "Stage Développement Web",
+                    "subtitle": "BeeDigital",
+                    "year": "2024",
+                    "city": "agadir",
+                    "link": "https://maps.app.goo.gl/nLuvc13xMv1KfozA7",
+                    "lists": [
+                        "Développement et gestion de sites WordPress pour clients locaux",
+                        "Optimisation SEO de pages existantes"
+                    ]
+                },
+                {
+                    "title": "Développeur Freelance",
+                    "subtitle": "",
+                    "year": "2024",
+                    "city": "",
+                    "link": "",
+                    "lists": [
+                        "Développeur Freelance",
+                        "Réalisation d'un site pour studio musical sous WordPress"
+                    ]
+                },
+                {
+                    "title": "stage",
+                    "subtitle": "nowotch",
+                    "year": "2024",
+                    "city": "agadir",
+                    "link": "https://maps.app.goo.gl/uoYoFQ5KxBLkbiFu9",
+                    "lists": [
+                        "Développement et maintenance de sites WordPress dynamiques"
+                    ]
+                },
+                {
+                    "title": "Travail à temps partiel",
+                    "subtitle": "McDonald's Adrar Kitea",
+                    "year": "2023",
+                    "city": "agadir",
+                    "link": "https://maps.app.goo.gl/VXcLuN5jCikKQguK9",
+                    "lists": []
+                }
+            ]
+        },
+        
+        {
+            "title": "coMPÉTENCES TECHNIQUES",
+            "details": [
+                {
+                    "subtitle": "Frontend", "link": "https://www.w3schools.com/whatis/whatis_frontenddev.asp",
+                    "skills": [
+                        "HTML", "CSS", "Bootstrap", "TailwindCss", "jQuery", "ReactJs", "NextJs", "Redux Toolkit"
+                    ]
+                },
+                {
+                    "subtitle": "Backend", "link": "https://www.careerexplorer.com/careers/back-end-developer/",
+                    "skills": [
+                        "NodeJs", "ExpressJs", "Laravel", "Firebase", "Supabase"
+                    ]
+                },
+                {
+                    "subtitle": "Mobile", "link": "https://www.indeed.com/career-advice/finding-a-job/what-is-mobile-app-developer",
+                    "skills": [
+                        "React Native"
+                    ]
+                },
+                {
+                    "subtitle": "Bases de données", "link": "https://en.wikipedia.org/wiki/Database",
+                    "skills": [
+                        "MySQL", "MongoDB", "SQLite"
+                    ]
+                },
+                {
+                    "subtitle": "CMS", "link": "https://kinsta.com/knowledgebase/content-management-system/",
+                    "skills": [
+                        "Wordpress", "Elementor", "SEO"
+                    ]
+                },
+                {
+                    "subtitle": "Outils", "link": "https://www.apm.org.uk/resources/find-a-resource/agile-project-management",
+                    "skills": [
+                        "Git/GitHub", "Méthodes Agile", "UML"
+                    ]
+                },
+                {
+                    "subtitle": "languges",  "link": "https://en.wikipedia.org/wiki/Programming_language",
+                    "skills": [
+                        "JavaScript", "TypeScript", "Python", "PHP", "languge C"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "LANGUES",
+            "langues": [
+                {
+                    "title": "arabe",
+                    "text": "Langue maternelle",
+                    "level": 5
+                },
+                {
+                    "title": "Anglais",
+                    "text": "Courant",
+                    "level": 3
+                },
+                {
+                    "title": "Francais",
+                    "text": "Intermédiaire",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "title": "activiVITÉS EXTRA-PROFESSIONNELLES",
+            "text": "Pendant l'année 2023, j'ai représenté l'Institut OFPPT Agadir avec mes collègues en collectant des contributions pour l'Association des enfants orphelins, afin de leur permettre d'acheter des vêtements pour l'Aïd. Cette expérience m'a permis d'apprendre à interagir avec les gens, à travailler en équipe, ainsi qu'à faire preuve de patience et d'optimisme."
+        }
+    ]
+}
