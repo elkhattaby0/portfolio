@@ -263,7 +263,7 @@ body {
         width: 100%;
         position: relative;
         border-radius: 20px;
-        background-image: url("./Images/cover.webp");
+        background-image: url("../public/Images/cover.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
