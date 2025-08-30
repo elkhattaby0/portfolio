@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elkhattaby0.github.io/portfolio/sitemap.xml
+Sitemap: https://elkhattaby.vercel.app/sitemap.xml
