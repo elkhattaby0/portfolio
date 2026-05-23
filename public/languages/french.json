@@ -1,6 +1,6 @@
 {
     "img": "./Images/profile.webp",
-    "fullname": "lahoucine el khattaby",
+    "fullname": "Lahoucine El Khattaby",
     "subtitle": "développeur full stack",
     "contact": [
         { "type": "phone", "value": "+(212) 650-999-953", "link": "tel:0650999953", "icon": "https://img.icons8.com/ios-filled/100/phone.png"},
@@ -8,8 +8,31 @@
         { "type": "linkden", "value": "linkden.con/in/lahoucine-elkhattaby", "link": "https://ma.linkedin.com/in/lahoucine-el-khattaby-0335341bb", "icon": "https://img.icons8.com/ios-filled/100/linkedin.png"},
         { "type": "address", "value": "Dcheira Agadir, Maroc", "icon": "https://img.icons8.com/ios-filled/100/marker.png", "link": "https://maps.app.goo.gl/BwEkNjM68U2QzRTZ6"}
     ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+        {
+            "question": "Sur quel type de projets travaillez-vous ?",
+            "answer": "Je travaille principalement sur des sites vitrines, des portfolios, des landing pages et des applications web sur mesure. Je peux aussi intervenir sur des sites WordPress et des projets JavaScript modernes avec React ou Node.js."
+        },
+        {
+            "question": "Travaillez-vous seulement avec des clients au Maroc ?",
+            "answer": "Non. Je suis basé au Maroc, mais je peux également collaborer à distance avec des clients dans d'autres pays selon la nature du projet et les besoins en communication."
+        },
+        {
+            "question": "Pouvez-vous améliorer un site existant au lieu d'en créer un nouveau ?",
+            "answer": "Oui. Je peux moderniser le design, améliorer les performances, corriger des bugs, optimiser le SEO et ajouter de nouvelles fonctionnalités à un site existant."
+        },
+        {
+            "question": "Comment peut-on vous contacter pour un projet ?",
+            "answer": "Le plus simple est de me contacter par email, téléphone ou LinkedIn en utilisant les coordonnées affichées en haut de cette page."
+        }
+    ],
 
     "details": [
+        {
+            "title": "profil",
+            "text": "Je suis développeur Full Stack basé à Agadir, au Maroc. Je travaille sur des sites vitrines, des portfolios, des landing pages et des applications web sur mesure avec des technologies comme React, Next.js, Node.js, WordPress et Laravel. Mon parcours comprend des missions freelance, des stages, la maintenance de sites web, l'optimisation SEO et la création de solutions digitales utiles, avec une attention particulière à la performance, à l'expérience utilisateur et à la communication avec les clients."
+        },
         {
             "title": "formation",
             "details": [
@@ -130,7 +153,7 @@
                 {
                     "subtitle": "Outils", "link": "https://www.apm.org.uk/resources/find-a-resource/agile-project-management",
                     "skills": [
-                        "Git/GitHub", "Méthodes Agile", "UML", "VS Code", "Postman", "XAMPP", "Docker", "Linux", "SonarQube", "RabbitMQ"
+                        "Git/GitHub", "Méthodes Agile", "UML", "VS Code", "Postman", "XAMPP", "Docker", "Linux", "SonarQube", "RabbitMQ", "Claude", "OpenAI Codex", "ChatGPT", "développement assisté par IA"
                     ]
                 },
                 {

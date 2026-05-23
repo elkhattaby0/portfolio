@@ -75,6 +75,13 @@ body {
     line-height: var(--lineHeight);
     display: flex; align-items: center;
 }
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
 #head img {
     border-radius: 10%;
     border: 2px dashed var(--accentColor);
@@ -202,6 +209,43 @@ body {
     text-transform: capitalize;
     line-height: var(--lineHeight);
 }
+.faq-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+.faq-item {
+    border-bottom: 1px dashed #1d242b90;
+    padding-bottom: 8px;
+}
+.faq-item summary {
+    cursor: pointer;
+    font-size: var(--h3);
+    font-weight: 600;
+    color: var(--textColor);
+    line-height: var(--lineHeight);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-item summary::after {
+    content: "+";
+    color: var(--accentColor);
+    font-size: 22px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+.faq-item[open] summary::after {
+    content: "−";
+}
+.faq-item p {
+    margin: 10px 0 0;
+}
 
 #qrcode {
     background: var(--bg);
@@ -263,7 +307,7 @@ body {
         width: 100%;
         position: relative;
         border-radius: 20px;
-        background-image: url("../public/Images/cover.webp");
+        background-image: url("/Images/cover.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
